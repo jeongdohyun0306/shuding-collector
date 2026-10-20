@@ -1,8 +1,0 @@
-{
- "names": ["슈딩이"],
- "w_eg2_img": 1.0,
- "w_eg2_cap": 1.0,
- "parse_neg": true,
- "neg_lambda": 1.0,
- "neg_tau": 1.0
-}

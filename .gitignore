@@ -3,7 +3,6 @@ __pycache__/
 *.pyc
 *.part
 *.tmp
-index/thumbs/
 index_*/
 data/coco_photos/
 data/coco_meta/*.parquet

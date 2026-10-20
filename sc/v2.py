@@ -28,6 +28,9 @@ class Cfg:
     names: list = field(default_factory=lambda: list(kparse.NAMES))
 
 
+FINAL = dict(w_eg2_cap=1.0, neg_lambda=1.0, neg_tau=1.0)
+
+
 class V2:
     def __init__(self, corpus, cfg: Cfg, persist=True, memo=True):
         self.c, self.cfg, self.persist, self.memo = corpus, cfg, persist, memo

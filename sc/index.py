@@ -1,6 +1,5 @@
 import hashlib
 import json
-import shutil
 import time
 from pathlib import Path
 
@@ -32,6 +31,12 @@ class Corpus:
         return h.hexdigest()
 
     def check_fingerprint(self):
+        missing = [f for f in self.files if not Path(f).exists()]
+        if missing:
+            raise SystemExit(f"{len(missing)} of {len(self.files)} photos are missing (first: {missing[0]}); "
+                             "the index caches were left untouched. Put the photos back or rebuild with "
+                             f"python -m sc.build --photos <folder> --out {self.dir}. "
+                             "For the evaluation corpus (index/), run tools/fetch_coco.py.")
         fp_path = self.path("fingerprint.txt")
         fp = self.fingerprint()
         old = fp_path.read_text(encoding="utf-8").strip() if fp_path.exists() else None
@@ -42,9 +47,6 @@ class Corpus:
             stale = [n for n in CACHE_FILES if self.path(n).exists()]
             for n in stale:
                 self.path(n).unlink()
-            thumbs = self.path("thumbs")
-            if thumbs.exists():
-                shutil.rmtree(thumbs)
             if stale:
                 print(f"[index] photo list changed, cleared {', '.join(stale)}")
         fp_path.write_text(fp, encoding="utf-8")

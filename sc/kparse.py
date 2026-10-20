@@ -410,6 +410,8 @@ class Parse:
                 done = self.np_operator(i, self.unit_end(i))
             elif tg == "VV" and f in EXCEPTIVE and self.form(i + 1) == "고" and not (self.form(i - 1) == "지" and self.tag(i - 1) == "EC"):
                 done = self.np_operator(i, i + 1)
+            elif tg == "NNG" and f == "제외" and self.tag(i + 1) == "XSV" and self.form(i + 1) == "하" and self.form(i + 2) == "고":
+                done = self.np_operator(i, i + 2)
             i += 1
         return self
 

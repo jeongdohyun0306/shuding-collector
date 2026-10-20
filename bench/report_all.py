@@ -15,10 +15,10 @@ from bench.agreement import parse_codes
 from sc import index, kparse, models
 from sc.index import Corpus
 from sc.v1 import V1
-from sc.v2 import V2, Cfg, z
+from sc.v2 import FINAL, V2, Cfg, z
 
 OUT = ROOT / "results"
-LIGHT = dict(w_eg2_cap=1.0, neg_lambda=1.0, neg_tau=1.0)
+LIGHT = FINAL
 ABLATIONS = {
     "img_only": dict(parse_neg=False),
     "img_parse": dict(),
@@ -107,6 +107,13 @@ def main():
             s = summary(rows)
             grid[f"{lam}/{tau}"] = {"dev": s["dev/all"]["ndcg10"], "dev_neg": s["dev/negation"]["ndcg10"]}
     summ["penalty_grid_dev"] = grid
+    grid2 = {}
+    for lam in (0.5, 1.0, 2.0):
+        for tau in (0.5, 1.0, 1.5, 2.0):
+            rows = evaluate("tmp", V2(c, Cfg(**dict(FINAL, neg_lambda=lam, neg_tau=tau))).scores)
+            s = summary(rows)
+            grid2[f"{lam}/{tau}"] = {"dev": s["dev/all"]["ndcg10"], "dev_neg": s["dev/negation"]["ndcg10"]}
+    summ["penalty_grid_dev_v2"] = grid2
     a = [r["ndcg10"] for r in rows_v1]
     b = [r["ndcg10"] for r in rows_v2]
     summ["bench_paired"] = {"all": paired(a, b)}
@@ -137,18 +144,21 @@ def main():
     Qp = index.eg2_texts([p["pos"] for p in P])
     negs = sorted({n for p in P for n in p["neg"]})
     Qn = dict(zip(negs, index.eg2_texts(negs))) if negs else {}
+    fin = Cfg(**FINAL)
     for dim in (768, 512, 256, 128):
         def nrm(x):
             x = x[..., :dim]
             return x / np.linalg.norm(x, axis=-1, keepdims=True)
         I, C = nrm(v2.eg2_img), nrm(v2.caps)
 
+        def fused(v):
+            return fin.w_eg2_img * z(v @ I.T) + fin.w_eg2_cap * z(v @ C.T)
+
         def sc(_texts):
-            S = z(nrm(Qp) @ I.T) + z(nrm(Qp) @ C.T)
+            S = fused(nrm(Qp))
             for qi, p in enumerate(P):
                 for n in p["neg"]:
-                    v = nrm(Qn[n][None])
-                    S[qi] -= np.maximum(0, (z(v @ I.T) + z(v @ C.T))[0] - 1.0)
+                    S[qi] -= fin.neg_lambda * np.maximum(0, fused(nrm(Qn[n][None]))[0] - fin.neg_tau)
             return S
         mrl[dim] = summary(evaluate("tmp", sc))["all/all"]["ndcg10"]
     summ["mrl"] = mrl
