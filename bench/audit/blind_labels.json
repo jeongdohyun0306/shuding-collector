@@ -1,0 +1,406 @@
+[
+ {
+  "idx": 9,
+  "codes": "C L sl sf in"
+ },
+ {
+  "idx": 21,
+  "codes": "S yw mo ?out"
+ },
+ {
+  "idx": 33,
+  "codes": "L pl ?mo in"
+ },
+ {
+  "idx": 45,
+  "codes": "?S ?L bd lp pr in"
+ },
+ {
+  "idx": 57,
+  "codes": "ht lk hd pr in"
+ },
+ {
+  "idx": 69,
+  "codes": "L lk tie in"
+ },
+ {
+  "idx": 81,
+  "codes": "T ?L mc tv in"
+ },
+ {
+  "idx": 93,
+  "codes": "nc gs out"
+ },
+ {
+  "idx": 105,
+  "codes": "L ?sl ?lk bd ?sf in"
+ },
+ {
+  "idx": 117,
+  "codes": "S C L ?sl wd bd mc in"
+ },
+ {
+  "idx": 129,
+  "codes": "L ?C sl sf pr ?lp ?wd in"
+ },
+ {
+  "idx": 141,
+  "codes": "L lk sk in"
+ },
+ {
+  "idx": 153,
+  "codes": "L ?S wd ?tv in"
+ },
+ {
+  "idx": 165,
+  "codes": "L lk cr out"
+ },
+ {
+  "idx": 177,
+  "codes": "?bx lk in"
+ },
+ {
+  "idx": 189,
+  "codes": "L lk bd pr dg mc in"
+ },
+ {
+  "idx": 201,
+  "codes": "?L lk hd pr lp sf ?sh in"
+ },
+ {
+  "idx": 213,
+  "codes": "?L ?ea ?pl ?gs out"
+ },
+ {
+  "idx": 225,
+  "codes": "L lk sh in"
+ },
+ {
+  "idx": 237,
+  "codes": "T pr sh ?tv in"
+ },
+ {
+  "idx": 249,
+  "codes": "L lk sf ?out"
+ },
+ {
+  "idx": 261,
+  "codes": "L ?C sl mc ?bx in"
+ },
+ {
+  "idx": 273,
+  "codes": "S lk in"
+ },
+ {
+  "idx": 285,
+  "codes": "S in"
+ },
+ {
+  "idx": 297,
+  "codes": "S wd in"
+ },
+ {
+  "idx": 3,
+  "codes": "L ?C sl bd in ?cl"
+ },
+ {
+  "idx": 15,
+  "codes": "T ?mo cr wd pr ?in"
+ },
+ {
+  "idx": 27,
+  "codes": "S mo lk out gs"
+ },
+ {
+  "idx": 39,
+  "codes": "hd pr in"
+ },
+ {
+  "idx": 51,
+  "codes": "nc out pr"
+ },
+ {
+  "idx": 63,
+  "codes": "L ?C ?lk sf in pr"
+ },
+ {
+  "idx": 75,
+  "codes": "L C sl ?gr sf ?bx in"
+ },
+ {
+  "idx": 87,
+  "codes": "L sl bd in"
+ },
+ {
+  "idx": 99,
+  "codes": "nc out"
+ },
+ {
+  "idx": 111,
+  "codes": "L lk sf bd in"
+ },
+ {
+  "idx": 123,
+  "codes": "L lk bd in dg"
+ },
+ {
+  "idx": 135,
+  "codes": "?T lk lp in"
+ },
+ {
+  "idx": 147,
+  "codes": "S lk sk in"
+ },
+ {
+  "idx": 159,
+  "codes": "S wd in"
+ },
+ {
+  "idx": 171,
+  "codes": "T bx bd pr in"
+ },
+ {
+  "idx": 183,
+  "codes": "L sl bd out dg ?pr"
+ },
+ {
+  "idx": 195,
+  "codes": "ea hd pr in ?sf"
+ },
+ {
+  "idx": 207,
+  "codes": "T ea sk in"
+ },
+ {
+  "idx": 219,
+  "codes": "L lk tv in ?wd"
+ },
+ {
+  "idx": 231,
+  "codes": "L ?lk ?pl sf in"
+ },
+ {
+  "idx": 243,
+  "codes": "T wd out"
+ },
+ {
+  "idx": 255,
+  "codes": "S lk out"
+ },
+ {
+  "idx": 267,
+  "codes": "S L lk bd out ?wd mc"
+ },
+ {
+  "idx": 279,
+  "codes": "?S lk in"
+ },
+ {
+  "idx": 291,
+  "codes": "?L ?lk bx in"
+ },
+ {
+  "idx": 0,
+  "codes": "L sl gl cl out ?gs"
+ },
+ {
+  "idx": 12,
+  "codes": "L ?sl gl cl out ?gs"
+ },
+ {
+  "idx": 24,
+  "codes": "nc pr in"
+ },
+ {
+  "idx": 36,
+  "codes": "?L lk pr in"
+ },
+ {
+  "idx": 48,
+  "codes": "L ?sl sf hd pr in"
+ },
+ {
+  "idx": 60,
+  "codes": "nc wd ?out"
+ },
+ {
+  "idx": 72,
+  "codes": "L lk tie wd in"
+ },
+ {
+  "idx": 84,
+  "codes": "L lk out"
+ },
+ {
+  "idx": 96,
+  "codes": "T gs out"
+ },
+ {
+  "idx": 108,
+  "codes": "L lk bd ?sf lp ?wd in"
+ },
+ {
+  "idx": 120,
+  "codes": "L bd dg in"
+ },
+ {
+  "idx": 132,
+  "codes": "?L ?pl lp in"
+ },
+ {
+  "idx": 144,
+  "codes": "nc sk in"
+ },
+ {
+  "idx": 156,
+  "codes": "?S lk out ?wd"
+ },
+ {
+  "idx": 168,
+  "codes": "S ?cr out"
+ },
+ {
+  "idx": 180,
+  "codes": "L lk ?bx in"
+ },
+ {
+  "idx": 192,
+  "codes": "?nc ?dg ?S wd out"
+ },
+ {
+  "idx": 204,
+  "codes": "lk hd pr in"
+ },
+ {
+  "idx": 216,
+  "codes": "S tv in"
+ },
+ {
+  "idx": 228,
+  "codes": "?S sh ?bx in"
+ },
+ {
+  "idx": 240,
+  "codes": "S T L mc pr out"
+ },
+ {
+  "idx": 252,
+  "codes": "T ea mc pr out"
+ },
+ {
+  "idx": 264,
+  "codes": "C L sl lp wd in"
+ },
+ {
+  "idx": 276,
+  "codes": "S lp ?pr ?hd in"
+ },
+ {
+  "idx": 288,
+  "codes": "S lk sk tv in"
+ },
+ {
+  "idx": 300,
+  "codes": "L lp in"
+ },
+ {
+  "idx": 6,
+  "codes": "L yw mo out"
+ },
+ {
+  "idx": 18,
+  "codes": "L ?gr ?bx ?cr ?in"
+ },
+ {
+  "idx": 30,
+  "codes": "L pl in"
+ },
+ {
+  "idx": 42,
+  "codes": "L sl lp pr in"
+ },
+ {
+  "idx": 54,
+  "codes": "L ht bx lk in"
+ },
+ {
+  "idx": 66,
+  "codes": "nc T pl cl mc out"
+ },
+ {
+  "idx": 78,
+  "codes": "L lk ?gr ?bx in"
+ },
+ {
+  "idx": 90,
+  "codes": "S out gs ?tie ?lk"
+ },
+ {
+  "idx": 102,
+  "codes": "L out gs pr"
+ },
+ {
+  "idx": 114,
+  "codes": "T dg ?out ?sf"
+ },
+ {
+  "idx": 126,
+  "codes": "S lk bd in"
+ },
+ {
+  "idx": 138,
+  "codes": "L ?lp in"
+ },
+ {
+  "idx": 150,
+  "codes": "S wd in"
+ },
+ {
+  "idx": 162,
+  "codes": "L lk cr ?out"
+ },
+ {
+  "idx": 174,
+  "codes": "S lk in"
+ },
+ {
+  "idx": 186,
+  "codes": "L dg pr bd in ?pl"
+ },
+ {
+  "idx": 198,
+  "codes": "?S lp in ?sf"
+ },
+ {
+  "idx": 210,
+  "codes": "C L sl ?bx in"
+ },
+ {
+  "idx": 222,
+  "codes": "S tv in"
+ },
+ {
+  "idx": 234,
+  "codes": "S ?sf ?lk in"
+ },
+ {
+  "idx": 246,
+  "codes": "L out"
+ },
+ {
+  "idx": 258,
+  "codes": "L ?C sl pr ?hd bd in"
+ },
+ {
+  "idx": 270,
+  "codes": "L sl sf bd dg in"
+ },
+ {
+  "idx": 282,
+  "codes": "L ?bx ?sl in"
+ },
+ {
+  "idx": 294,
+  "codes": "lp in"
+ }
+]

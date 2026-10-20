@@ -1,0 +1,311 @@
+# Claude(AI)가 사진을 한 장씩 직접 보고 붙인 정답 라벨. 사람이 붙인 것이 아니다. 검색 모델 결과를 보기 전에 고정했다.
+# 2026-10-20 정정: 1번(shuding_p3_0)과 2번(shuding_p3_1)에 사람 다리가 찍혀 있어 pr을 추가했다. 검증 에이전트가 찾고 사진을 직접 보고 확인했다.
+# 다른 Claude 에이전트가 101장을 따로 라벨링해 대조했다: 코드 단위 일치율 98.1% (bench/agreement.py, bench/audit/blind_labels.json)
+# 자세: L 누움, S 앉음, T 서있음/걷기, C 웅크림(L 포함)
+# 행동: sl 잠, yw 하품, mo 입 벌림(이빨 보임), gr 그루밍, ea 먹기/마시기, pl 놀기, lk 카메라 응시
+# 착용: gl 안경, ht 모자, cl 옷/천, tie 넥타이/리본
+# 장소: in 실내, out 실외, gs 풀밭, sf 소파, bd 침대/이불, bx 상자/가방/바구니 안, sk 세면대/욕실, wd 창가, cr 자동차, lp 노트북/키보드, tv 텔레비전, sh 신발
+# 함께: pr 사람(몸 일부라도), hd 사람이 안거나 무릎 위, dg 개, mc 고양이 여러 마리
+# nc 진짜 고양이가 아님(인형·그림 등)
+# ?코드 = 애매해서 그 검색어 채점에서 제외
+0: L gl cl out gs
+1: L out lk pr
+2: L bx in pr
+3: L sl in bd
+4: S out lk
+5: L sl out
+6: L yw mo out
+7: L yw mo out
+8: T out
+9: L C sl in sf
+10: S yw mo wd in
+11: L out gs lk
+12: L gl cl out gs
+13: S mo lk in
+14: S in
+15: T cr pr
+16: T sk in ?mo
+17: S mo in bx wd
+18: L mo in ?yw
+19: yw mo in
+20: S mo sk in lk
+21: S yw mo ?out
+22: S yw mo out
+23: L mo ?yw out
+24: nc pr ht in
+25: S tv in
+26: mc pl mo in
+27: S gs out mo
+28: nc
+29: S cr ?wd
+30: L in ?pl ?mo
+31: L ?bx out lk ?cr
+32: in lk ?ea
+33: L pl mo in
+34: L mo lk in
+35: L in bd pr lk
+36: in pr lk ?hd
+37: pr hd in
+38: S pr hd lp in sf
+39: pr hd in
+40: pr hd mc in
+41: L pr hd bd in
+42: L pr lp in ?sl
+43: S in lk
+44: L gl cl in
+45: L pr bd lp in
+46: L pr bd mc in sl ?hd
+47: pr hd sf in
+48: L pr sf in
+49: nc pr ht
+50: L in ?ht
+51: nc pr out
+52: ht in lk
+53: mc ea out
+54: ht bx in lk
+55: in ?pl ?bx
+56: nc pr ht
+57: pr hd ht ?in
+58: dg in
+59: pr hd in
+60: nc
+61: pr hd ?out
+62: L bd in lk
+63: L C ?sl pr sf in
+64: nc pr
+65: ht cl ?in
+66: nc
+67: tie ?cl in
+68: nc pr out
+69: L tie ?cl lk in
+70: T tie ?cl in ?sf
+71: tie ?cl in
+72: L tie ?cl lk in ?wd
+73: nc pr
+74: pr hd out ?gs
+75: L C ?sl bx in
+76: ea in
+77: cr ?wd
+78: in lk ?mo
+79: pr hd in
+80: T ea out
+81: T mc in tv
+82: L out ?sl
+83: L mc lp sl in
+84: L lk ?out
+85: L bd in ?sl
+86: L C sl ?in
+87: L sl bd in
+88: L bd in
+89: T out ?gs
+90: S gs out ?lk
+91: dg pl gs out
+92: S out
+93: nc
+94: S out gs
+95: S ?out
+96: T gs out
+97: T out ?gs lk
+98: S out ?gs lk
+99: nc
+100: S out lk
+101: S gs out lk ?cr
+102: out ?gs
+103: L lk in ?sf ?bd
+104: L sl lp sf in
+105: L ?sl in ?bd ?sf
+106: L mc sf in ?pl
+107: L C sl tv in
+108: L in lk ?lp ?sf
+109: pl in lk
+110: T pr tv in
+111: L in bd lk
+112: L C in ?sl ?bd
+113: L sf in ?lp lk
+114: dg in
+115: L in ?bd ?sf lk
+116: L in bd ?sl
+117: S mc wd in bd ?sl
+118: S wd in
+119: L bd in lk
+120: bd in ?mc
+121: L pr bd in
+122: S lk in ?bd ?sf
+123: L dg bd in
+124: pr lp in ?hd ?bd
+125: nc pr in
+126: L lk in ?bd
+127: L lk in ?lp ?sf
+128: L lp sf in
+129: L pr lp sl in ?sf
+130: L lp lk in
+131: lp lk in ?pl
+132: lp in
+133: lp in
+134: lp lk in
+135: lp lk in
+136: L lp pr in
+137: L in ?bx ?lp lk
+138: L lp in
+139: T sk ea in
+140: S sk in lk
+141: L sk lk in
+142: T sk in ?ea
+143: nc
+144: nc sk in
+145: T sk in lk
+146: T sk in ?pl
+147: S sk in lk
+148: S sk in
+149: wd out ?ea
+150: S wd in
+151: S out ?wd ?sl
+152: mc in ?sl
+153: L in ?wd ?tv
+154: S wd ?in lk
+155: wd in
+156: ?wd lk ?in
+157: nc bd
+158: S mc wd in
+159: S wd in
+160: L cr pr ?sl
+161: out ?cr lk
+162: L cr lk ?wd
+163: L out ?cr
+164: L out ?cr
+165: L cr out lk
+166: L cr mc out
+167: S cr out
+168: S out ?cr
+169: T cr out ?gs
+170: S cr out
+171: T bx pr bd in
+172: S bx in
+173: nc sh
+174: S in lk ?bx
+175: mc bx in
+176: L bx dg in
+177: ?bx in
+178: L bx in lk
+179: wd out
+180: L in ?bx
+181: L bx in lk
+182: S in lk ?bx
+183: L dg out sl
+184: L dg sf in
+185: out ?bx
+186: L dg pr bd in
+187: pr out mc
+188: L dg bd in
+189: L pr bd mc dg in ?sl
+190: L dg pr ?out
+191: nc dg
+192: S wd ?out
+193: L pr sf lp sl in
+194: T pr in
+195: pr hd ea in
+196: wd in ?ea
+197: pr dg bd in
+198: lp in
+199: pr hd lp in
+200: L sh pr ?out
+201: pr hd lp sf in
+202: L pr bd in
+203: S out pr
+204: pr hd in
+205: T ea in
+206: T sk ea in
+207: sk ea in
+208: L sl in ?bx
+209: sk in ?ea
+210: L C sl in ?bx
+211: pr mc ea out
+212: sk ea in
+213: L out
+214: S in ?bx
+215: S tv in
+216: S tv in
+217: tv in lk
+218: L tv in
+219: L tv in lk
+220: S tv in lk
+221: tv in
+222: S tv in
+223: sh in
+224: pr hd cl in
+225: L sh in lk
+226: L sh in ?sl
+227: sh in ?mc
+228: sh in ?bx
+229: sh in pl ?mo
+230: L sh sl in
+231: L sf in ?pl
+232: L in
+233: L pr bd in ?pl
+234: S in ?sf
+235: in ?ea
+236: ht in lk
+237: T pr in
+238: L in lk ?pl
+239: L cr out
+240: pr mc out
+241: L cr sl out
+242: S cr out
+243: T wd ?out ?gs
+244: L sl out
+245: L out ?gs ?sl
+246: L out
+247: out ?cr lk
+248: S pr out
+249: L ?out ?sf lk
+250: T pr out
+251: L sl out
+252: pr out ?ea
+253: S out
+254: S out ?gs
+255: S out ?gs
+256: L gr out
+257: L pr hd lp in
+258: L pr hd bd in
+259: L lp in
+260: L out
+261: L mc in ?sl ?bx
+262: L bx in
+263: L lp sl in
+264: L C lp sl wd in
+265: L lp sl in
+266: L bx lk in
+267: L mc ?out ?sl
+268: L in ?ea
+269: L cr out
+270: L dg sf in
+271: T lp in ?pl
+272: L mc wd sl in
+273: S in lk
+274: L lp lk in
+275: sh in
+276: lp in
+277: nc
+278: L ht in lk ?sf
+279: S lk in
+280: S in
+281: S lp in
+282: L bx in
+283: L pr in
+284: L bx in lk
+285: S mc in lk
+286: L pr hd sf in mc ?sl
+287: T bd tv in ?lp
+288: S sk tv in lk
+289: S in lk
+290: L lp in
+291: bx in lk
+292: ea in ?mo
+293: ea in
+294: lp in
+295: dg in ?mo lk
+296: L sl in
+297: S wd in
+298: T lp in lk
+299: S in ?sf ?tv
+300: L lp in

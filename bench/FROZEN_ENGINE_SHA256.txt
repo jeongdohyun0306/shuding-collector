@@ -1,0 +1,5 @@
+5d01b844b0f6a81004f7fd9f6fe68b4483010a475cc4c8ac329839ee77b6f728 *sc/kparse.py
+3b2f306de2b55d8aea3fe0b0b04b7fb8ed970af553795f89152a36adedecf0e9 *sc/v2.py
+d57a51c1306e4a93264e289cd496afccb820ffff752f56441d78cbb8297e4142 *sc/v1.py
+976e39cf0995597ae521036970e1f60f61ad36b6a1a09fac7678d26b0d90225b *app/config.json
+# 2차 held-out 검색어를 받기 전에 고정. v1.py는 설명 문자열만 지운 뒤 다시 계산했다(동작 같음).

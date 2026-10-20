@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+*.part
+*.tmp
+index/thumbs/
+index_*/
+data/coco_photos/
+data/coco_meta/*.parquet
+data/coco_meta/cats.pkl
+data/coco_meta/urls.txt
+data/pdf_photos/
+results/*.log
+sheets/

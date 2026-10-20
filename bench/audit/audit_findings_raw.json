@@ -1,0 +1,191 @@
+[
+ {
+  "title": "Re-running build.py (or reusing an index dir) keeps stale embeddings for a new corpus.json, and the server never checks row counts",
+  "file": "C:/dev/shuding_collector/sc/build.py",
+  "line": 26,
+  "severity": "high",
+  "impact_on_comparison": "neutral",
+  "evidence": "build.py:23 always rewrites corpus.json, but lines 26/28/30 go through Corpus.cached (sc/index.py:23-26), which returns any existing eg2_img.npy / captions.json / eg2_cap.npy without checking they match the new file list. server.py:94-106 loads them with no assert that len(eg2_img) == len(captions) == len(corpus.items). Failure: index a folder of 300 photos, add 20, rerun `python -m sc.build --photos X --out index_shuding`. corpus.json now has 320 items but the embeddings still have 300 rows. Ids are `p{k:04d}_{stem}` (build.py:22) and k is the sorted position, so every photo after the inserted one shifts. Search results then point at the wrong photos, and new photos can never be returned. If photos were removed instead, run() (server.py:62) does `items[i]` with i >= len(items), raises IndexError, the API returns 500 and the UI stays on '찾는 중…'. The same happens with `--out index` (the benchmark dir: the 301-row benchmark eg2_img.npy gets reused for an unrelated folder) and with `server.py --corpus other.json` plus the default --index. The thumbs/ cache in the index dir is keyed only by id, so it is never invalidated either.",
+  "suggested_fix": "Write a manifest (sorted file list + size + mtime, or a hash of it) next to the cached arrays in build.py and delete/recompute the caches when it differs. At server start, assert eg2_img.shape[0] == len(captions) == eg2_cap.shape[0] == len(corpus.items) and exit with a clear message otherwise."
+ },
+ {
+  "title": "config.json \"name\" is dead config: the name-to-고양이 replacement is hardcoded to 슈딩이, which hurts v1 much more than v2 on another cat's folder",
+  "file": "C:/dev/shuding_collector/app/server.py",
+  "line": 98,
+  "severity": "medium",
+  "impact_on_comparison": "favors_v2",
+  "evidence": "server.py:98 stores cfg_d['name'] and /api/photos returns it (line 48), but index.html never reads r.name (init, line 81-82). The actual replacement is hardcoded in sc/v1.py:5 (NAME = \"슈딩이\"), sc/kparse.py:8 (NAMES = [\"슈딩이\"], and v2.parse calls kparse.parse(q) with the default names), and sc/v2.py:65. The page title/h1 (index.html:6,64), the example chips (index.html:77) and the warmup queries (server.py:107-108) also hardcode 슈딩이. When the app is pointed at another cat's folder with name \"치즈\" or \"나비\" (common Korean cat names, which also mean 'cheese' and 'butterfly'), v1 embeds \"풀밭에 있는 치즈\" unchanged. v2 still gets partial help because kparse.parse appends \" 고양이\" when CAT is not in pos (kparse.py:111-112), giving \"풀밭에 있는 치즈 고양이\". So compare mode on a different folder shows a v1 that lacks the normalization the original app did for its own cat.",
+  "suggested_fix": "Pass the configured name into V1 (preprocess) and into kparse.parse(q, names=[name]) through V2/Cfg, and use it for the warmup queries. Build the title and example chips from r.name in index.html."
+ },
+ {
+  "title": "Compare mode latency numbers are not comparable: v2 serves cached query vectors (including two pre-warmed example chips) while v1 re-encodes every time",
+  "file": "C:/dev/shuding_collector/app/server.py",
+  "line": 107,
+  "severity": "medium",
+  "impact_on_comparison": "favors_v2",
+  "evidence": "V2._cached_vec (sc/v2.py:67-73) memoizes every query/negation embedding in self.qcache (in memory even with persist=False). V1.scores (sc/v1.py:20-23) calls index.eg2_texts every time with no cache. server.py:107-108 warm v2 with exactly \"풀밭에 있는 슈딩이\" and \"안경을 안 쓴 슈딩이\", which are EX[2] and EX[0] in index.html:77. So the first click on those chips, and any repeated query, shows v2 at about 0-1 ms (dict lookup + two 301x768 matmuls) next to v1 at a full GPU encode. render() (index.html:105,107) puts both ms values side by side, which suggests v2 is faster even though v2 does strictly more work (positive + negation passes). A cold query reverses the picture.",
+  "suggested_fix": "Cache query embeddings in V1 the same way (or disable the v2 cache in the app), warm both engines identically, or label the timing as cached/uncached. If timing is meant to be shown, measure the encode step separately from scoring."
+ },
+ {
+  "title": "HEIC and any unreadable file abort the whole build and the server startup; the out dir inside the photo dir gets re-indexed",
+  "file": "C:/dev/shuding_collector/sc/build.py",
+  "line": 11,
+  "severity": "medium",
+  "impact_on_comparison": "not_applicable",
+  "evidence": "EXTS includes \".heic\" (build.py:11), but pillow_heif is not installed in .venv (import fails) and nothing calls register_heif_opener (grep finds none). Installed Pillow 12.3.0 cannot open HEIC, so index.eg2_images -> models.load_image -> Image.open raises UnidentifiedImageError on the first iPhone photo. Corpus.cached saves only after fn() returns (index.py:27-32), so a crash at photo 900 loses all GPU work. Nothing is caught per file, so the same applies to macOS AppleDouble files ('._IMG_0001.jpg') and corrupt images matched by rglob('*') (build.py:21). If the build did succeed, server.py:100-103 opens every file again at startup with no try. Also, if --out is placed inside --photos, server.py writes thumbnails to <out>/thumbs/480_*.jpg and 1400_*.jpg (server.py:27), and the next build's rglob picks them up as photos.",
+  "suggested_fix": "Either register pillow_heif (and add it to the venv) or drop .heic from EXTS. While writing corpus.json, skip files that fail Image.open(...).verify() and report them, skip dot-files, and exclude the out directory from the rglob."
+ },
+ {
+  "title": "Frontend has no error handling, and the server returns shapes that render() cannot handle",
+  "file": "C:/dev/shuding_collector/app/static/index.html",
+  "line": 96,
+  "severity": "medium",
+  "impact_on_comparison": "not_applicable",
+  "evidence": "search() does `fetch(...).then(r=>r.json())` with no r.ok check and no catch (index.html:96). A non-JSON response leaves '찾는 중…' on screen forever with an unhandled rejection. Such responses include FastAPI's plain-text 500 (CUDA OOM on the shared 8 GB GPU, or the IndexError from the stale-index finding) and uvicorn's h11 400 'Invalid HTTP request received.' The venv has no httptools, so h11 is used, and its default request-head limit is 16 KB. Each Hangul syllable becomes 9 bytes after encodeURIComponent, so a query of about 1,700 syllables trips it; #q has no maxlength and the server has no cap. Wrong JSON shape also crashes: server.py:67-69 returns {\"results\": []} when q is empty after Python strip(), and an unknown mode returns {\"q\": q} with neither v1 nor v2. render() then calls focus(\"v1\",0), and `last[\"v1\"].results` throws a TypeError. This is reachable from the UI because Python strips characters that JS trim() keeps: I checked in the venv that '\\x1c'.strip()=='' and '\\x85'.strip()=='' (U+001C-U+001F, U+0085, e.g. in pasted text). `k` is also unvalidated: k=-1 returns N-1 results, k=0 returns an empty list and the UI silently shows nothing.",
+  "suggested_fix": "In search(), check r.ok, wrap the fetch in try/catch and show an error message in #out. Make the server always return the same shape ({q, v1?, v2?}) or a JSON 400 for empty q / bad mode. Validate mode with a Literal, clamp k to 1..50, add maxlength on #q and a server-side length cap."
+ },
+ {
+  "title": "At 375px the bottom dock hides the photo the result strip points at, and it can grow taller than the viewport",
+  "file": "C:/dev/shuding_collector/app/static/index.html",
+  "line": 41,
+  "severity": "medium",
+  "impact_on_comparison": "not_applicable",
+  "evidence": "These are estimates from the CSS, not a render. #dock (line 41) has no max-height or overflow, and the six example chips (lines 54, 73) are always shown. With dock inner width 317px they wrap to 4 rows (~128px). The v2 label with two chips wraps to 2 rows. Totals: dock is about 342px in v2 mode and about 438px in compare mode, plus the 16px bottom offset. The mobile wall padding-bottom is 360px (line 59), so in compare mode the last ~90px of the wall can never be scrolled out from under the dock. focus() uses scrollIntoView({block:\"center\"}) (line 119), which puts the selected photo at ~330px on a ~660px iOS Safari viewport, while the dock top sits at ~300px (v2) or ~206px (compare). The highlighted photo is therefore mostly or fully hidden. On a landscape phone (~340px visible height) the compare-mode dock is taller than the viewport, so the input is pushed above the top edge and cannot be reached. A long query makes the '찾는 것' chip, and the dock, taller. #q uses font-size 15px (line 43), so iOS Safari zooms the page on focus. The header needs ~408px at 375px (h1 + count + three seg buttons + gaps), so the h1 and seg labels wrap.",
+  "suggested_fix": "Give #dock max-height: calc(100dvh - 32px) and overflow:auto. Hide or collapse the example chips after the first search. Measure the dock with a ResizeObserver, set a --dock-h variable, and use it for #wall padding-bottom and .ph scroll-margin-bottom (or scroll so the target sits above the dock). Set #q font-size to 16px. Allow the header to wrap or shorten the seg labels on narrow screens."
+ },
+ {
+  "title": "Parsed query phrases are inserted into innerHTML unescaped (self-XSS, and markup breakage)",
+  "file": "C:/dev/shuding_collector/app/static/index.html",
+  "line": 104,
+  "severity": "low",
+  "impact_on_comparison": "not_applicable",
+  "evidence": "render() builds the chips with template strings: `찾는 것: ${v.pos}`, `빼는 것: ${n}` and `(${v.neg_en[k]})`, then assigns $(\"#out\").innerHTML (lines 104-108). pos and neg come from kparse.parse, which just does q.split() and re-joins the raw tokens. The query `<img src=x onerror=alert(1)> 슈딩이` matches no negation rule, so pos is `<img src=x onerror=alert(1)> 고양이` and the handler runs. It is self-XSS only: the page never reads a query from the URL. But any ordinary query containing '<' followed by a letter garbles the label and the strip after it. When verify_k is enabled, neg_en is Qwen translation output, also unescaped. The wall uses alt=\"${p.id}\" (line 84), and ids carry the file stem from build.py. Windows filenames cannot contain '\"' or '<', but on macOS/Linux a filename containing '\"' breaks out of the attribute. No path traversal exists: /thumb/{i} takes a bounds-checked int, there is no static mount, and build.py ids are file stems with no separators.",
+  "suggested_fix": "Add an esc() helper (replace & < > \" ') and apply it to v.pos, n, neg_en and p.id. Or build the chips with createElement + textContent."
+ },
+ {
+  "title": "Thumbnail cache writes are non-atomic, never invalidated, and drop the ICC profile",
+  "file": "C:/dev/shuding_collector/app/server.py",
+  "line": 25,
+  "severity": "low",
+  "impact_on_comparison": "not_applicable",
+  "evidence": "thumb() checks only p.exists() and then im.save(p) writes straight to the final path (lines 27-32). If the process is killed or crashes mid-save, a truncated JPEG stays and is served forever. Two concurrent requests for the same uncached thumbnail (another browser or tab, or the strip and wall images of the same i on a cold cache) can see the file as existing while it is still being written. Starlette then stats a partial size, or two threads write the same file. The cache key is only `{size}_{id}`: a photo rotated or edited after its first view keeps the old thumbnail, while /api/photos recomputes w/h at startup, so the wall's aspect-ratio box and the image disagree. JpegImagePlugin._save reads icc_profile only from encoderinfo (line 771 of the installed plugin), and server.py passes only quality=85. Display-P3 phone photos therefore lose their profile and look duller in the wall and lightbox. EXIF orientation itself is handled correctly: thumb(), the startup size loop and models.load_image all use exif_transpose, and the saved thumbnail carries no EXIF, so nothing is rotated twice.",
+  "suggested_fix": "Save to a temp file in the same dir and os.replace() it, with a per-id threading.Lock. Include the source file's mtime/size in the cache filename. Pass icc_profile=im.info.get(\"icc_profile\") when saving."
+ },
+ {
+  "title": "Server startup fully decodes every photo just to read its dimensions",
+  "file": "C:/dev/shuding_collector/app/server.py",
+  "line": 100,
+  "severity": "low",
+  "impact_on_comparison": "not_applicable",
+  "evidence": "Lines 100-103 call ImageOps.exif_transpose(im) for every file. In the installed Pillow 12.3.0, exif_transpose starts with image.load() and returns a transposed image or image.copy(), so each full-resolution photo is decoded and copied. That is fine for the 301 small COCO/real photos, but for a folder of thousands of 12 MP phone photos it adds minutes before 'ready' and large memory churn. Any unreadable file aborts startup without naming it.",
+  "suggested_fix": "Read im.size and im.getexif().get(274) without loading, and swap w/h for orientations 5-8. Better: store w/h in corpus.json at build time. Wrap each file in try and report the path on failure."
+ },
+ {
+  "title": "A wrong --index path silently falls back to the benchmark corpus, spends GPU time, then crashes with a TypeError",
+  "file": "C:/dev/shuding_collector/app/server.py",
+  "line": 93,
+  "severity": "low",
+  "impact_on_comparison": "not_applicable",
+  "evidence": "If <index>/corpus.json does not exist, server.py:93 silently uses data/corpus.json. Corpus.__init__ creates the (typo) directory (sc/index.py:18). V1(c) then embeds all 301 benchmark images on the shared GPU and saves eg2_img.npy into that directory. The warmup query then reaches V2.caps, which calls self.c.cached(\"captions.json\", None) (sc/v2.py:52). The file is missing, so cached() calls None() and raises \"TypeError: 'NoneType' object is not callable\". The result is a confusing crash plus a half-filled index directory that later looks partly built. Relative paths in a hand-written corpus.json resolve against the project root (index.py:16), not against the corpus file's directory.",
+  "suggested_fix": "Require corpus.json, eg2_img.npy, captions.json and eg2_cap.npy in --index and exit with a clear message if any is missing. Remove the silent fallback and never compute embeddings from inside server.py."
+ },
+ {
+  "title": "Keyboard handling gaps: Escape does nothing before the first search, arrows act behind the lightbox, nothing is focusable",
+  "file": "C:/dev/shuding_collector/app/static/index.html",
+  "line": 122,
+  "severity": "low",
+  "impact_on_comparison": "not_applicable",
+  "evidence": "The keydown handler returns early on `if(!last||document.activeElement===$(\"#q\"))` (line 122). The lightbox can be opened by clicking a photo before any search, and then Escape cannot close it. After pressing Enter, focus stays in #q, so arrow navigation and Escape do nothing until the user clicks elsewhere. With the lightbox open, ArrowLeft/Right move the highlight and scroll the hidden wall but do not change the lightbox image. Wall figures and strip images are plain figure/img elements with click handlers and no tabindex or role (lines 84, 99), and the lightbox has no close button, so keyboard-only users cannot open a photo or pick a result.",
+  "suggested_fix": "Handle Escape for #box before the `last` check, and let Escape work from #q. When the box is open, make arrows step through results and update the box image. Render photos and strip items as <button> (or add tabindex=0 + Enter/Space handlers) and add a visible close control to the lightbox."
+ },
+ {
+  "title": "Overlapping searches can show stale results under the wrong label",
+  "file": "C:/dev/shuding_collector/app/static/index.html",
+  "line": 93,
+  "severity": "low",
+  "impact_on_comparison": "not_applicable",
+  "evidence": "search() has no AbortController or request sequence number. `last` is set by whichever response arrives last (line 96), and render() picks the label from the current global `mode` (lines 105, 107), not from the response. Clicking '개선판' then '원래 방식' quickly (each click re-searches, line 91), or submitting twice, can leave the v2 result on screen while the v1 button is highlighted, labelled '결과'. A cold v2 query (two embedding passes) easily finishes after a later v1 query.",
+  "suggested_fix": "Keep a request counter (or abort the previous fetch with AbortController) and ignore responses that are not the latest. Store the mode alongside the response and label from it."
+ },
+ {
+  "title": "No Host header check, so a DNS-rebinding page can read the photos from the local server",
+  "file": "C:/dev/shuding_collector/app/server.py",
+  "line": 110,
+  "severity": "low",
+  "impact_on_comparison": "not_applicable",
+  "evidence": "uvicorn binds 127.0.0.1 (good), but FastAPI has no TrustedHostMiddleware and every endpoint is an unauthenticated GET. A malicious site visited while the app runs can rebind its hostname to 127.0.0.1:8765 and read /api/photos and /thumb/{i}. The real photos can include people (the labels have people codes). Cross-site pages can also fire /api/search requests that use the shared GPU.",
+  "suggested_fix": "Add starlette TrustedHostMiddleware(allowed_hosts=[\"127.0.0.1\", \"localhost\"])."
+ },
+ {
+  "title": "App rankings may differ slightly from results/v1.json and v2.json (unstable sort, single vs batched bf16 query encoding)",
+  "file": "C:/dev/shuding_collector/app/server.py",
+  "line": 61,
+  "severity": "low",
+  "impact_on_comparison": "neutral",
+  "evidence": "Unverified (would need the model). run() uses np.argsort(-s) (default quicksort, not stable), while bench/run_eval.py:22 uses kind=\"stable\". The bench V2 runs with persist=True and reuses query vectors from index/query_cache.json, computed by eg2_texts in padded batches of up to 32 in bfloat16. The app uses persist=False and encodes each query alone. Small numeric differences can reorder near-ties, so a live demo of a benchmark query may not show the exact top-10 recorded in results/*.json.",
+  "suggested_fix": "Use kind=\"stable\" in run(). For demos that must match the report, load query_cache.json read-only in the app (persist=True without saving) so the same vectors are used."
+ },
+ {
+  "title": "Negation parser was fit to the exact benchmark wordings, test split included; v2's negation gain shrinks on paraphrases",
+  "file": "sc/kparse.py",
+  "line": 4,
+  "severity": "medium",
+  "impact_on_comparison": "favors_v2",
+  "evidence": "kparse.py was last modified at 15:03:13. queries.json was frozen at 14:51:54. The docstring (lines 3-4) quotes n01 (dev) and n04 \"사람 없이 소파에 있는 슈딩이\" (test) word for word. The parser splits all 12 benchmark negation queries perfectly, dev and test, but breaks on near paraphrases. Examples: \"침대 위에서 자고 있지 않은 슈딩이\" -> pos \"침대 위에서 자고 고양이\", neg [\"있는 고양이\"]. \"사람 옆에 있는데 안겨 있지는 않은 슈딩이\" -> neg []. \"사람이나 다른 동물 없이 혼자인 슈딩이\" -> pos \"사람이나 혼자인 고양이\" (v2 0.426 vs v1 0.861). Method: I wrote 2 paraphrases per negation query (24 total), kept each query's expr and labels, and scored them with fresh EmbeddingGemma-2 text embeddings (same model and the same image/caption indexes; script scratchpad/audit/a8.py). Test-split negation nDCG@10: v1 0.382 -> 0.385 (no change), v2 0.847 -> 0.680. All 24 paraphrases: v1 0.532, v2 0.806. v2 still wins, but its test-negation gain falls from +0.465 to +0.295. The same run also reproduced v1 = 0.7356 exactly (same top-10 on all 47 queries).",
+  "suggested_fix": "Freeze the parser rules before reading the test queries, or score negation on a paraphrase set written by someone who has not seen kparse.py. Report the original-wording and paraphrase numbers side by side."
+ },
+ {
+  "title": "Headline 0.736 -> 0.867 mostly comes from 12 negation queries, 3 of which are near-trivial",
+  "file": "bench/run_eval.py",
+  "line": 39,
+  "severity": "medium",
+  "impact_on_comparison": "favors_v2",
+  "evidence": "Per-query paired differences, v2 minus v1 (results/v1.json vs results/v2.json): total gain +0.132. Of that, +0.100 comes from the 12 negation queries and +0.031 from the other 35. Non-negation alone: +0.042 (bootstrap 95% CI +0.017 to +0.069, sign-flip permutation p=0.003). n01, n02 and n05 have 279/301, 204/299 and 193/295 judged positives. On those three, nDCG@10 mostly rewards keeping the 3 glasses (gl) / hat (ht) photos and the 19 nc photos out of the top 10, and v2 reaches 1.0 on n01 (+0.469) and n05 (+0.438). Negation is 26% of the query mix, and the person who built v2 wrote the queries 49 s after the labels were saved. summary() averages over all queries, so the mix sets the headline number.",
+  "suggested_fix": "Lead with per-type results (single 0.850 -> 0.879, compound 0.725 -> 0.802, negation 0.505 -> 0.898), or macro-average over types. For negation queries where most photos are positive, report viol@10 as the measure and stop folding their nDCG into the headline."
+ },
+ {
+  "title": "Labels are called human-made, but file timestamps point to machine labeling in about 5 minutes",
+  "file": "data/labels_raw.txt",
+  "line": 1,
+  "severity": "medium",
+  "impact_on_comparison": "neutral",
+  "evidence": "Header line 1 says \"사람이 눈으로 붙인 정답 라벨\", and README.md line 65 says the same. Timeline: tools/make_sheets.py fixed the corpus order (corpus.json 14:46:05) and wrote 26 contact sheets into another Claude session's scratchpad (<scratchpad>/sheets, files 14:46:06 to 14:46:08). labels_raw.txt was saved at 14:51:05. That is 301 photos with about 4 codes each in at most 5 minutes, which a person could not do; the index-based labels could not exist before that ordering did. I spot-checked 8 photos and the labels were right, for example idx 192: a cat in a window labeled 'S wd ?out', where the Qwen caption calls it a dog. So the problem is provenance, not accuracy. The same agent apparently labeled the photos, wrote the queries and designed v2.",
+  "suggested_fix": "Say who or what made the labels. Have a person blind-label a random subset (bench/agreement.py already computes agreement) and report the agreement before calling the labels human ground truth."
+ },
+ {
+  "title": "Caption prompt was written after the queries were frozen and lists exactly the benchmark's attribute axes",
+  "file": "sc/vlm.py",
+  "line": 5,
+  "severity": "low",
+  "impact_on_comparison": "favors_v2",
+  "evidence": "CAPTION_PROMPT asks the captioner to cover: whether the eyes are closed (sl), whether the mouth is open (mo/yw), what the cat is wearing (gl/ht/cl/tie), and which people or animals are near it (pr/hd/dg/mc). captions.json was written at 15:08:14, after queries.json (14:51:54), so the prompt author could see the test queries. Test queries on these axes: s02, s04, s12, s14, s16, s18, c02, c06, n02, n04, n06, n08, n10, n12. Recomputed from the cache with no parsing: adding the caption channel moves nDCG@10 from 0.780 to 0.812 on dev and from 0.689 to 0.719 on test. I could not measure how much of that comes from the targeted wording, because that needs re-captioning with Qwen3-VL, which this audit did not run.",
+  "suggested_fix": "Ablate with a generic caption prompt fixed without reference to the queries (for example \"Describe this photo in 3 sentences\"), or disclose that the prompt was written with the full query set visible."
+ },
+ {
+  "title": "Config choice is not dev-only: test scores print beside dev, the chosen config is not dev-best, and the selection runs are not kept",
+  "file": "bench/sweep.py",
+  "line": 33,
+  "severity": "low",
+  "impact_on_comparison": "favors_v2",
+  "evidence": "line() prints test nDCG and viol next to dev for every config. I recomputed sweep CONFIGS on CPU from index/query_cache.json (scratchpad/audit/a5.py). all3: dev 0.904, test 0.832. img_qve: dev 0.887, test 0.806. img_cap (= light): dev 0.890, test 0.843. So light is not the dev-best config. Over a grid of lambda in {0.5,1,2,4} and tau in {0,0.5,1,1.5,2}, dev barely moves (0.868 to 0.891), while the chosen lambda=1, tau=1 sits exactly at the test maximum of 0.843. No script in the repo writes results/v2.json or v2_light.json (grep). The cache holds 2260 rr| and 1646 yn| entries from reranker/verifier configs that have no results file. Choosing light because it loads no extra model is a fair engineering reason, but then \"chosen on dev\" is not an accurate description.",
+  "suggested_fix": "Write the selection rule down before looking at test, hide test output in sweep.py, and keep every sweep result, including the rerank/verify runs, so the choice can be audited."
+ },
+ {
+  "title": "judge() excludes items whose relevance is already decided, because exclusion follows short-circuit order",
+  "file": "bench/labels.py",
+  "line": 40,
+  "severity": "low",
+  "impact_on_comparison": "neutral",
+  "evidence": "Unsure codes evaluate as False, and any unsure code that gets touched excludes the item, even when a sure code already fixes the answer. Example: for c01 \"x.sf and x.sl\", an item with '?sf' and no sl is certainly irrelevant, yet it is dropped. I checked with three-valued logic, enumerating the unsure codes (scratchpad/audit/a6.py): 62 certainly-irrelevant judgments across 10 queries are dropped (c01 10, c06 9, c08 9, c09 7, c03 6, c02 5, c04 5, c05 4, n05 2, n04 1). No item is judged wrongly. Effect: v1 0.7356 -> 0.7348, v2 0.8674 -> 0.8652.",
+  "suggested_fix": "Evaluate expr under every True/False assignment of the touched unsure codes, and exclude the item only if the result changes."
+ },
+ {
+  "title": "Negation threshold is described as 1 SD above the mean, but it is applied to a sum of two z-scores (about 0.54 SD)",
+  "file": "sc/v2.py",
+  "line": 101,
+  "severity": "low",
+  "impact_on_comparison": "not_applicable",
+  "evidence": "N[n] comes from first_stage(negs) = z(img) + z(cap), and that sum is never re-standardised. Measured on the 8 negative phrases: std 1.81 to 1.89, and 18% to 30% of photos score above tau=1 (a true z > 1 would be about 16%). README.md line 13 and the task description both say \"z-score - 1\" / 표준편차 1배. This does not bias the v1/v2 comparison, because v2 was tuned this way, but the method is described wrongly.",
+  "suggested_fix": "Apply z() to the fused score before thresholding, or document tau in fused-score units (tau=1 is roughly 0.54 SD)."
+ }
+]

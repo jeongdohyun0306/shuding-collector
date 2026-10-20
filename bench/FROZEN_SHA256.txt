@@ -1,0 +1,5 @@
+5eeb1529e3ea0e3f9d13b0c10786f44630d5c010eeb0d5564d2a9425eee1b8d9 *data/labels_raw.txt (2026-10-20 14:5x, 고정 당시 파일 전체)
+6460abccffd0502265e38879adb50cf8f0998a521f2b52d7c6b68e546f3fa992 *bench/queries.json
+a0c0b6f5aa96acd59b26f2c0a1e7e7e710261a2f18e60795eb302add5c600f34 *data/labels_raw.txt 의 라벨 줄만 (# 주석 줄 제외). 고정 당시와 같다.
+2a5b55de41556633cba2319867b440b3b11a352826dad8b85650cc1901d70f61 *data/labels_raw.txt (2026-10-20 머리말 주석 정정 후 파일 전체)
+4f7ad6a25baba4b4aa401ba4613b304132baa2092b0e0264d33262c1b2a1a6fb *data/labels_raw.txt 라벨 줄만, 2026-10-20 정정 후 (1번·2번에 pr 추가). 정정 전 결과는 results/*_before_label_fix.json

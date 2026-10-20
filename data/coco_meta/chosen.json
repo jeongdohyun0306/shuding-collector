@@ -1,0 +1,3459 @@
+[
+ {
+  "id": "coco_315073",
+  "file": "data/coco_photos/coco_315073.jpg",
+  "captions": [
+   "A cat with it's mouth wide open laying next to an open blue bottle on a window sill.",
+   "A cat sitting on a chair sticking out its tongue.",
+   "A cat sit on a blanket with it's mouth open.",
+   "A cat yawning next to a blue bottle. ",
+   "A grey adult cat opens its mouth very wide."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000315073.jpg"
+ },
+ {
+  "id": "coco_19397",
+  "file": "data/coco_photos/coco_19397.jpg",
+  "captions": [
+   "A grey and black cat sitting on a  yellow chair.",
+   "A cat sits on a chair and waits for dinner.",
+   "A cat sitting on a kitchen stool yawns",
+   "A cat sitting on a chair in a room.",
+   "A tabby cat sitting on a yellow kitchen chair above his food."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000019397.jpg"
+ },
+ {
+  "id": "coco_31392",
+  "file": "data/coco_photos/coco_31392.jpg",
+  "captions": [
+   "A cat sitting on the dashboard of a car.",
+   "The black and white cat is sitting on the dashboard of the car. ",
+   "A cat yawns on the dashboard of a car.  ",
+   "Grey cat on dashboard of moving car on highway.",
+   "a black and white cat in a car and some trees"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000031392.jpg"
+ },
+ {
+  "id": "coco_434036",
+  "file": "data/coco_photos/coco_434036.jpg",
+  "captions": [
+   "A cat stands on a toilet to look out of the window.",
+   "a little kitty cat looks outside of a big ole window",
+   "A cat standing on top of a toilet seat while yawning.",
+   "A black cat standing on top of a white toilet seat.",
+   "Cat standing on top of a toilet looking out the window."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000434036.jpg"
+ },
+ {
+  "id": "coco_11244",
+  "file": "data/coco_photos/coco_11244.jpg",
+  "captions": [
+   "A cat is sitting in a box with its mouth open.",
+   "A cat sits inside a plastic-wrapped box with its mouth open. ",
+   "An orange cat sits on a table yawning.",
+   "The cat is sitting in the plastic wrapped box.",
+   "A tabby cat sitting in an opened wine bottle case."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000011244.jpg"
+ },
+ {
+  "id": "coco_475108",
+  "file": "data/coco_photos/coco_475108.jpg",
+  "captions": [
+   "Calico cat yawning and laying on a gray seat.",
+   "A calico cat yawns while reclining on a chair.",
+   "A calico kitten sitting on a cozy bed",
+   "A black, white and orange cat yawning and shedding it's fur. ",
+   "The cat is yawning while laying on top of a chair."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000475108.jpg"
+ },
+ {
+  "id": "coco_519094",
+  "file": "data/coco_photos/coco_519094.jpg",
+  "captions": [
+   "A grey and white cat next to a blanket and shelf with blue bottle.",
+   "Cat laying on pillow next to glass bottle.",
+   "The cat could be yawning or could be screaming.",
+   "The cat is angry while sitting on top of a pillow.",
+   "a cat is yawning while it sits inside the house"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000519094.jpg"
+ },
+ {
+  "id": "coco_467675",
+  "file": "data/coco_photos/coco_467675.jpg",
+  "captions": [
+   "An angry cat hissing while sitting on a bathroom counter.",
+   "Cat phissing or yawning on a bathroom countertop",
+   "A cat that is sitting near a sink.",
+   "A cat snarling at a person taking a picture of it.",
+   "A cat is hissing in the bathroom on the counter."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000467675.jpg"
+ },
+ {
+  "id": "coco_14857",
+  "file": "data/coco_photos/coco_14857.jpg",
+  "captions": [
+   "A cat sitting on a wooden chair with it's mouth open.",
+   "A cat on a small chair has a big yawn.",
+   "A cat yawning while sitting in an old wooden miniature chair.",
+   "This is a picture of a cat howling in a chair.",
+   "A cat with its mouth open sitting on a chair."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000014857.jpg"
+ },
+ {
+  "id": "coco_413650",
+  "file": "data/coco_photos/coco_413650.jpg",
+  "captions": [
+   "a black orange and white cat and some bricks",
+   "A cat standing on the ground near a brick wall while making a face.",
+   "A white and grey tabby cat yawns. ",
+   "A cat is sitting down and yawning. ",
+   "a cat with his mouth open yawning showing its front teeth "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000413650.jpg"
+ },
+ {
+  "id": "coco_109055",
+  "file": "data/coco_photos/coco_109055.jpg",
+  "captions": [
+   "A cat sitting between two bikes  sitting next to each other.",
+   "A cat that is sitting in between bikes.",
+   "A cat with its mouth opened sitting between some bikes.",
+   "Cat sitting on the ground between bikes showing its teeth.",
+   "a cat sitting next to a bunch of bikes parked next to each other"
+  ],
+  "coco_url": "http://images.cocodataset.org/val2017/000000109055.jpg"
+ },
+ {
+  "id": "coco_227487",
+  "file": "data/coco_photos/coco_227487.jpg",
+  "captions": [
+   "a little girl wearing cat ars shows off her half chewed cake in her mouth.",
+   "A young girl eats a colorful piece of cake.",
+   "A young girl opens her mouth while eating cake.",
+   "A girl with a hat on eating cake.",
+   "A little girl wearing cat ears eating cake with her mouth open."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000227487.jpg"
+ },
+ {
+  "id": "coco_253219",
+  "file": "data/coco_photos/coco_253219.jpg",
+  "captions": [
+   "A cat with its mouth open sitting on a rug in front of a television.",
+   "a long-haired Siamese cat sits in the living room, in front of the television",
+   "A large white cat sitting on top of a rug.",
+   "The cat seems very bored by the tv show.",
+   "A cat sits on the carpet and stares at the television"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000253219.jpg"
+ },
+ {
+  "id": "coco_366955",
+  "file": "data/coco_photos/coco_366955.jpg",
+  "captions": [
+   "A dog is making a crazy face at a cat.",
+   "a small kitten and a puppy fighting under a table",
+   "A small dog and cat playing with each other.",
+   "A black cat with kittens under a table",
+   "A black dog has his mouth open while looking at a black kitten."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000366955.jpg"
+ },
+ {
+  "id": "coco_134801",
+  "file": "data/coco_photos/coco_134801.jpg",
+  "captions": [
+   "A cat sitting in an open field meowing.",
+   "An orange and white cat is sitting outside in the grass.  ",
+   "A ginger cat sitting in a green field and purring",
+   "An orange and white cat sitting in the grass meowing.",
+   "a tan and white cat sitting in the green grass "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000134801.jpg"
+ },
+ {
+  "id": "coco_210839",
+  "file": "data/coco_photos/coco_210839.jpg",
+  "captions": [
+   "A shot glass is shown with an animated cat painted on it.",
+   "Half full glass decorated with picture of cat and \"Meow\".",
+   "A glass shows a red cat with the caption \"meow\". ",
+   "A cat logo on the front of a glass",
+   "A glass filled with a liquid with a cat printed on it."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000210839.jpg"
+ },
+ {
+  "id": "coco_359638",
+  "file": "data/coco_photos/coco_359638.jpg",
+  "captions": [
+   "The cat is looking out of the car window. ",
+   "A cat sitting in the passenger seat of a car making a face in the window.",
+   "A grey cat with a white chest squints out a car window and smiles.",
+   "A cat in a car, meowing, while looking out the window.",
+   "A cat holding it's mouth open next to a car door window."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000359638.jpg"
+ },
+ {
+  "id": "coco_337786",
+  "file": "data/coco_photos/coco_337786.jpg",
+  "captions": [
+   "Grown cat playing with a comb with its teeth. ",
+   "A cat chewing on the end of a brush.",
+   "A cat is chewing on a metal fiber brush",
+   "A cat is biting down on an object.",
+   "A cat has a fur brush in its mouth."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000337786.jpg"
+ },
+ {
+  "id": "coco_480991",
+  "file": "data/coco_photos/coco_480991.jpg",
+  "captions": [
+   "A brown and black kitten laying on case on back of motorcycle.",
+   "Cat curled up in a duffle bag on a moped.",
+   "A cat with its tongue out while sitting in a bag on the back of a motor scooter.",
+   "A cat sitting in a duffel bag on the back of a motorcycle.",
+   "A cat sitting inside a bag on the back of a motorcycle"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000480991.jpg"
+ },
+ {
+  "id": "coco_449150",
+  "file": "data/coco_photos/coco_449150.jpg",
+  "captions": [
+   "A cat is about to have its teeth brushed. ",
+   "A kitten with her head cocked to one side as someone attempts to brush the kitten's teeth.",
+   "A picture of a cat looking at something.",
+   "A gray stripped cat holds its face toward a red toothbrush.",
+   "a cat looking curious at a suspended toothbrush."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000449150.jpg"
+ },
+ {
+  "id": "coco_92202",
+  "file": "data/coco_photos/coco_92202.jpg",
+  "captions": [
+   "a cat playing with a stuffed toy on the carpet",
+   "A cat is playing with the toy banana. ",
+   "The grey and white cat is playing with a small yellow toy.",
+   "Cat licking a cat toy with it's tongue.",
+   "A black and white cat chewing on a toy."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000092202.jpg"
+ },
+ {
+  "id": "coco_558467",
+  "file": "data/coco_photos/coco_558467.jpg",
+  "captions": [
+   "A cat is laying on the floor beside a suitcase and staring upward with its mouth open.",
+   "a fat cat laying on a towel next to a chair",
+   "A cat laying in the floor on a blue towel.",
+   "A cat lying on a blue towel looks up at the camera.",
+   "a cat layind down by a chair looking into a camera"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000558467.jpg"
+ },
+ {
+  "id": "coco_16875",
+  "file": "data/coco_photos/coco_16875.jpg",
+  "captions": [
+   "A man wearing glasses lays in bed next to a cat.",
+   "Sleeping man under comforter with cat sitting next to him.",
+   "A man in round glasses lays in bed next to a cat.",
+   "A man lying in bed with a cat next to him.",
+   "A man sleeping on a bed with a cat."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000016875.jpg"
+ },
+ {
+  "id": "coco_529590",
+  "file": "data/coco_photos/coco_529590.jpg",
+  "captions": [
+   "A bearded man in glasses and his cat",
+   "An older male taking a selfie with his cat",
+   "A man taking a picture of himself and a cat.",
+   "A man with glasses posing for a picture with a cat.",
+   "A man with glasses and a cat staring. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000529590.jpg"
+ },
+ {
+  "id": "coco_29145",
+  "file": "data/coco_photos/coco_29145.jpg",
+  "captions": [
+   "a close up of a person with an umbrella",
+   "A woman with glasses that has a cat laying on her.",
+   "A woman is holding a cat under an umbrella.",
+   "A woman wearing glasses holding an animal on her neck.",
+   "A woman with glasses that has a cat sitting on her"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000029145.jpg"
+ },
+ {
+  "id": "coco_318857",
+  "file": "data/coco_photos/coco_318857.jpg",
+  "captions": [
+   "a man sitting on a couch with a cat in his lap playing on a computer",
+   "The kitten is interested in what the computer is doing.",
+   "a man in glasses using a laptop keyboard",
+   "A man with a kitten on his lap uses his laptop.",
+   "A guy is on his computer with a kitten in his lap. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000318857.jpg"
+ },
+ {
+  "id": "coco_567797",
+  "file": "data/coco_photos/coco_567797.jpg",
+  "captions": [
+   "A woman has a cat pressed up to her lips.",
+   "A woman kisses and hugs her Siamese cat.",
+   "A woman with glasses kissing a black and white cat.",
+   "A women holding a cat while kissing it.",
+   "A woman in glasses hugs and kisses her cat."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000567797.jpg"
+ },
+ {
+  "id": "coco_45741",
+  "file": "data/coco_photos/coco_45741.jpg",
+  "captions": [
+   "Person wearing glasses cradling a cat in his hands while other cats watch.",
+   "Man with several cats in blue colored room.",
+   "A young vet worker holding a cat in a room full of cats.",
+   "A boy holding one of many cats in the room.",
+   "a male in a gray sweatshirt is holding a cat and there are three other cats "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000045741.jpg"
+ },
+ {
+  "id": "coco_153036",
+  "file": "data/coco_photos/coco_153036.jpg",
+  "captions": [
+   "A view of a man in bed with a geek squad shirt on.",
+   "A man and a black cat in a bed surrounded by stuffed animals",
+   "Man in glasses lying on bed with a black cat resting on his chest.",
+   "a man laying in bed with a black cat next to him ",
+   "A man lays in a bed with many stuffed animals. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000153036.jpg"
+ },
+ {
+  "id": "coco_230501",
+  "file": "data/coco_photos/coco_230501.jpg",
+  "captions": [
+   "A woman kneeling down to an orange cat on a lap top computer.",
+   "A woman with glasses snuggling with an orange cat.",
+   "a cat laying down next to a woman wearing glasses ",
+   "A cat and girl with their heads laying on a laptop.",
+   "A person laying their face on an orange cat."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000230501.jpg"
+ },
+ {
+  "id": "coco_350854",
+  "file": "data/coco_photos/coco_350854.jpg",
+  "captions": [
+   "A cat sitting on top of a wooden table.",
+   "A cat sitting on a table next to drinking glasses.",
+   "A gray cat standing on top of table next to a couple of glasses.",
+   "A cat sitting on the edge of a table.",
+   "A cat is sitting next to drinking glasses on a table."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000350854.jpg"
+ },
+ {
+  "id": "coco_41322",
+  "file": "data/coco_photos/coco_41322.jpg",
+  "captions": [
+   "A cat wearing a sweater and glasses under a book shelf.",
+   "a cat in a red shirt is wearing some glasses",
+   "The cat under the table wears glasses and a sweater.",
+   "A cat is sitting under a shelf wearing a pair of glasses. ",
+   "A cat wearing a sweater and a pair of glasses"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000041322.jpg"
+ },
+ {
+  "id": "coco_532775",
+  "file": "data/coco_photos/coco_532775.jpg",
+  "captions": [
+   "A man laying in bed with a cat on top of him.",
+   "A man sits on his bed with a cat on his lap. ",
+   "A man with glasses is sitting in his bed with his cat below.",
+   "A man sitting in bed with a laptop and a cat on the bed.",
+   "A man under the covers of a bed with a cat and laptop on it."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000532775.jpg"
+ },
+ {
+  "id": "coco_397705",
+  "file": "data/coco_photos/coco_397705.jpg",
+  "captions": [
+   "A man laying in bed with a book and three cats.",
+   "A man is sleeping with two cats and a book.",
+   "A man laying in a bed with three cats.",
+   "A man with his cats lying in bed.",
+   "A man is sleeping wearing glasses under a pink, black and white quilt while two cats sleep with him."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000397705.jpg"
+ },
+ {
+  "id": "coco_158058",
+  "file": "data/coco_photos/coco_158058.jpg",
+  "captions": [
+   "A guy on his couch hods a beer and smiles",
+   "A person in glasses sitting on a sofa. ",
+   "A man relaxes on the couch with his tortoiseshell cat.",
+   "a man in glasses is sitting on a coach",
+   "The man sitting with a can of soda smiles while petting a cat. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000158058.jpg"
+ },
+ {
+  "id": "coco_192878",
+  "file": "data/coco_photos/coco_192878.jpg",
+  "captions": [
+   "A couple of people sitting on a couch with remotes.",
+   "there are two men sitting on a couch playing a video game",
+   "A man wearing a jacket, glasses and holding a Nintendo Wii game controller.",
+   "A man is sitting on a sofa with a cat.",
+   "two people sitting on couch with a cat."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000192878.jpg"
+ },
+ {
+  "id": "coco_312081",
+  "file": "data/coco_photos/coco_312081.jpg",
+  "captions": [
+   "A person wears a large cat costume to entertain children.",
+   "A person wearing a Cat in the Hat costume in front of kids.",
+   "The Cat in the Hat visiting with children.",
+   "A person in a cat-in-the-hat costume performing for children",
+   "A large cat in the hat character is with children."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000312081.jpg"
+ },
+ {
+  "id": "coco_283965",
+  "file": "data/coco_photos/coco_283965.jpg",
+  "captions": [
+   "A cat hides under a big hat lying under the floor ",
+   "A cat laying on the ground with a hat on top.",
+   "A large cat half hidden by a Chinese style basket hat",
+   "a cat playing halfway under a straw hat",
+   "A cat lounges on the floor under a big hat."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000283965.jpg"
+ },
+ {
+  "id": "coco_440763",
+  "file": "data/coco_photos/coco_440763.jpg",
+  "captions": [
+   "A child, wearing a cat costume and umbrella, stands before a brick building.",
+   "A small child wearing a cat style hat and carrying an open umbrella over her shoulder.",
+   "A girl with a hat shape like a cats head and an umbrella.",
+   "A little girl is holding an umbrella while wearing an animal hood.",
+   "Cute little girl dressed for rain and holding an opened umbrella"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000440763.jpg"
+ },
+ {
+  "id": "coco_353351",
+  "file": "data/coco_photos/coco_353351.jpg",
+  "captions": [
+   "A black and white cat wearing a red hat. ",
+   "A cat is wearing a hat with a feather on it.",
+   "Photo of cat wearing a red hat with watermark, \"caseymultimedia\".",
+   "Black and white cat with a little red hat on.",
+   "A black and white cat wearing a red hat with flowers on it"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000353351.jpg"
+ },
+ {
+  "id": "coco_141366",
+  "file": "data/coco_photos/coco_141366.jpg",
+  "captions": [
+   "A group of cats gathered around drinking milk from a ball.",
+   "Many cats are drinking water from white bowls.",
+   "Many different colored cats crown around a white bowl.",
+   "a close up of many cats near a bowl of milk",
+   "A group of cats are around a little white bowl."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000141366.jpg"
+ },
+ {
+  "id": "coco_108244",
+  "file": "data/coco_photos/coco_108244.jpg",
+  "captions": [
+   "A black cat with a hat on the ground.",
+   "A black cay laying on top of a white box.",
+   "A cat sits inside a box wearing a pirate hat. ",
+   "A black cat in a box wearing a pirate hat.",
+   "A cat curled up in a box with a Pirates Hat on."
+  ],
+  "coco_url": "http://images.cocodataset.org/val2017/000000108244.jpg"
+ },
+ {
+  "id": "coco_554291",
+  "file": "data/coco_photos/coco_554291.jpg",
+  "captions": [
+   "A small kitten standing in a  blue hat on top of a table.",
+   "a cat sitting inside of a plastic bucket",
+   "A cat's image is blurred as he tumbles in a bowl near a food scale and pen and paper on a table.",
+   "A kitty cat jumping out of a blue bowl ",
+   "A kitten climbing out of a blue bowl."
+  ],
+  "coco_url": "http://images.cocodataset.org/val2017/000000554291.jpg"
+ },
+ {
+  "id": "coco_14180",
+  "file": "data/coco_photos/coco_14180.jpg",
+  "captions": [
+   "an image of a guy that is sitting in a chair with hat",
+   "A photo portrait of a young man wearing a tall hat and holding a snowboard.",
+   "A person sitting on a chair, wearing a Cat in the Hat hat and holding a snowboard.",
+   "a young man wearing glasses and a dr seuss hat sitting in a director's chair and holding a snowboard",
+   "A young man in a chair with a skiing board is posing for the camera. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000014180.jpg"
+ },
+ {
+  "id": "coco_312694",
+  "file": "data/coco_photos/coco_312694.jpg",
+  "captions": [
+   "the woman is holding a cat with a hat on ",
+   "She thinks that her cat likes the dumb hat she put on him.",
+   "a close up of a person holding a cat wearing a hat",
+   "A woman holding a cat wearing a funny character hat.",
+   "This cat owner has her pet dressed in a cute hat with googly eyes."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000312694.jpg"
+ },
+ {
+  "id": "coco_489352",
+  "file": "data/coco_photos/coco_489352.jpg",
+  "captions": [
+   "A brown dog wearing a santa hat next to another dog.",
+   "The collie dog is wearing a santa hat.",
+   "The dog is wearing a Christmas hat looking into the distance.",
+   "a brown and white dog in a red hat and a brown and black cat",
+   "A collie wearing a Santa Clause hat "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000489352.jpg"
+ },
+ {
+  "id": "coco_32738",
+  "file": "data/coco_photos/coco_32738.jpg",
+  "captions": [
+   "A woman holding up a small gray cat in the air.",
+   "Grey cat being help up by a woman in a white shirt. ",
+   "A lady uses both hands to hold a cat in the air.",
+   "A grey cat is being held by a woman at a cat show.",
+   "A woman holding up a cat to look at with while people look on in the background."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000032738.jpg"
+ },
+ {
+  "id": "coco_300661",
+  "file": "data/coco_photos/coco_300661.jpg",
+  "captions": [
+   "Figurines of humans and animals dressed as humans",
+   "A picture of a fake boat with people.",
+   "Couple figurine, a cat figurine and two costumed dog figurines posed on a boat. ",
+   "Antique ceramic figurines in the window of a shop",
+   "A bunch of toy figurines in a window."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000300661.jpg"
+ },
+ {
+  "id": "coco_183051",
+  "file": "data/coco_photos/coco_183051.jpg",
+  "captions": [
+   "a person holds a kitting inside of their jacket",
+   "This is a picture if a person holding a white cat",
+   "a small kitchen being held inside a woman's coat",
+   "A gray and white kitten tucked into a woman's jean jacket.",
+   "A woman holding a small white kitten inside her jacket."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000183051.jpg"
+ },
+ {
+  "id": "coco_294108",
+  "file": "data/coco_photos/coco_294108.jpg",
+  "captions": [
+   "A cat is shown underneath a pile of clothes.",
+   "A cat lying on a pair of pants on a bed with a shirt thrown over it",
+   "A cat sleeping on a bed covered in clothes.",
+   "a cat laying in a bed with clothes",
+   "A cat lying on the bed amongst a bunch of clothes "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000294108.jpg"
+ },
+ {
+  "id": "coco_42741",
+  "file": "data/coco_photos/coco_42741.jpg",
+  "captions": [
+   "A boy sitting on a couch with a charlie brown necktie and no collar shirt, with a black cat on his side.",
+   "A young boy is wearing a red, cartoonie tie while a black cat looks on. ",
+   "Boy in a green and yellow shirt, red pants, a tie sitting next to a black cat on a couch. ",
+   "Boy sitting on couch with Pacers tee-shirt and tie with black cat laying next to him.",
+   "A young man wearing a red tie sitting next to a cat."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000042741.jpg"
+ },
+ {
+  "id": "coco_308766",
+  "file": "data/coco_photos/coco_308766.jpg",
+  "captions": [
+   "A beautiful creepy emo hipster girl holding a glowing red eyed teddy bear.",
+   "a person holding an evil looking stuffed animal",
+   "A woman in costume holding a teddy bear with eyes that light up. ",
+   "A girl holding a teddy bear with glowing eyes.",
+   "A girl dressed as a cat is holding a teddy bear."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000308766.jpg"
+ },
+ {
+  "id": "coco_296907",
+  "file": "data/coco_photos/coco_296907.jpg",
+  "captions": [
+   "A cat wearing a Santa suit including a Santa hat.",
+   "A cat that has her eyes closed on the bed.",
+   "A cat is wearing a santa hat and collar.",
+   "An orange cat sitting on a lap and wearing a santa hat.",
+   "A tan car wears a Santa Claus outfit."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000296907.jpg"
+ },
+ {
+  "id": "coco_138299",
+  "file": "data/coco_photos/coco_138299.jpg",
+  "captions": [
+   "A painting of cats playing tennis on a court",
+   "Artwork depicting cats playing a game of tennis. ",
+   "A drawing of three cats dressed like people playing tennis.",
+   "Cartoon of cats that look like humans playing tennis.",
+   "A color illustration of two cats dressed like a man and a woman, playing tennis."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000138299.jpg"
+ },
+ {
+  "id": "coco_258499",
+  "file": "data/coco_photos/coco_258499.jpg",
+  "captions": [
+   "A cat is seated while he wears a collar and tie.",
+   "A cat that is sitting down wearing a tie.",
+   "a cat dressed with a collar and tie decorated with irish symbols",
+   "Gray cat wearing white collar and green tie sitting in room.",
+   "This is a cat wearing an Irish themed tie."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000258499.jpg"
+ },
+ {
+  "id": "coco_160963",
+  "file": "data/coco_photos/coco_160963.jpg",
+  "captions": [
+   "The little girl is dressed in pink and holding a umbrella. ",
+   "A little girl holding up a pink umbrella.",
+   "A little girl stands under a pink umbrella.",
+   "Young blond girl with pigtails wearing a pink top and holding a pink and white umbrella.",
+   "Young girl is outside and holding a pink Hello Kitty umbrella."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000160963.jpg"
+ },
+ {
+  "id": "coco_282591",
+  "file": "data/coco_photos/coco_282591.jpg",
+  "captions": [
+   "A cat wears a green tie and stares straight ahead.",
+   "A cat is laying and looking wide eyed while wearing a scarf.",
+   "A cat laying down and wearing a green neck tie.",
+   "A cat that is laying on some carpet.",
+   "A brown cat with wearing a green tie."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000282591.jpg"
+ },
+ {
+  "id": "coco_301146",
+  "file": "data/coco_photos/coco_301146.jpg",
+  "captions": [
+   "A large grey cat is standing next to a sofa.",
+   "a close up of a cat wearing a tie close to a couch",
+   "A grey cat with a white collar and small tie.",
+   "A cat wearing a bandana is standing by a sofa.",
+   "A cat that doesn't look happy dressed with a tie around it's neck. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000301146.jpg"
+ },
+ {
+  "id": "coco_15978",
+  "file": "data/coco_photos/coco_15978.jpg",
+  "captions": [
+   "A cat with a yellow bow tie on.",
+   "A very fat cat looks into the camera lense",
+   "A cat wearing a yellow bow tie with it's eyes closed.",
+   "A black cat wearing a yellow bow tie.",
+   "A black cat wearing a yellow bow tie."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000015978.jpg"
+ },
+ {
+  "id": "coco_59501",
+  "file": "data/coco_photos/coco_59501.jpg",
+  "captions": [
+   "a cat is laying on a window ledge",
+   "a cat wearing a tie is staring at the camera",
+   "a black brown and white cat a window and a white cup",
+   "The cat is laying down on the ledge of a window sill.",
+   "A cat lays down with a ribbon around its neck"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000059501.jpg"
+ },
+ {
+  "id": "coco_8532",
+  "file": "data/coco_photos/coco_8532.jpg",
+  "captions": [
+   "A man that has glasses and a hat.",
+   "Stylish man looking into camera with blurred background ",
+   "A man wearing a cat and sunglasses with a red neck tie.",
+   "a man in a blue shirt and red tie",
+   "A man with a plaid hat, tie, dress shirt and glasses on."
+  ],
+  "coco_url": "http://images.cocodataset.org/val2017/000000008532.jpg"
+ },
+ {
+  "id": "coco_445187",
+  "file": "data/coco_photos/coco_445187.jpg",
+  "captions": [
+   "A man in a tie is sitting in a yellow chair holding a cat.  ",
+   "a person sitting down with a cat ",
+   "A man sits on folding chairs holding a cat next to a coffee table. ",
+   "a couple of yellow chairs next to a wooden fence",
+   "S young man is holding an orange cat."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000445187.jpg"
+ },
+ {
+  "id": "coco_339987",
+  "file": "data/coco_photos/coco_339987.jpg",
+  "captions": [
+   "A cat laying in a chair in a room.",
+   "A cat laying in a basket on top of a mat.",
+   "a cat is laying in a cushioned wooden chair",
+   "Cat licking himself while curled up on wicker chair",
+   "a cat sitting in a chair on the ground "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000339987.jpg"
+ },
+ {
+  "id": "coco_167802",
+  "file": "data/coco_photos/coco_167802.jpg",
+  "captions": [
+   "A cat eating a birthday cake on top of the table. ",
+   "A cat sitting on a table eating cake.",
+   "a cat eating a frosted cake on a table",
+   "A cat licks the top of a small cake.",
+   "The cat is licking the icing off of the cake."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000167802.jpg"
+ },
+ {
+  "id": "coco_510006",
+  "file": "data/coco_photos/coco_510006.jpg",
+  "captions": [
+   "THERE IS A CAT ON THE CAR BACK SEAT",
+   "A gray and white cat sitting in the back window of a car.",
+   "A cat grooming itself in the back window of a car.",
+   "A cat basks in the sun in the back of a car.",
+   "A cat is sitting in a car licking itself."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000510006.jpg"
+ },
+ {
+  "id": "coco_464558",
+  "file": "data/coco_photos/coco_464558.jpg",
+  "captions": [
+   "A cat got caught hiding in the cupboard.",
+   "A cat sitting inside of a refrigerator next to food.",
+   "A at licking its lips in a pantry.",
+   "A cat that is sitting inside of a refrigerator. ",
+   "a close up of a cat in a shelf on the wall"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000464558.jpg"
+ },
+ {
+  "id": "coco_264708",
+  "file": "data/coco_photos/coco_264708.jpg",
+  "captions": [
+   "a person holding a kitten that is licking on wood",
+   "A small cat on someone's lap looking at a chair.",
+   "A kitten with his mouth on the bottom of a chair.",
+   "A kitten peeking around the leg of a chair.",
+   "A small cat smelling an old chair leg."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000264708.jpg"
+ },
+ {
+  "id": "coco_562205",
+  "file": "data/coco_photos/coco_562205.jpg",
+  "captions": [
+   "A cat standing near a cup that is sitting on the ground.",
+   "A cat is outside next to a blue cup.",
+   "A gray cat scratching its mouth next to a cup.",
+   "A gray cat licking off a paw over a cup",
+   "A grey cat slicking his paw after putting it in a cup of water."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000562205.jpg"
+ },
+ {
+  "id": "coco_581249",
+  "file": "data/coco_photos/coco_581249.jpg",
+  "captions": [
+   "A cat standing next to a bag of luggage with a cat on top of it.",
+   "One cat resting on a luggage while another stretches. ",
+   "Cat on perch watching cat frolicking on floor.",
+   "two kittens play on the carpet, inside hotel room",
+   "Two cats playing with one sitting on a suitcase."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000581249.jpg"
+ },
+ {
+  "id": "coco_350133",
+  "file": "data/coco_photos/coco_350133.jpg",
+  "captions": [
+   "a black kitty laying on a bench licking its paw",
+   "A cat laying on its side on a wooden bench.",
+   "a cat on a bench near a wooden wall",
+   "A cat that is laying on a wooden bench.",
+   "The cat lying on a bench licks it's paws. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000350133.jpg"
+ },
+ {
+  "id": "coco_267794",
+  "file": "data/coco_photos/coco_267794.jpg",
+  "captions": [
+   "The two cats are lying on the desk together",
+   "a couple of cats are asleep near a keyboard",
+   "Two cats sleeping on desktop next to keyboard",
+   "two cats are laying on a desk with things",
+   "Two cats find room to stretch out and rest themselves end to end, even on a cluttered desk. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000267794.jpg"
+ },
+ {
+  "id": "coco_126324",
+  "file": "data/coco_photos/coco_126324.jpg",
+  "captions": [
+   "A cat sleeping on top of a wooden bench.",
+   "A calico cat with a pink nose laying on a wooden bench.",
+   "A cat laying comfortably on a fence rail",
+   "A cat stretching out on a wooden bench.",
+   "A cat laying on a wood bench looking into a camera."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000126324.jpg"
+ },
+ {
+  "id": "coco_580620",
+  "file": "data/coco_photos/coco_580620.jpg",
+  "captions": [
+   "A mirror mounted to a wall reflecting a bed under a map of Australia.",
+   "a bedroom with a bed inside of it ",
+   "A bedroom mirror reflecting an image of a bed with a cat sleeping on top.",
+   "A cat stretched out asleep on a child's bed.",
+   "A cat is taking a nap on someone's bed."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000580620.jpg"
+ },
+ {
+  "id": "coco_212603",
+  "file": "data/coco_photos/coco_212603.jpg",
+  "captions": [
+   "A sleeping cat is curled up with its legs stretched out.",
+   "A white cat balled up on the floor napping.",
+   "A large white cat curled up in a ball",
+   "The cat is laying comfortable on the floor. ",
+   "A beige cat is curled up asleep on a desk."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000212603.jpg"
+ },
+ {
+  "id": "coco_243218",
+  "file": "data/coco_photos/coco_243218.jpg",
+  "captions": [
+   "a black cat is laying on a bed",
+   "A black cat lying on its back sleeping on a bed.",
+   "A black cat lays of a multi-colored bed spread",
+   "Cat stretching on back on bed, reaching towards the sky",
+   "A black cat lying on his back on a bed."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000243218.jpg"
+ },
+ {
+  "id": "coco_291541",
+  "file": "data/coco_photos/coco_291541.jpg",
+  "captions": [
+   "A cat is out stretched on a large bed.",
+   "A cat laying on a bed and pawing at the air. ",
+   "A cat rolling around on the sheets of an unmade bed.",
+   "a cat lays down on a bed ",
+   "A striped cat laying upside down on a down comforter,"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000291541.jpg"
+ },
+ {
+  "id": "coco_319611",
+  "file": "data/coco_photos/coco_319611.jpg",
+  "captions": [
+   "A black and white cat walking in grass next to water and duck.",
+   "A cat and a white duck near a muddy body of water",
+   "White goose and black and white cat at the edge of a pond.",
+   "A cat and a goose ignore each other near a pond.",
+   "The goose and the cat are playing by the creek."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000319611.jpg"
+ },
+ {
+  "id": "coco_433134",
+  "file": "data/coco_photos/coco_433134.jpg",
+  "captions": [
+   "A close up of a black and white cat in the grass.",
+   "A gray and white cat standing on a lush green field.",
+   "a cat stares as it sits on some grass ",
+   "A cat standing on grass making a funny expression.",
+   "a black and white cat on some grass"
+  ],
+  "coco_url": "http://images.cocodataset.org/val2017/000000433134.jpg"
+ },
+ {
+  "id": "coco_400489",
+  "file": "data/coco_photos/coco_400489.jpg",
+  "captions": [
+   "A dog and a cat are playing in a field",
+   "Cat and dog playing together in a green field.",
+   "A dog and cat play outside with each other",
+   "A cat being playful with a dog on a field.",
+   "A dog and cat laying beside each other in the grass. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000400489.jpg"
+ },
+ {
+  "id": "coco_387478",
+  "file": "data/coco_photos/coco_387478.jpg",
+  "captions": [
+   "There is a black and white photo of a cat behind a fence",
+   "A cat, a bicycle, and a chair are in a yard behind a train track.",
+   "a bike and a white chair sitting next to each other by a fence ",
+   "A cat, a bicycle, and a chair are behind the chain linked fence.",
+   "A cat, bicycle, and char inside a fence."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000387478.jpg"
+ },
+ {
+  "id": "coco_7778",
+  "file": "data/coco_photos/coco_7778.jpg",
+  "captions": [
+   "The Frisbee has a yellow cartoon dog on it.",
+   "A light green frisbee lying on a field with grass",
+   "A frisbee with a picture of a dog holding a frisbee",
+   "A picture of a Life is good frisbee lying in the grass.",
+   "A frisbee laying on a grass field with a picture of a cat on it.."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000007778.jpg"
+ },
+ {
+  "id": "coco_377867",
+  "file": "data/coco_photos/coco_377867.jpg",
+  "captions": [
+   "A cat sits next to a bike that is garnished with flowers. ",
+   "A black and white cat sitting in front of a bicycle parked by a tree.",
+   "A memorial bicycle with a floral arrangement on the handle bars.",
+   "A cat sitting next to a white bicycle on a green lawn.",
+   "A white bike with flowers on the front by a cat."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000377867.jpg"
+ },
+ {
+  "id": "coco_210099",
+  "file": "data/coco_photos/coco_210099.jpg",
+  "captions": [
+   "An orange cat sunning itself on a lawn chair.",
+   "A cat sits on a wicker chair in the sun.",
+   "A cat sitting on a chair outside in the sun.",
+   "A cat sitting in a chair enjoying the sun.",
+   "A cat sitting on a wicker chair in the sun."
+  ],
+  "coco_url": "http://images.cocodataset.org/val2017/000000210099.jpg"
+ },
+ {
+  "id": "coco_50049",
+  "file": "data/coco_photos/coco_50049.jpg",
+  "captions": [
+   "there is a black cat that is walking through a grass field",
+   "A cat walking through the grass in front of a tree.",
+   "A black walking in a open grass field.",
+   "A black cat walking gingerly through a field of grass.",
+   "A cat that is standing in the grass."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000050049.jpg"
+ },
+ {
+  "id": "coco_80208",
+  "file": "data/coco_photos/coco_80208.jpg",
+  "captions": [
+   "A gray and white cat walking through a forest.",
+   "An up close shot of a gray cat walking in the grass",
+   "A cat is walking in a wooded area.",
+   "A cat that is standing in the grass.",
+   "A cat with a death stare coming towards the camera."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000080208.jpg"
+ },
+ {
+  "id": "coco_472399",
+  "file": "data/coco_photos/coco_472399.jpg",
+  "captions": [
+   "A vase of flowered branches sitting on a chair in a backyard.",
+   "A cat under a white chair that has a mason jar with flowers in it.",
+   "A white tray with a vase holding flowers over a cat.",
+   "A cat sits under a chair with flowers on it.",
+   "A cat standing under a metal chair that is placed in a yard and has a vase of flowers on it."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000472399.jpg"
+ },
+ {
+  "id": "coco_207585",
+  "file": "data/coco_photos/coco_207585.jpg",
+  "captions": [
+   "A group of stuffed animals sitting on top of a wall.",
+   "This is a picture of four stuffed animals.",
+   "Three teddy bears and a stuffed cat on a stone wall.",
+   "Four stuffed animals, a leopard and three teddy bears, in a row sitting on a stone ledge with grass and trees behind.",
+   "A bunch of teddy bears sitting on a stone wall."
+  ],
+  "coco_url": "http://images.cocodataset.org/val2017/000000207585.jpg"
+ },
+ {
+  "id": "coco_98549",
+  "file": "data/coco_photos/coco_98549.jpg",
+  "captions": [
+   "A black cat sitting up in a tree in front of a picture of grass. ",
+   "A black cat sitting in the crook of a large tree.",
+   "A black cat sitting in the crook of a tree.",
+   "A cat is sitting in the middle of a tree looking angrily.",
+   "A black cat is sitting between two tree limbs."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000098549.jpg"
+ },
+ {
+  "id": "coco_471871",
+  "file": "data/coco_photos/coco_471871.jpg",
+  "captions": [
+   "A tad in front of the thunder of a car",
+   "A cat sitting next to the bumper of a parked car.",
+   "a small cat sits next to a parked car",
+   "A cat sitting in the grass under the bumper of a car.",
+   "A calico cat sits under a car's front fender. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000471871.jpg"
+ },
+ {
+  "id": "coco_505945",
+  "file": "data/coco_photos/coco_505945.jpg",
+  "captions": [
+   "A cat is walking around in a field with another cat.",
+   "A cat laying in front of a silver ball.",
+   "a close up of a cat laying on the ground near a mirror ",
+   "A cat that is sitting by a reflective ball.",
+   "a cat laying next to a silver ball in the yard"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000505945.jpg"
+ },
+ {
+  "id": "coco_531405",
+  "file": "data/coco_photos/coco_531405.jpg",
+  "captions": [
+   "a white and black cat sitting on a zebra print couch",
+   "a black and white cat is sitting on a zebra couch",
+   "A black and white cat sitting on a chair covered in zebra pattern.",
+   "A cat that is laying down on a couch.",
+   "a small cat is sitting on a zebra couch"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000531405.jpg"
+ },
+ {
+  "id": "coco_18903",
+  "file": "data/coco_photos/coco_18903.jpg",
+  "captions": [
+   "A tired cat lies on a couch next to a laptop.",
+   "A cat laying on a couch next to a laptop computer that has a drive attached to it.",
+   "A cat is lounging on a chair beside a laptop.",
+   "An open lap top computer next to a cat laying on a couch.",
+   "A cat resting near a portable computer in use."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000018903.jpg"
+ },
+ {
+  "id": "coco_209903",
+  "file": "data/coco_photos/coco_209903.jpg",
+  "captions": [
+   "A cat laying sleeping on its side near a blanket.",
+   "a kitten is snuggled up in a blanket with a pillow",
+   "an orange and white cat is lying on a white couch",
+   "a close up of a cat laying on a pillow ",
+   "A cat is laying down in a pile of towels."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000209903.jpg"
+ },
+ {
+  "id": "coco_977",
+  "file": "data/coco_photos/coco_977.jpg",
+  "captions": [
+   "A couple of cats laying on a couch in a room.",
+   "There are three cats laying on a couch.",
+   "Three cats are stretched out on a couch.",
+   "a couple of kitty cats sprawled out on a sofa",
+   "A cat lying on a couch with pillows"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000000977.jpg"
+ },
+ {
+  "id": "coco_127912",
+  "file": "data/coco_photos/coco_127912.jpg",
+  "captions": [
+   "A cat sleeps on a round ottoman in front of a TV.",
+   "a cat that is laying down on a big couch",
+   "A cat curled up in a ball sleeping comfortably",
+   "Black cat sleeping on a cushion in front of a television.",
+   "a black cat is laying near a television"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000127912.jpg"
+ },
+ {
+  "id": "coco_276507",
+  "file": "data/coco_photos/coco_276507.jpg",
+  "captions": [
+   "Black cat laying on a multi colored blanket.",
+   "Black cat sitting in the sun perched on a colorful blanket.",
+   "A black cat laying down on a chair next to a computer.",
+   "A cat lying atop a couch staring at the camera.",
+   "The black cat poses for the camera on a colorful spread."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000276507.jpg"
+ },
+ {
+  "id": "coco_281598",
+  "file": "data/coco_photos/coco_281598.jpg",
+  "captions": [
+   "A kitten peeking out from behind a tablecloth on a chair.",
+   "a kitten hanging from the side of a chair",
+   "A kitten looking out sideways from a chair.",
+   "a close up of a cat near a couch on the ground",
+   "a cat peeks its head out from behind a couch"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000281598.jpg"
+ },
+ {
+  "id": "coco_120747",
+  "file": "data/coco_photos/coco_120747.jpg",
+  "captions": [
+   "a living room with hardwood foors , a tv and table",
+   "Cat entering a room with woman sitting on a couch.",
+   "A room with a table, television, a person sitting on a couch and a cat standing in another room.",
+   "A boy who is sitting on a couch watching television.",
+   "A living room with a boy sitting on a couch watching t.v."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000120747.jpg"
+ },
+ {
+  "id": "coco_51871",
+  "file": "data/coco_photos/coco_51871.jpg",
+  "captions": [
+   "A cat is lying down on the blanket on the couch",
+   "A cat is cozy with a pillow and a blanket. ",
+   " a cat laying on a blanket and looking all content",
+   "A striped cat curls up on a comfortable sofa.",
+   "The striped cat is lying on pillows and a towel."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000051871.jpg"
+ },
+ {
+  "id": "coco_395550",
+  "file": "data/coco_photos/coco_395550.jpg",
+  "captions": [
+   "a cat laying nestled up into a bowl with its head on top of a remote",
+   "A cat that is laying on a remote control. ",
+   "A cat with a controller is sleeping on a couch.",
+   "a black cat is lying its head on a controller",
+   "A black cat sleeps atop a remote control."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000395550.jpg"
+ },
+ {
+  "id": "coco_271728",
+  "file": "data/coco_photos/coco_271728.jpg",
+  "captions": [
+   "A fat orange cat on a couch beside a TV remote",
+   "A cat sits on a couch beside a notebook computer.",
+   "A orange cat is laying on a grey sofa.",
+   "a cat on a couch in front of a laptop",
+   "A cat lying on a sofa in front of a computer."
+  ],
+  "coco_url": "http://images.cocodataset.org/val2017/000000271728.jpg"
+ },
+ {
+  "id": "coco_284851",
+  "file": "data/coco_photos/coco_284851.jpg",
+  "captions": [
+   "A small kitten sitting on a chair next to a small dog.",
+   "A dog and a kitten are sitting nose to nose.  ",
+   "A cat witting on a couch touching noses with a dog",
+   "The cat and dog are smelling each other. ",
+   "A small kitten and dog smelling each other"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000284851.jpg"
+ },
+ {
+  "id": "coco_260978",
+  "file": "data/coco_photos/coco_260978.jpg",
+  "captions": [
+   "A cat is rolling around on a couch",
+   "An orange cat lying on its side on a bed.",
+   "A cat laying on a couch with a sheet and a remote on it.",
+   "An orange cat on a sofa with a remote",
+   "A cat upside on the couch near a remote"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000260978.jpg"
+ },
+ {
+  "id": "coco_104454",
+  "file": "data/coco_photos/coco_104454.jpg",
+  "captions": [
+   "A solid white cat laying on a blue blanket.",
+   "A white cat lying beside a closed suitcase.",
+   "A white cat laying on a bed next to a suitcase.",
+   "The white dog is sleeping on the blue blanket.",
+   "Beautiful white cat laying on a blue blanket next to a suitcase"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000104454.jpg"
+ },
+ {
+  "id": "coco_412377",
+  "file": "data/coco_photos/coco_412377.jpg",
+  "captions": [
+   "Two favorite kitty activities are sleeping and perusing the outdoors from a windowsill.",
+   "One cat is sitting on the windowsill next to a fan.",
+   "A cat sitting in window sill next to a cat sleeping on a bed.",
+   "A cat sleeps on a blanket while another cat peers out a window. ",
+   "A orange tabby cat sitting on a room pass thru while a black cat sleeps on a couch."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000412377.jpg"
+ },
+ {
+  "id": "coco_28006",
+  "file": "data/coco_photos/coco_28006.jpg",
+  "captions": [
+   "A cat is standing on the bed blanket. ",
+   "The cat is getting all wrapped up in the drapes.",
+   "Grey cat coming out from behind a window curtain. ",
+   "a gray and white cat is standing on a couch",
+   "A cat stands on the back of a couch."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000028006.jpg"
+ },
+ {
+  "id": "coco_386884",
+  "file": "data/coco_photos/coco_386884.jpg",
+  "captions": [
+   "A cat is hiding under a blanket and peering out.",
+   "A black cat hiding under a blue blanket.",
+   "A cat looks out from under a blue blanket.",
+   "There is a cat lying under a blanket",
+   "a cat looking out from underneath a blanket."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000386884.jpg"
+ },
+ {
+  "id": "coco_525913",
+  "file": "data/coco_photos/coco_525913.jpg",
+  "captions": [
+   "A bed in a bedroom sitting underneath a window.",
+   "A large bed with a cat and dog sleeping on it",
+   "There are some animals sitting on the end of a bed",
+   "A dog lies on the bed as a cat lies on a pillow.",
+   "A black white photo of a bedroom with a small dog laying on the large bed "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000525913.jpg"
+ },
+ {
+  "id": "coco_461110",
+  "file": "data/coco_photos/coco_461110.jpg",
+  "captions": [
+   "A little girl that is laying down with a cat.",
+   "a kid and a brown cat on the bed",
+   "The young girl and her dog are laying on the bed.",
+   "A small girl on a bed with a cat.",
+   "A girl is lying in bed with her cat."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000461110.jpg"
+ },
+ {
+  "id": "coco_360178",
+  "file": "data/coco_photos/coco_360178.jpg",
+  "captions": [
+   "A catting setting on a bed next to a yellow teddy bear.",
+   "A brown, grey and white cat on bed next to a yellow stuffed bear.",
+   "Grey and white cat with bright green eyes next to a yellow Teddy Bear.",
+   "A cat is sitting on a bed next to a yellow teddy bear.",
+   "Multicolored cat sitting next to a teddy bear on the bed"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000360178.jpg"
+ },
+ {
+  "id": "coco_476086",
+  "file": "data/coco_photos/coco_476086.jpg",
+  "captions": [
+   "An orange cat, a brown dog and a black dog lay on a white bed.",
+   "two dogs and a cat la down on a bed together ",
+   "Two dogs and a cat sitting laying on a bed.",
+   "A large brown dog laying on a bed next to a cat and black dog.",
+   "Two dogs and a cat laying in a big bed."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000476086.jpg"
+ },
+ {
+  "id": "coco_62547",
+  "file": "data/coco_photos/coco_62547.jpg",
+  "captions": [
+   "A man holding a cat sitting in front of a laptop computer.",
+   "A couple of guys hanging out with a cat and browsing the internet.",
+   "A man with a blanket and a cat is using a computer.",
+   "A man laying with a cat while working on a laptop.",
+   "Two men with eye glasses looking at something."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000062547.jpg"
+ },
+ {
+  "id": "coco_430493",
+  "file": "data/coco_photos/coco_430493.jpg",
+  "captions": [
+   "A woman on a cell phone and her cat is watching.",
+   "Woman talking on cell phone in bed, while wrapped up from the cold.",
+   "A woman is on her phone in the dark.",
+   "A woman talking on her cell phone and holding cosmetics.",
+   "a woman sitting on a couch while talking on a phone "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000430493.jpg"
+ },
+ {
+  "id": "coco_580234",
+  "file": "data/coco_photos/coco_580234.jpg",
+  "captions": [
+   "A cat sitting in an animal bed with a blanket. ",
+   "A white and tabby calico mixed cat is laying in it's plush bed.",
+   "A white cat sitting on top of a pink cat bed.",
+   "A cat with different colored eyes sitting in a cat bed.",
+   "THERE IS A CAT THAT IS SITTING ON THE CAT BED"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000580234.jpg"
+ },
+ {
+  "id": "coco_173832",
+  "file": "data/coco_photos/coco_173832.jpg",
+  "captions": [
+   "a cat laying down while playing with a computer mouse",
+   "The at is playing with the cord of the computer mouse.",
+   "A cat is on a dark surface with a computer mouse.",
+   "A cat has an electronic mouse in its paws.",
+   "A cat lays on the floor with a computer mouse. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000173832.jpg"
+ },
+ {
+  "id": "coco_109629",
+  "file": "data/coco_photos/coco_109629.jpg",
+  "captions": [
+   "A curious at rests it's paw on a laptop.",
+   "Grey spotted cat laying on couch using a laptop",
+   "A gray and black cat is next to a laptop computer.",
+   "A cat sitting on a couch playing with a computer. ",
+   "laptop open on the couch with cat halfway on it"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000109629.jpg"
+ },
+ {
+  "id": "coco_154254",
+  "file": "data/coco_photos/coco_154254.jpg",
+  "captions": [
+   "A cat curled up on a bed sleeping with a man sitting in the back ground holding a laptop and watching the cat.",
+   "A man in a chair while holding a laptop and posing for a picture.",
+   "A man sitting in a chair smiling at a sleeping cat on a bed.",
+   "A brown and white cat laying in couch with man in chair in background.",
+   "A man with a laptop is next to a cat."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000154254.jpg"
+ },
+ {
+  "id": "coco_533156",
+  "file": "data/coco_photos/coco_533156.jpg",
+  "captions": [
+   "Cat sitting on chair in front of desk with open laptop",
+   "a cat laying on a chair near a desk",
+   "A cat that is sitting on a wooden chair. ",
+   "a cat that is sitting on a chair with a laptop on a table",
+   "a large white and brown cat sitting in a chair near a laptop"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000533156.jpg"
+ },
+ {
+  "id": "coco_78741",
+  "file": "data/coco_photos/coco_78741.jpg",
+  "captions": [
+   "A grey and white cat sitting next to keyboard and computer monitor.",
+   "A cat standing on to of a computer keyboard next to a monitor.",
+   "a cat stiing by a desk with a paw on a keyboard ",
+   "A cat standing on a desk near a keyboard.",
+   "A cat sits with its' paw on the keyboard of the computer."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000078741.jpg"
+ },
+ {
+  "id": "coco_61849",
+  "file": "data/coco_photos/coco_61849.jpg",
+  "captions": [
+   "A cat resting its paw on a computer mouse.",
+   "A cat with its paws on a computer mouse ",
+   "An animal has its paws atop an electronic device.",
+   "A man touching a computer mouse with it's paw.",
+   "A cat with its paws on a computer mouse at a desk."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000061849.jpg"
+ },
+ {
+  "id": "coco_121446",
+  "file": "data/coco_photos/coco_121446.jpg",
+  "captions": [
+   "A cat naps next to a laptop computer.",
+   "Orange-brown cat with chin on Dell laptop appearing to be sleeping.",
+   "A large orange cat sleeping on top of a laptop computer.",
+   "An orange cat with its head laying on a laptop.",
+   "A large gold cat is resting on a desk with his head on a laptop."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000121446.jpg"
+ },
+ {
+  "id": "coco_333758",
+  "file": "data/coco_photos/coco_333758.jpg",
+  "captions": [
+   "A black cat laying behind an open laptop computer.",
+   "A cat sitting behind a computer screen near  a lamp",
+   "a black kitty siting behind a laptop monitor ",
+   "a close up of a cat sitting on a desk behind a laptop",
+   "A scary looking black car staring right into the camera. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000333758.jpg"
+ },
+ {
+  "id": "coco_437517",
+  "file": "data/coco_photos/coco_437517.jpg",
+  "captions": [
+   "A cat standing next to a computer keyboard.",
+   "A tiger striped cat about to step onto a computer keyboard.",
+   "Cat sitting next to white electronic keyboard  on table.",
+   "A cat who is sitting in front of a keyboard.",
+   "A white and grey cat is walking by a keyboard."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000437517.jpg"
+ },
+ {
+  "id": "coco_463865",
+  "file": "data/coco_photos/coco_463865.jpg",
+  "captions": [
+   " a furry kitten laying on a laptop",
+   "A cat laying on a laptop on a desk.",
+   "a cute little kitten sitting on a laptop keyboard ",
+   "A small furry kitten laying on a keyboard of a laptop.",
+   "Grey cat lying on the keyboard of a laptop as someone tries to type."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000463865.jpg"
+ },
+ {
+  "id": "coco_288724",
+  "file": "data/coco_photos/coco_288724.jpg",
+  "captions": [
+   "A cat is sitting on its bed which is placed on a desk.",
+   "A cat in a bag sitting atop a dresser. ",
+   "A black and white cat sits ina cat bed on a desk.",
+   "A black and white cat curled in a striped pet bed on top of a computer desk.",
+   "A cat is lying in a bed on a desk."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000288724.jpg"
+ },
+ {
+  "id": "coco_274537",
+  "file": "data/coco_photos/coco_274537.jpg",
+  "captions": [
+   "Large adult grey cat lying on shelf with computer mouse.",
+   "A large cat laying on top of a chair next to a mouse.",
+   "A cat sits beside a USB mouse laying on a table.",
+   "A large fluffy cat is sitting on a chair next to a computer mouse.",
+   "A cat sitting next to an unplugged computer mouse."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000274537.jpg"
+ },
+ {
+  "id": "coco_563805",
+  "file": "data/coco_photos/coco_563805.jpg",
+  "captions": [
+   "A cat drinking water out of a white sink.",
+   "A cat is drinking water out of a dripping faucet.",
+   "A brown cat on a sink checking something",
+   "A cat drinks water from a bathroom sink.",
+   "a cat that is in a big white sink"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000563805.jpg"
+ },
+ {
+  "id": "coco_144560",
+  "file": "data/coco_photos/coco_144560.jpg",
+  "captions": [
+   "a close up of a cat on a bath room sink ",
+   "A cat looking up while sitting on the bathroom sink",
+   "a cat with big eyes sitting on a bathroom sink ",
+   "a grey cat with brown eyes staring sited beside the sink",
+   "A caat that is sitting on a wash basin is lookkng at the camera man. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000144560.jpg"
+ },
+ {
+  "id": "coco_118480",
+  "file": "data/coco_photos/coco_118480.jpg",
+  "captions": [
+   "A gray cat laying in the bathroom sink.",
+   "A cat sitting in the sink of a bathroom",
+   "An adult cat laying in a bathroom sink.",
+   "A gray cat sleeping inside of a glass bowl.",
+   "A CAT IS LYING IN THE BATHROOM SINK "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000118480.jpg"
+ },
+ {
+  "id": "coco_102670",
+  "file": "data/coco_photos/coco_102670.jpg",
+  "captions": [
+   "Cat looking into a sink next to the toilet.",
+   "this is a cat drinking water out of the wall",
+   "A black cat sticking their head into a sink looking for a drink.",
+   "A cat standing on a toilet with his head in a urinal",
+   "A black and white cat with its head in a urinal."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000102670.jpg"
+ },
+ {
+  "id": "coco_279463",
+  "file": "data/coco_photos/coco_279463.jpg",
+  "captions": [
+   "A magazine with the title Games for Cats is showing two cats in a toilet.",
+   "A picture of a cat in a toilet and another cat sitting next to the toilet. ",
+   "Cover of a magazine with a picture of some cats in the toilet.",
+   "A cover of a magazine about games for cats.",
+   "A magazine with a couple of cat around a toilet on it's cover."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000279463.jpg"
+ },
+ {
+  "id": "coco_143110",
+  "file": "data/coco_photos/coco_143110.jpg",
+  "captions": [
+   "A barren bathroom features a sink and a cat box and the corner of a tub.",
+   "a sink a bath tub and a black bag on the ground",
+   "A toilet in a bathroom next to a white tub.",
+   "A corner of a bathroom showing part of a sink and tub",
+   "A bathroom area with a litter box and urinal."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000143110.jpg"
+ },
+ {
+  "id": "coco_46749",
+  "file": "data/coco_photos/coco_46749.jpg",
+  "captions": [
+   "A very cute small cat standing in a rest room.",
+   "a small grey kitten is sitting in the bathroom",
+   "A cat in the bathroom with toilet paper lying on the floor.",
+   "Small grey and black cat looking up next to toilet paper on the ground. ",
+   "A cat sitting next to a white toilet in a bathroom."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000046749.jpg"
+ },
+ {
+  "id": "coco_122213",
+  "file": "data/coco_photos/coco_122213.jpg",
+  "captions": [
+   "A kitty cat standing on a sink playing with a mirror.",
+   "a cat looking at itself in a bathroom mirror",
+   "A cat standing on a sink with its front paws on the mirror.",
+   "A cat pushes a mirror from side to side ",
+   "a cat leaning against a mirror in the bathroom"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000122213.jpg"
+ },
+ {
+  "id": "coco_455365",
+  "file": "data/coco_photos/coco_455365.jpg",
+  "captions": [
+   "Black and white photograph of a cat on a toilet seat.",
+   "A black cat sitting on top of a toilet bowl seat cover.",
+   "a black cat sits on a toilet seat, looking at the camera",
+   "A black cat is sitting on the rug covered lid of a toilet bowl.",
+   "A cat sits on a toilet seat in a washroom."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000455365.jpg"
+ },
+ {
+  "id": "coco_236841",
+  "file": "data/coco_photos/coco_236841.jpg",
+  "captions": [
+   "A cat using a toilet like a person would.",
+   "A cat sitting on the seat of a toilet",
+   "A cat perched on a toilet using the bathroom.",
+   "A cat wishing for some privacy to use the toilet in peace. ",
+   "A cat sitting on a toilet in the bathroom. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000236841.jpg"
+ },
+ {
+  "id": "coco_288776",
+  "file": "data/coco_photos/coco_288776.jpg",
+  "captions": [
+   "a cat on a window sill with a bag ",
+   "A cat is up in a blue windowsill playing with a package that is sitting there.",
+   "a cat sitting by a window of a bright blue wall ",
+   "A white and black kitten sitting in a blue and red window. ",
+   "A black and white cat outside of a red and blue window."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000288776.jpg"
+ },
+ {
+  "id": "coco_188667",
+  "file": "data/coco_photos/coco_188667.jpg",
+  "captions": [
+   "A cat standing next to a window in a room.",
+   "A can sitting in front of a window with the blinds closed.",
+   "a gray cat sitting in a window looking up",
+   "Filtered photograph of a cat standing by a window.",
+   "A cat looking up towards the ceiling in front of a window with broken blinds."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000188667.jpg"
+ },
+ {
+  "id": "coco_46877",
+  "file": "data/coco_photos/coco_46877.jpg",
+  "captions": [
+   "A grey and white cat outside looking into a window.",
+   "an image of a cat looking into a window",
+   "A black and white car peeping through a glass window",
+   "A black and white cat waiting outside the window.",
+   "a cat sitting outside a window looking in "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000046877.jpg"
+ },
+ {
+  "id": "coco_217299",
+  "file": "data/coco_photos/coco_217299.jpg",
+  "captions": [
+   "A cat staring at it's own reflection in a glass cabinet.",
+   "Two cats looking at one another through glass",
+   "Two cats are are looking at each other through a window.",
+   "A cat is looking in the mirror at a front side that doesn't look anything like the back side.",
+   "A cat is looking in the mirror at its refelection "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000217299.jpg"
+ },
+ {
+  "id": "coco_302110",
+  "file": "data/coco_photos/coco_302110.jpg",
+  "captions": [
+   "A cat laying on a rug next to a sliding glass door.",
+   "The cat is laying down on the floor by the glass doors. ",
+   "a table rug black and brown cat television and cabinet",
+   "A room with a cat on the carpet and books",
+   "A cat is look out the window through blinds. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000302110.jpg"
+ },
+ {
+  "id": "coco_159459",
+  "file": "data/coco_photos/coco_159459.jpg",
+  "captions": [
+   "A picture of a cat looking out the window.",
+   "A white and black cat sitting on a window sill.",
+   "A window of a brick house with a white colored cat sitting inside the window and looking out.",
+   "A white cat looking out of the window between the blinds.",
+   "A white cat with a brown head sits in the window sill of a brick house."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000159459.jpg"
+ },
+ {
+  "id": "coco_175202",
+  "file": "data/coco_photos/coco_175202.jpg",
+  "captions": [
+   "A cat looks through a window at birds with cartoon bubbles written above them, as if they were speaking about the cat.",
+   "A cat looking at two birds who are thinking something.",
+   "A cat in a room near two small birds.",
+   "A cat is looking at two pigeons perched on a ledge.",
+   "A cat peers at pigeons on a ledge"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000175202.jpg"
+ },
+ {
+  "id": "coco_418853",
+  "file": "data/coco_photos/coco_418853.jpg",
+  "captions": [
+   "A cat peeking into a window standing next to a trash bag.",
+   "A cat looking through a curved  glass door.",
+   "Cat next to a trash bag looking through a window.",
+   "a black brown and white cat looking through a window",
+   "A cat is seen sitting next to a bag through a small window."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000418853.jpg"
+ },
+ {
+  "id": "coco_176289",
+  "file": "data/coco_photos/coco_176289.jpg",
+  "captions": [
+   "a cat sleeping in the middle of a big bed ",
+   "Someone did not bother to make a messy bed this morning.",
+   "A bed sitting next to a window with blankets on top of it.",
+   "The sun is coming through the window's blinds.",
+   "A bed has white sheets and is near a window."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000176289.jpg"
+ },
+ {
+  "id": "coco_343235",
+  "file": "data/coco_photos/coco_343235.jpg",
+  "captions": [
+   "Three cats sitting looking out sliding glass door to yard and one cat lying on small rug looking at camera.",
+   "A group of cats looking out of a window.",
+   "An picture of an image of four cats, standing by the window. ",
+   "There are three cats sitting and looking out the window, and one cat lying down and looking the opposite direction.",
+   "Four cats sitting in front of a open window"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000343235.jpg"
+ },
+ {
+  "id": "coco_31176",
+  "file": "data/coco_photos/coco_31176.jpg",
+  "captions": [
+   "a black and gray spotted cat is sitting on a windows sill",
+   "A cat on the window looking outside next to the balcony",
+   "Tiger kitten sitting by French window looking out over sunny balcony. ",
+   "A kitten sitting in a window sill near a wooden deck.",
+   "A kitten in bathing in the sun while looking out at the deck. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000031176.jpg"
+ },
+ {
+  "id": "coco_234467",
+  "file": "data/coco_photos/coco_234467.jpg",
+  "captions": [
+   "A woman stands by a car that has a orange and white cat in it.",
+   "a person playing with a cat in a car",
+   "A woman reaching in to pet a brown and white dog.",
+   "A woman smiling at a cat who is laying in the back window of a car.",
+   "A woman standing next to a car with a cat inside."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000234467.jpg"
+ },
+ {
+  "id": "coco_24497",
+  "file": "data/coco_photos/coco_24497.jpg",
+  "captions": [
+   "Cat behind a fallen street sign on a car.",
+   "a cute cat standing by a street sign sitting on the back of a rusty blue truck",
+   "a small cat is sitting near a green sign",
+   "a truck with some appliances inside the back of it ",
+   "a cat that is sitting down on a old car"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000024497.jpg"
+ },
+ {
+  "id": "coco_502847",
+  "file": "data/coco_photos/coco_502847.jpg",
+  "captions": [
+   "A cat in the rear window of a vehicle.",
+   "a cat stares out of the back of a car window ",
+   "a cat laying back in a car and staring out the window",
+   "A cat laying upside down in the back of a car. ",
+   "Is the cat looking out of the back window of a car?"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000502847.jpg"
+ },
+ {
+  "id": "coco_564056",
+  "file": "data/coco_photos/coco_564056.jpg",
+  "captions": [
+   "A large sleeping cat laying under a parked car.",
+   "A cat sleeping in the shade under a car.",
+   "A cat resting on the ground underneath a car.",
+   "A very cute cat laying down under a car.",
+   "there is a cat that has fallen asleep under a car"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000564056.jpg"
+ },
+ {
+  "id": "coco_7740",
+  "file": "data/coco_photos/coco_7740.jpg",
+  "captions": [
+   "A cat laying down in front of a car.",
+   "The front of a silver gray car with a small cat laying in front of a tire.",
+   "A cute cat laying down near the tire of  a car.",
+   "A cat in the street, sleeping under a parked car.",
+   "A cat takes a nap under the wheel of a car."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000007740.jpg"
+ },
+ {
+  "id": "coco_40359",
+  "file": "data/coco_photos/coco_40359.jpg",
+  "captions": [
+   "A cat is sitting on top of a shiny surface.",
+   "A white cat lies placidly on the roof of a car.",
+   "A cat and its reflection on a car hood",
+   "A white cat lounging in the roof of a car",
+   "Whit cat laying on the hood of a car."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000040359.jpg"
+ },
+ {
+  "id": "coco_357663",
+  "file": "data/coco_photos/coco_357663.jpg",
+  "captions": [
+   "Two cats sitting on top of the roof of a car.",
+   "Two cats next to each other on top of a car.",
+   "Two cats are playing on the roof of a car.",
+   "two cats sitting on top of a parked car",
+   "Two cats are on the roof of a parked vehicle."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000357663.jpg"
+ },
+ {
+  "id": "coco_280551",
+  "file": "data/coco_photos/coco_280551.jpg",
+  "captions": [
+   "A cat on top of a covered car by a house. ",
+   "a car with a tarp on sits in front if a house ",
+   "An automobile is wrapped up in front of a brick building.",
+   "A car with a cover on it with a cat laying on top.",
+   "A cat sitting on top of a car with a tarp over it."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000280551.jpg"
+ },
+ {
+  "id": "coco_229754",
+  "file": "data/coco_photos/coco_229754.jpg",
+  "captions": [
+   "A black and white cat sitting next to a parked car.",
+   "A cat on the ground next to the wheel of a car.",
+   "Black and white cat scratching itself while looking at a hubcap.",
+   "A black and white cat scratching next to a car.",
+   "a cat sits and looks up at a car "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000229754.jpg"
+ },
+ {
+  "id": "coco_466156",
+  "file": "data/coco_photos/coco_466156.jpg",
+  "captions": [
+   "The striped cat is sitting on top of the car.",
+   "a cat sitting on a car engine with the hood up",
+   "someone opened a hood on a car and he cat jumped up on the edge",
+   "Black cat sitting on the engine of a black car. ",
+   "A gray cat is walking next to a truck."
+  ],
+  "coco_url": "http://images.cocodataset.org/val2017/000000466156.jpg"
+ },
+ {
+  "id": "coco_316563",
+  "file": "data/coco_photos/coco_316563.jpg",
+  "captions": [
+   "there is a cat that is standing on top of a car",
+   "a cat standing on a snow covered car ",
+   "A cat sitting on the hood of a snow covered car.",
+   "A cat has jumped on top of a car covered with snow.",
+   "Fluffy cat sitting on top of snow covered car"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000316563.jpg"
+ },
+ {
+  "id": "coco_533686",
+  "file": "data/coco_photos/coco_533686.jpg",
+  "captions": [
+   "Semi large grey and white cat standing on a open suit case.",
+   "a cat standing inside a suitcase and being pet by a person with longsleeve shirt on",
+   "A cat sits in the middle of a suit case while a person strokes him. ",
+   "A grey and white cat inside a suitcase.",
+   "A cat sitting inside of a piece of luggage on a   bed."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000533686.jpg"
+ },
+ {
+  "id": "coco_344024",
+  "file": "data/coco_photos/coco_344024.jpg",
+  "captions": [
+   "A ginger tabby cat lays on top of luggage",
+   "An orange cat is sitting inside of an empty suitcase.",
+   "An orange cat sitting in a piece of luggage.",
+   "A cat sits in an empty, open suitcase on the floor.",
+   "A cat is sitting inside of a suitcase"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000344024.jpg"
+ },
+ {
+  "id": "coco_90833",
+  "file": "data/coco_photos/coco_90833.jpg",
+  "captions": [
+   "A stuffed animal cat stands in a pair of shoes.",
+   "Cat perched on a shoe box with sneakers.",
+   "A stuffed animal cat sitting in a pair of sneakers.",
+   "A black cat stuffed toy stands in a pair of blue sneakers.",
+   "Two rubber shoes and a teddy bear on top of a box"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000090833.jpg"
+ },
+ {
+  "id": "coco_40348",
+  "file": "data/coco_photos/coco_40348.jpg",
+  "captions": [
+   "A brown, white and black cat sitting on top of a black suitcase.",
+   "A cat sitting on top of a piece of luggage.",
+   "Brown and white cat standing on top of a suitcase. ",
+   "a black and brown cat sitting on the edge of a black suitcase",
+   "a cat sitting on a chair in a living room"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000040348.jpg"
+ },
+ {
+  "id": "coco_266627",
+  "file": "data/coco_photos/coco_266627.jpg",
+  "captions": [
+   "The cat is looking inside of the open backpack. ",
+   "The dog is sniffing through the suspicious luggage.",
+   "a cat is looking through a suit case.",
+   "Two cats sitting near a backpack and one looking inside.",
+   "A cat looking in a back pack that is open."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000266627.jpg"
+ },
+ {
+  "id": "coco_544760",
+  "file": "data/coco_photos/coco_544760.jpg",
+  "captions": [
+   "a dog that is looking at a cage",
+   " Dog looking directly up from a wooden floor",
+   "A dog standing on top of a wooden floor.",
+   "A dog is standing next to a cat on a suitcase.",
+   "a cat lying in an empty suitcase watches a dog, who is looking at the camera"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000544760.jpg"
+ },
+ {
+  "id": "coco_468951",
+  "file": "data/coco_photos/coco_468951.jpg",
+  "captions": [
+   "A black and white cat sticking its head over black luggage.",
+   "Unzipped suitcase on floor with cat peeking out of compartment.",
+   "A black suitcase with a cat peeking outside of it. ",
+   "A cat hiding in a black luggage case.",
+   "a close up of a cat on a luggage bag"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000468951.jpg"
+ },
+ {
+  "id": "coco_550157",
+  "file": "data/coco_photos/coco_550157.jpg",
+  "captions": [
+   "A cat is lying down on the back pack on the floor",
+   "A cat laying on a back pack in a room.",
+   "A kitten laying on a backpack instead of his bed.",
+   "there is a cat that is laying on top of a luggage",
+   "a cat that is sitting on a chair"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000550157.jpg"
+ },
+ {
+  "id": "coco_517610",
+  "file": "data/coco_photos/coco_517610.jpg",
+  "captions": [
+   "An open with plants sitting in front of it on a ledge.",
+   "Some window plants near an open window pane",
+   "A cat sticking it's head out of a window behind flowers in a planter.",
+   "A cat looking out  a window by a flower box",
+   "Long pot of flowers sitting underneath an open window. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000517610.jpg"
+ },
+ {
+  "id": "coco_66271",
+  "file": "data/coco_photos/coco_66271.jpg",
+  "captions": [
+   "A large black cat laying on top of a pink piece of luggage.",
+   "A black cat standing on a red suitcase",
+   "Cat catty sitting on a suitcase with a closed kennel against the wall.",
+   "A black cat sitting on a bag of red luggage.",
+   "A black cat is laying on top of luggage."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000066271.jpg"
+ },
+ {
+  "id": "coco_107623",
+  "file": "data/coco_photos/coco_107623.jpg",
+  "captions": [
+   "A cat lies on a suitcase and relaxes comfortably.",
+   "A multicolored cat lying on a blue suitcase.",
+   "A cat with a sleepy look lying on a suit case.",
+   "A cat sitting on a bag, staring at the camera.",
+   "A brindled cat laying on top of a tweed suitcase."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000107623.jpg"
+ },
+ {
+  "id": "coco_182903",
+  "file": "data/coco_photos/coco_182903.jpg",
+  "captions": [
+   "Cat in a closet with baggage and misc.",
+   "A cat laying next to a pile of luggage in a doorway.",
+   "A cat inside a messy closet beside various handbags and suitcases.",
+   "a cat with a tag sits on carpet next to suitcases",
+   "a cat that is laying down some bags"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000182903.jpg"
+ },
+ {
+  "id": "coco_264514",
+  "file": "data/coco_photos/coco_264514.jpg",
+  "captions": [
+   "A dog and a cat are lying next to the sign that says \"Please Help\".",
+   "A dog and a cat are sitting next to a homeless sign.",
+   "A dog sitting atop an old couch on the street.",
+   "a dog and cat sitting on a  blanket next to a sign",
+   "A dog and cat sit on a huge stack of baggage and sign."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000264514.jpg"
+ },
+ {
+  "id": "coco_401681",
+  "file": "data/coco_photos/coco_401681.jpg",
+  "captions": [
+   "A large dog laying on top of a couch holding a cat.",
+   "A couch that has a dog laying on it, with the dogs arms over the top of a cat that is also laying down on the couch.",
+   "A dog is laying on the couch with a cat.",
+   "a cat and a dog laying on a couch in the living room",
+   "A dog and a cat are snuggling on a couch."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000401681.jpg"
+ },
+ {
+  "id": "coco_109498",
+  "file": "data/coco_photos/coco_109498.jpg",
+  "captions": [
+   "a little cat house in the yard with a kitty sitting in it. ",
+   "A cat sitting in a bird house out in the snow. ",
+   "A raised dog house with a  dog inside in a yard covered in snow.",
+   "From inside a cat house, a cat watches a bird. ",
+   "A snow covered hill with a bird house."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000109498.jpg"
+ },
+ {
+  "id": "coco_393685",
+  "file": "data/coco_photos/coco_393685.jpg",
+  "captions": [
+   "A white bull dog rolling around on it's back next to a cat.",
+   "A dog and cat playing with their owner on a bed",
+   "A dog and a cat laying with each other on a bed.",
+   "A dog and a cat resting on a bed.",
+   "a person petting a dog laying on its back"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000393685.jpg"
+ },
+ {
+  "id": "coco_532617",
+  "file": "data/coco_photos/coco_532617.jpg",
+  "captions": [
+   "A man standing in a garden with a small white dog and gray cat.",
+   "A person with cats checking on vegetables that are growing",
+   "A person and some animals that are by some plants.",
+   "two cats in a garden sniffing plants with a person",
+   "A man and two cats standing on a porch with a lot of potted plants."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000532617.jpg"
+ },
+ {
+  "id": "coco_136373",
+  "file": "data/coco_photos/coco_136373.jpg",
+  "captions": [
+   "A dog and a cat laying on a messy bed.",
+   "A couple of dogs sleeping on top of a bed in a bedroom.",
+   "A dog and cat sitting on a bed.",
+   "a dog and a cat lay next to each other on a bed",
+   "A dog and a cat lay on a bed.\n"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000136373.jpg"
+ },
+ {
+  "id": "coco_380252",
+  "file": "data/coco_photos/coco_380252.jpg",
+  "captions": [
+   "A man sleeping in bed with dogs and cats sleeping with him.",
+   "old  man in thebed with 2 cats in 1 dog",
+   "The dog and cat is laying in the bed with the man.",
+   "A man sleeping in bed with two cats and a dog.",
+   "A man sleeps on a bed with several pets."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000380252.jpg"
+ },
+ {
+  "id": "coco_307423",
+  "file": "data/coco_photos/coco_307423.jpg",
+  "captions": [
+   "Cat laying on top of a dog on a leash.",
+   "A gray cat with a leash on lays on top of a black and brown dog.",
+   "a gray and black cat is sitting on a black and brown dog",
+   "A large black and brown dog with a cat on it.",
+   "The man's pets are resting on the sidewalk, the cat relaxing on the dog's back"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000307423.jpg"
+ },
+ {
+  "id": "coco_274602",
+  "file": "data/coco_photos/coco_274602.jpg",
+  "captions": [
+   "a dog standing over a birthday cake shaped like a dog bone.",
+   "Small dog leaning forward in front of a cake eating it. ",
+   "A black dog standing on a table sniffs a birthday cake.",
+   "Back cat smelling a bone shaped birthday cake.",
+   "A mid sized black dog eating a cake shaped like a bone. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000274602.jpg"
+ },
+ {
+  "id": "coco_67445",
+  "file": "data/coco_photos/coco_67445.jpg",
+  "captions": [
+   "A potted plant sitting on the porch of a home.",
+   "A dog looking out a window at a porch with a potted plant.",
+   "A cat looking out a porch window with a plant on the porch.",
+   "A dog in the window of a house looking out.",
+   "A dog is looking out of the window of a house."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000067445.jpg"
+ },
+ {
+  "id": "coco_189880",
+  "file": "data/coco_photos/coco_189880.jpg",
+  "captions": [
+   "There is a person doing something in the image.\n",
+   "Girl sitting on a couch with a computer as a cat looks on.",
+   "A woman sits on a couch with a cat right behind her.",
+   "a young girl sits on a couch next to a cat",
+   "A woman sitting on a couch with a laptop on her lap, while a cat lays at the top of the couch."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000189880.jpg"
+ },
+ {
+  "id": "coco_684",
+  "file": "data/coco_photos/coco_684.jpg",
+  "captions": [
+   "A woman that is with a cat in a mirror.",
+   "a woman taking a selfie in front of a stack of mirrors",
+   "A woman is taking a picture looking into a mirror while the cat watches.",
+   "A three piece circular mirror with a girl taking a picture of it in the reflection",
+   "A woman and a cat reflected in a mirror made of three circular sections"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000000684.jpg"
+ },
+ {
+  "id": "coco_368852",
+  "file": "data/coco_photos/coco_368852.jpg",
+  "captions": [
+   "A person feeding a kitten a bottle of milk.",
+   "Someone feeding a tiny kitten with a baby bottle.",
+   "A person is feeding a small orange kitten.",
+   "Girl is bottle feeding a small kitten on the couch",
+   "A kitten is held and fed with a bottle."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000368852.jpg"
+ },
+ {
+  "id": "coco_512630",
+  "file": "data/coco_photos/coco_512630.jpg",
+  "captions": [
+   "A person holding a banana near a cat.",
+   "A cat sitting up on top of a cluttered counter",
+   "A black and white cat is looking at a banana.",
+   "A black cat sitting in front of a banana.",
+   "A very cute black and white cat by a window."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000512630.jpg"
+ },
+ {
+  "id": "coco_510593",
+  "file": "data/coco_photos/coco_510593.jpg",
+  "captions": [
+   "A woman lays on a bed with a cat and a dog with a restraining collar.",
+   "A woman is laying on a bed with two dogs.",
+   "A woman laying in the bed with two dogs. ",
+   "A woman rests with two dogs on the bed with her.",
+   "A woman lying on a bed with blankets and pillows with two small dogs."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000510593.jpg"
+ },
+ {
+  "id": "coco_69364",
+  "file": "data/coco_photos/coco_69364.jpg",
+  "captions": [
+   "A cat napping next to a computer keyboard.",
+   "A cat lays next to the keyboard of a laptop.",
+   "Person using a laptop with a cat on their lap",
+   "A cat sleeping next to an open laptop computer.",
+   "A black cat sitting beside a laptop computer."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000069364.jpg"
+ },
+ {
+  "id": "coco_322536",
+  "file": "data/coco_photos/coco_322536.jpg",
+  "captions": [
+   "A man holding a cat while working on his laptop.",
+   "A man sitting in a chair while using a laptop computer with a cat in his lap.",
+   "A man uses a laptop while holding a cat.",
+   "A man in a chair using a laptop while holding a cat.",
+   "A man holding a cat on his lap using his laptop."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000322536.jpg"
+ },
+ {
+  "id": "coco_296946",
+  "file": "data/coco_photos/coco_296946.jpg",
+  "captions": [
+   "A pair of feet with a cat sitting in the middle of them.",
+   "A person looking down at his own shoes and the top of a dog's head.",
+   "A furry dog sitting between the legs of a person.",
+   "A close-up of an animal between a person's leg.",
+   "looking down on a  person standing with sneakers on and a dog in between the persons legs with it's paw reached out."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000296946.jpg"
+ },
+ {
+  "id": "coco_374860",
+  "file": "data/coco_photos/coco_374860.jpg",
+  "captions": [
+   "A tan kitten laying between a pair of legs and a laptop.",
+   "A woman is using her computer and laying with her cat.",
+   "A cat is sitting in between a person's legs and a computer.",
+   "A kitten lying between a persons legs as they are on a laptop.",
+   "a laptop is on top of a small cat"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000374860.jpg"
+ },
+ {
+  "id": "coco_192824",
+  "file": "data/coco_photos/coco_192824.jpg",
+  "captions": [
+   "a person laying in a bed with a cat ",
+   "a cat is being fed by it's owner in a bed.",
+   "The person is taking a break from reading to pet their cat",
+   "A woman is petting a black and white cat in bed.",
+   "A man laying in bed with a book and a cat."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000192824.jpg"
+ },
+ {
+  "id": "coco_488206",
+  "file": "data/coco_photos/coco_488206.jpg",
+  "captions": [
+   "A cat sits on a bench next to another bench.",
+   "A black cat and a man sitting on some benches.",
+   "A cat sitting on a park bench with a man sitting on a bench in the background",
+   "A black cat sitting on top of a wooden bench.",
+   "A man sitting on a wooden bench with cat in the foreground."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000488206.jpg"
+ },
+ {
+  "id": "coco_474667",
+  "file": "data/coco_photos/coco_474667.jpg",
+  "captions": [
+   "A person holding a black cat next to their face.",
+   "A teenager with acne, holding up a black cat.",
+   "A person looks at the camera while holding a black cat.",
+   "a person is holding up a black cat",
+   "A man with a black kitten is staring at the viewer."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000474667.jpg"
+ },
+ {
+  "id": "coco_437556",
+  "file": "data/coco_photos/coco_437556.jpg",
+  "captions": [
+   "A kitten eating food out of a dish on the kitchen floor.",
+   "A kitten is eating cat food from its dish.",
+   "A cat that is eating some food on the ground.",
+   "Black and white cat eating from a bowl. ",
+   "a cat eats out of their food bowl dramaticly"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000437556.jpg"
+ },
+ {
+  "id": "coco_382056",
+  "file": "data/coco_photos/coco_382056.jpg",
+  "captions": [
+   "a black and white cat playing in the toilet",
+   "A black and white cat is looking into a toilet.",
+   "A white and black cat peeping on a toilet basin ",
+   "A cat standing on the side of a toilet seat.",
+   "A black and white cat looking into a toilet bowl."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000382056.jpg"
+ },
+ {
+  "id": "coco_302666",
+  "file": "data/coco_photos/coco_302666.jpg",
+  "captions": [
+   "A cat sitting on the toilet seat drinking from the bowl",
+   "A cat drinking water out of a toilet. ",
+   "a grey cat looking at the waters in the toilet pit",
+   "A cat is fascinated by the toilet bowl.",
+   "There is a cat balancing on the edge of a toilet trying to get a drink."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000302666.jpg"
+ },
+ {
+  "id": "coco_235842",
+  "file": "data/coco_photos/coco_235842.jpg",
+  "captions": [
+   "A cat that is laying down on a bowl.",
+   "A black and white cat sleep in a bowl on a counter.",
+   "A cat sleeps curled up in a bowl.",
+   "A black cat laying down in a bowl.",
+   "A cat laying in a bowl sitting on a shelf."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000235842.jpg"
+ },
+ {
+  "id": "coco_275831",
+  "file": "data/coco_photos/coco_275831.jpg",
+  "captions": [
+   "A bathroom with an animal drinking out of the toilet.",
+   "A white cat drinking out of the toilet bowl.",
+   "a white dog with its head in the toilet",
+   "White dog sticking its face inside a white toilet bowl. ",
+   "a ca dipping its head into a toilet bowl"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000275831.jpg"
+ },
+ {
+  "id": "coco_533826",
+  "file": "data/coco_photos/coco_533826.jpg",
+  "captions": [
+   "A very cute cat laying in a bowl.",
+   "A car curled up sleeping in a red bowl.",
+   "A cat curled up sleeping in a red bowl.",
+   "A fluffy cat is sleeping in a small bowl.",
+   "a white and brown cat that is laying down in a red bowl"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000533826.jpg"
+ },
+ {
+  "id": "coco_580002",
+  "file": "data/coco_photos/coco_580002.jpg",
+  "captions": [
+   "A man feeding many cats on a boardwalk with a fence covered with pink flowers.",
+   "A group of cats gather as a man places something onto a white plate.",
+   "this is cats eating on a wood patio",
+   "a couple of cats are around a person",
+   "A person crouching and feeding a bunch of cats."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000580002.jpg"
+ },
+ {
+  "id": "coco_483447",
+  "file": "data/coco_photos/coco_483447.jpg",
+  "captions": [
+   "A can laying in a sink drinking water from the tap.",
+   "A house cat drinking water from a sink spigot.",
+   "A cat is licking a faucet on a sink.",
+   "A cat drinking out of a sink faucet.",
+   "A cat is bent under a bathroom sink drinking from the faucet."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000483447.jpg"
+ },
+ {
+  "id": "coco_407782",
+  "file": "data/coco_photos/coco_407782.jpg",
+  "captions": [
+   "A cat eating a bird in the yard",
+   "A cat hunter with its prey in tow.",
+   "A black cat hunches on the ground, holding a bird.",
+   "A cat with a bird in his hands laying outside. ",
+   "A dark colored striped cat outdoors with a bird in between it's paws."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000407782.jpg"
+ },
+ {
+  "id": "coco_492816",
+  "file": "data/coco_photos/coco_492816.jpg",
+  "captions": [
+   "A cat is sitting on top of a gray plate.",
+   "A white cat is laying on a pan and posing for a picture. ",
+   "A white cat sitting on a plate on a table.",
+   "A white cat laying in a bowl on top of a table.",
+   "THERE IS A WHITE CAT THAT IS SITTING IN THE PLAT EON THE TBLE "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000492816.jpg"
+ },
+ {
+  "id": "coco_315517",
+  "file": "data/coco_photos/coco_315517.jpg",
+  "captions": [
+   "A cat sitting on top of a television.",
+   "a cat is laying on top of a television",
+   "A cat is standing on top of TV near a huge bookcase. ",
+   "A cat is sitting on top of a tube television in a living room.",
+   "A cat sits on top of a television set."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000315517.jpg"
+ },
+ {
+  "id": "coco_197568",
+  "file": "data/coco_photos/coco_197568.jpg",
+  "captions": [
+   "A cat sitting on the floor in a living room watching television.",
+   "A cat sitting in front of a television.",
+   "The orange cat is enjoying watching the tv.",
+   "A cat sitting in front of a TV in a living room.",
+   "A very large cat sitting in front of a television set."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000197568.jpg"
+ },
+ {
+  "id": "coco_19987",
+  "file": "data/coco_photos/coco_19987.jpg",
+  "captions": [
+   "A cat stares away as a movie plays on a large screen TV.",
+   "A cat looking at the camera with a funny expression.",
+   "This is a picture of a cat looking forward.",
+   "A cat starring at you, and a HD TV in the background.",
+   "A concerned cat sits in front of a television displaying a blurry image."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000019987.jpg"
+ },
+ {
+  "id": "coco_349888",
+  "file": "data/coco_photos/coco_349888.jpg",
+  "captions": [
+   "A yellow cat is watching a television from a desk.",
+   "A cat laying on a couch watching a cat on T.V.",
+   "A cat on a table watches a show on tv",
+   "A large white cat sitting on a table in front of a TV.",
+   "A cat looking at a television where another cat is pictured"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000349888.jpg"
+ },
+ {
+  "id": "coco_563869",
+  "file": "data/coco_photos/coco_563869.jpg",
+  "captions": [
+   "a cat lying on top of a tv and looking at the camera ",
+   "A cat laying on the top of a television.",
+   "An unamused cat rests upon a flat screen TV",
+   "A large cat is sitting on top of a flat screen television.",
+   "Cat laying on top of slim TV with window and wall"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000563869.jpg"
+ },
+ {
+  "id": "coco_494328",
+  "file": "data/coco_photos/coco_494328.jpg",
+  "captions": [
+   "A black cat sits in front of a TV screen.",
+   "A cat sits in front of a TV picture of a man and a baby.",
+   "A BLACK CAT IS SITTING IN FRONT OF THE TV",
+   "The cat sits in front of the TV making it hard for others to see.",
+   "A cat sitting in front of a television screen."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000494328.jpg"
+ },
+ {
+  "id": "coco_321736",
+  "file": "data/coco_photos/coco_321736.jpg",
+  "captions": [
+   "A cat sitting in front of a TV showing fish.",
+   "A cat is laying down watching a children's TV show.",
+   "A cat rests in the light cast by a television screen. ",
+   "a black and white cat is watching a big screen television screen",
+   "A cat laying down watching a television program "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000321736.jpg"
+ },
+ {
+  "id": "coco_470099",
+  "file": "data/coco_photos/coco_470099.jpg",
+  "captions": [
+   "A cat is sitting on the floor while watching television.",
+   "there is a television on a stand and a cat is watching it",
+   "A cat seems to be staring at the blank TV. ",
+   "A cat that is sitting down watching a television.",
+   "A cat sitting in front of a TV in a living room."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000470099.jpg"
+ },
+ {
+  "id": "coco_215471",
+  "file": "data/coco_photos/coco_215471.jpg",
+  "captions": [
+   "A shelf filled with lots of different pairs of shoes .",
+   "Shoes messily stored on metal rack in closet.",
+   "A bunch of different types of shoes on a rack.",
+   "This collection of shoes comes with a yellow tabby cat.",
+   "a bunch of pairs of shoes on some racks"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000215471.jpg"
+ },
+ {
+  "id": "coco_385753",
+  "file": "data/coco_photos/coco_385753.jpg",
+  "captions": [
+   "a girl is holding a cat and talking on a cellphone",
+   "The woman is holding a cat and a phone.",
+   "A woman stands talking on the phone and holding her cat.",
+   "A girl holds a cat while talking on a cell phone.",
+   "Woman on the phone holding a cat and wearing boots."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000385753.jpg"
+ },
+ {
+  "id": "coco_317173",
+  "file": "data/coco_photos/coco_317173.jpg",
+  "captions": [
+   "A cat is sitting on the ground beside a wheel of a bicycle.",
+   "A cat laying on a floor with it's arms wrapped around a shoe.",
+   "A cat sitting cautiously over a pair of shoes on the floor.",
+   "A cat is holding a shoe between his paws.",
+   "A cat that is laying on the floor."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000317173.jpg"
+ },
+ {
+  "id": "coco_188459",
+  "file": "data/coco_photos/coco_188459.jpg",
+  "captions": [
+   "a big fat cat laying next to a pair of tennis shoes",
+   "Furry pet cat lying lazily on rug using shoes as a head pillow.",
+   "a fat cat is laying down next to shoes",
+   "A fluffy cat lying against a pair of shoes on a rug.",
+   "a cat lays on a blue surface leaning against a shoe."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000188459.jpg"
+ },
+ {
+  "id": "coco_579170",
+  "file": "data/coco_photos/coco_579170.jpg",
+  "captions": [
+   "A cat is playing with a toy underneath a stool.",
+   "A cat sitting underneath a wooden stool next to shoes.",
+   "A cat pawing at a long feathery toy on the floor.",
+   "a cat sitting under a stool playing with a toy ",
+   "Two shoes and a cat are next to a brown ladder."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000579170.jpg"
+ },
+ {
+  "id": "coco_372759",
+  "file": "data/coco_photos/coco_372759.jpg",
+  "captions": [
+   "a black cat is hiding in a box with shoes",
+   "A cat and some shoes side by side.",
+   "There is a cat sitting next to a pair of boots.",
+   "A cat sits among a pile of shoes in a confined space.",
+   "A black cat peers at a bunch of black shoes."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000372759.jpg"
+ },
+ {
+  "id": "coco_273075",
+  "file": "data/coco_photos/coco_273075.jpg",
+  "captions": [
+   "A CAT IS SNIFFING A PAIR OF SNEAKERS ON THE FLOOR",
+   "A cat is nibbling at a shoelace on a sneaker. ",
+   "A cat sniffing at a black Nike shoe.",
+   "An orange cat is sniffing a pair of shoes",
+   "A cat stares at a pair of shoes."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000273075.jpg"
+ },
+ {
+  "id": "coco_100008",
+  "file": "data/coco_photos/coco_100008.jpg",
+  "captions": [
+   "A cat laying on top of shoes on a floor.",
+   "a brown and white cat is laying on a pile of shoes",
+   "a cat laying on top of some shoes",
+   "A cat resting on the ground on top of various shoes.",
+   "A cat resting on the ground on a pile of shoes.",
+   "a grey and white cat is sitting on some shoes"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000100008.jpg"
+ },
+ {
+  "id": "coco_190580",
+  "file": "data/coco_photos/coco_190580.jpg",
+  "captions": [
+   "a black cat is laying next to his colorful toy ",
+   "A black cat is on a couch with a toy.",
+   "A cat laying down on couch with a toy",
+   "A black cat laying on a couch with a colorful toy.",
+   "A cat is staring in the distance with a cat toy in its paws."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000190580.jpg"
+ },
+ {
+  "id": "coco_56158",
+  "file": "data/coco_photos/coco_56158.jpg",
+  "captions": [
+   "A gray cat is laying on a pink duster.",
+   "Gray cat with green eyes looking at camera while lying on a pink toy.",
+   "a close up of a cat laying on a floor",
+   "A cat lounging on the floor with a tiny rug",
+   "Gray cat lying on pink dust mop on carpeting."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000056158.jpg"
+ },
+ {
+  "id": "coco_349291",
+  "file": "data/coco_photos/coco_349291.jpg",
+  "captions": [
+   "A dog laying on top of a bend next to an open book.",
+   "A cat lying on a bed with a person reading a book.",
+   "A cat cleans itself on top of a person reading a book.",
+   "a cat playing on a bed next to a person",
+   "A cat that is laying down on a bed."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000349291.jpg"
+ },
+ {
+  "id": "coco_523174",
+  "file": "data/coco_photos/coco_523174.jpg",
+  "captions": [
+   "A cat looking at an elephant on a table",
+   "A cat looks at a toy elephant on a table.",
+   "A cat casts a suspicious eye on a toy rubber elephant.",
+   "a grey cat looking at a toy elephant on the table ",
+   "A cat with a blue collar looking at a toy elephant."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000523174.jpg"
+ },
+ {
+  "id": "coco_572388",
+  "file": "data/coco_photos/coco_572388.jpg",
+  "captions": [
+   "A toy smiley face in the middle of a doughnut. ",
+   "The face of a black cat, a yellow smiley doll and doughnut holes",
+   "A cat licks at doughnut holes next to a plastic doll.  ",
+   "A black cat licks a doughnut in front of a yellow toy.",
+   "A black cat licks some sugared doughnut holes."
+  ],
+  "coco_url": "http://images.cocodataset.org/val2017/000000572388.jpg"
+ },
+ {
+  "id": "coco_129445",
+  "file": "data/coco_photos/coco_129445.jpg",
+  "captions": [
+   "A yellow cat wearing a Chinese hat on its head",
+   "An adorable yellow cat wearing a chinese style hat.",
+   "An orange house cat wearing a hat. ",
+   "A cat dressed in a bamboo hat looks just beyond camera.",
+   "A cat has a small, toy sized bamboo hat on its head. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000129445.jpg"
+ },
+ {
+  "id": "coco_157469",
+  "file": "data/coco_photos/coco_157469.jpg",
+  "captions": [
+   "A man playing with an interactive video game, with a cat next to him.",
+   "a man that is standing up with a wii remote",
+   "A man plays a video game on the wii while other individuals relax in the background.",
+   "Some guys are playing with a video game.",
+   "A man in a red hat and shorts pointing something in a room with a group of people."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000157469.jpg"
+ },
+ {
+  "id": "coco_45240",
+  "file": "data/coco_photos/coco_45240.jpg",
+  "captions": [
+   "Black and white cat playing with video game controller.",
+   "A cat laying on the floor with a video game remote. ",
+   "A black cat is laying with a game controller",
+   "A black laying on a floor with a Wii remote around its paw.",
+   "a close up of a cat on the ground near a nintendo remote"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000045240.jpg"
+ },
+ {
+  "id": "coco_178319",
+  "file": "data/coco_photos/coco_178319.jpg",
+  "captions": [
+   "A black and white photo of a cat sleeping on a car. ",
+   "A car is parked outside a house next to a clothesline.",
+   "A car is sleeping on the hood of a small car.",
+   "A cat curled up sleeping on a sportscar.  ",
+   "A cat sleeping on top of a car parked near a bunch of bushes."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000178319.jpg"
+ },
+ {
+  "id": "coco_179034",
+  "file": "data/coco_photos/coco_179034.jpg",
+  "captions": [
+   "A woman sitting on a bed next to a group of cats.",
+   "a person sitting on a bench with cats near by",
+   "A woman on a stone bench with some cats.",
+   "A woman sitting in a lush park surrounded by cats",
+   "Women sitting outdoors on bench with two cats nearby."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000179034.jpg"
+ },
+ {
+  "id": "coco_148634",
+  "file": "data/coco_photos/coco_148634.jpg",
+  "captions": [
+   "A cat sleeping on top of the hood of a car. ",
+   "A cat that is laying down on top of a car.",
+   "A cat is napping on top of a car.",
+   "A small cat laying on a car on the street.",
+   "A cat resting on top of red card."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000148634.jpg"
+ },
+ {
+  "id": "coco_196371",
+  "file": "data/coco_photos/coco_196371.jpg",
+  "captions": [
+   "A cat sitting on top of an old abandoned car. ",
+   "A cat is sitting on the roof of a vehicle with scrap metal in the background.",
+   "a cat sits on top of a old dirty truck",
+   "a cat on top of a car with junk in the background",
+   "A black and white cat sitting on top of the roof of a car."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000196371.jpg"
+ },
+ {
+  "id": "coco_110090",
+  "file": "data/coco_photos/coco_110090.jpg",
+  "captions": [
+   "A cat climbing up the side of an open window.",
+   "The cat tries to climb up into a window.",
+   "A cat clings on the outside of an open window with various items on the inside ledge.",
+   "A very cute cat climbing up on a window.",
+   "a cat that is hanging on some kind of window frame"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000110090.jpg"
+ },
+ {
+  "id": "coco_107188",
+  "file": "data/coco_photos/coco_107188.jpg",
+  "captions": [
+   "A cat is sleeping on an outdoor bench.",
+   "Orange tabby cat sleeping in the sun on a wood bench.",
+   "a cat sleeps on a bus bench out side ",
+   "An orange cat laying on top of a wooden bench.",
+   "Orange tabby cat sleeping on a wooden outdoor bench."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000107188.jpg"
+ },
+ {
+  "id": "coco_293435",
+  "file": "data/coco_photos/coco_293435.jpg",
+  "captions": [
+   "A white and black animal lays on a bench that is on grass outdoors.",
+   "A cat laying on a park bench in the shade.",
+   "A cat sleeping on top of a wooden park bench.",
+   "A couple of cats sit on an outdoor bench.",
+   "The cat is resting on the wooden bench in the yard. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000293435.jpg"
+ },
+ {
+  "id": "coco_96983",
+  "file": "data/coco_photos/coco_96983.jpg",
+  "captions": [
+   "A cat sitting on a wooden bench outside.",
+   "A cat is sitting on a bench outside.",
+   "A cat with a concerned look sitting on a bench.",
+   "A cat sitting on a wood bench near leaves. ",
+   "A large orange and white cat sitting on top of a wooden bench."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000096983.jpg"
+ },
+ {
+  "id": "coco_216665",
+  "file": "data/coco_photos/coco_216665.jpg",
+  "captions": [
+   "A little orange kitten looks out from behind the tire of a car that is parked on a city street. ",
+   "A small cat is hiding behind a car tire.",
+   "An orange tabby cat peaking out from behind a tire.",
+   "A yellow cat hiding underneath a car on the street.",
+   "Ginger cat peeking out from behind the wheel of a parked car"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000216665.jpg"
+ },
+ {
+  "id": "coco_496657",
+  "file": "data/coco_photos/coco_496657.jpg",
+  "captions": [
+   "Two little kids teasing a cat sitting in front of a doorway.",
+   "A child playing outside with a cat in front of a house.",
+   "Two small children watch a cat that looks toward them.",
+   "A girl going up to a small cat by yellow doors",
+   "Children try to coax a cat off a doorstep of a stone building."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000496657.jpg"
+ },
+ {
+  "id": "coco_182402",
+  "file": "data/coco_photos/coco_182402.jpg",
+  "captions": [
+   "A car sits in a chair on a balcony. ",
+   "cat lounges on a comfy chair outside on deck",
+   "THERE IS A CAT THAT IS SITTING IN A CHAIR ",
+   "Cat occupying a chair on an outdoor balcony.",
+   "a cat that is sitting in a seat by a rail"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000182402.jpg"
+ },
+ {
+  "id": "coco_184937",
+  "file": "data/coco_photos/coco_184937.jpg",
+  "captions": [
+   "A woman is petting a cat and drinking coffee",
+   "A woman sitting on steps petting a cat.",
+   "A woman sitting and holding a cup while petting a cat.",
+   "A woman holding a beverage, petting a cat.",
+   "A woman sitting on steps outside is petting a cat."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000184937.jpg"
+ },
+ {
+  "id": "coco_178193",
+  "file": "data/coco_photos/coco_178193.jpg",
+  "captions": [
+   "a close up of a cat on a wooden bench",
+   "A striped cat is laying down on a bench.",
+   "The cat is laying down on the wooden bench in the sun. ",
+   "A gray and white kitty cat outside laying on a wooden structure.",
+   "A grey and white cat sleeping on a wooden park bench."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000178193.jpg"
+ },
+ {
+  "id": "coco_141800",
+  "file": "data/coco_photos/coco_141800.jpg",
+  "captions": [
+   "a young female wearing a white dress watching kittens drink milk",
+   "A little girl sitting on a bench next to kittens eating out of a plate. ",
+   "Young girls sits on wooden bench with kittens.",
+   "The small girl in a dress sits next to a couple of eating kittens.",
+   "Girl in dress sitting on bench with kittens"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000141800.jpg"
+ },
+ {
+  "id": "coco_329319",
+  "file": "data/coco_photos/coco_329319.jpg",
+  "captions": [
+   "A black and white cat sitting on top of a wooden chair.",
+   "A white and gray cat sitting on a wooden bench",
+   "a cat sitting on a chair looking at the ground ",
+   "A small cat sits on a wooden bench watching the ground.",
+   "A cat sitting on a chair looking down."
+  ],
+  "coco_url": "http://images.cocodataset.org/val2017/000000329319.jpg"
+ },
+ {
+  "id": "coco_184190",
+  "file": "data/coco_photos/coco_184190.jpg",
+  "captions": [
+   "a black cat sitting on top of a green park bench.",
+   "an image of a black cat sitting on a green bench",
+   "A black cat sitting on a bench in the park",
+   "A black kitten sitting on the edge of a green bench.",
+   "A profile side view of a cat staring while sitting on a green bench."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000184190.jpg"
+ },
+ {
+  "id": "coco_75586",
+  "file": "data/coco_photos/coco_75586.jpg",
+  "captions": [
+   "A cat is siting and staring ahead on a small bench.",
+   "a cat siting on a blue bench in front of some trees",
+   "A cat is in a lush setting sitting on a bench.",
+   "A car sitting on a blue bench by some bushes.",
+   "A cat sitting on a blue bench beneath the trees."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000075586.jpg"
+ },
+ {
+  "id": "coco_411668",
+  "file": "data/coco_photos/coco_411668.jpg",
+  "captions": [
+   "A cat lays on a bench, cleaning itself",
+   "Orange cat bathing itself on a wooden bench",
+   "A yellow cat is sitting on a park bench.",
+   "A small cat grooming itself on a bench",
+   "A tabby cat grooms himself on a wooden bench."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000411668.jpg"
+ },
+ {
+  "id": "coco_369208",
+  "file": "data/coco_photos/coco_369208.jpg",
+  "captions": [
+   "A cat on a pet bed looking at a laptop.",
+   "This is a picture of a cat laying near a laptop computer",
+   "tree is a cat sleeping between someones legs",
+   "A person holds a computer on their legs, and a cat between their legs.",
+   "It looks like the cat is using the laptop."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000369208.jpg"
+ },
+ {
+  "id": "coco_271829",
+  "file": "data/coco_photos/coco_271829.jpg",
+  "captions": [
+   "A man sleeping in a bed with a cat next to him.",
+   "A man lays in bed with one hand in his pocket and another on his cat",
+   "A man and a cat are sleeping on a bed together.",
+   "A cat and a man are lying on the bed together.",
+   "A man laying in bed next to his pet cat."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000271829.jpg"
+ },
+ {
+  "id": "coco_205460",
+  "file": "data/coco_photos/coco_205460.jpg",
+  "captions": [
+   "A pair of computer monitors with a cat sleeping below them.",
+   "A couple of computer screens on a desk.",
+   "A cat sleeping amongst some computers at a work station.",
+   "Two computers turned on, on top of a desk",
+   "Two computer monitors next to each other in an office."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000205460.jpg"
+ },
+ {
+  "id": "coco_231374",
+  "file": "data/coco_photos/coco_231374.jpg",
+  "captions": [
+   "A black-and-white cat sleeps on the ground next to a chair.",
+   "a black and white kitty laying next to a chair leg",
+   "A cat sitting rolled up by a chair",
+   "A black and white cat sitting on the floor next to a  wooden chair.",
+   "A cat is sitting outside next to a chair."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000231374.jpg"
+ },
+ {
+  "id": "coco_432673",
+  "file": "data/coco_photos/coco_432673.jpg",
+  "captions": [
+   "A tiger cat sleeping on top of a wooden table.",
+   "A pair of cats lounging on a dining room table.",
+   "Two tabby cats, one in a basket and the other with head on a blanket.",
+   "A cat lays on the table next to a cat in a bowl. ",
+   "A cat in a bowl snoozes while another lays on a pillow."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000432673.jpg"
+ },
+ {
+  "id": "coco_141441",
+  "file": "data/coco_photos/coco_141441.jpg",
+  "captions": [
+   "A cat sleeping in a chest on it's stomach.",
+   "Black cat with white paws lying in an open suitcase.",
+   "Black/grayish cat lays down inside opened red suitcase",
+   "The black cat is laying in the open suitcase of her owner.",
+   "a black cat hiding in an open suitcase"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000141441.jpg"
+ },
+ {
+  "id": "coco_210956",
+  "file": "data/coco_photos/coco_210956.jpg",
+  "captions": [
+   "a cat laying on a desk next to a laptop",
+   "A large cat sits on the edge of a table.",
+   "A cat laying on a table next to a laptop",
+   "Ginger cat asleep on a table next to a laptop computer",
+   "a cat is sleeping next to a laptop"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000210956.jpg"
+ },
+ {
+  "id": "coco_326313",
+  "file": "data/coco_photos/coco_326313.jpg",
+  "captions": [
+   "A black cat lying down on a laptop.",
+   "A black cat is pictured curled up on a laptop.",
+   "a black cat sleeping on a laptop by a window",
+   "A black cat sleeping on a laptop on a table.",
+   "A cat laying on top of a laptop computer."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000326313.jpg"
+ },
+ {
+  "id": "coco_37707",
+  "file": "data/coco_photos/coco_37707.jpg",
+  "captions": [
+   "A cat sitting on a laptop computer with it's mouse reaching for the mouse pad.",
+   "A cat stretches it's paw out across a laptop keyboard",
+   "A black and white cat partially sitting on a laptop sleeping.",
+   "A cat with its paws on a laptop keyboard.",
+   "A cat rests its paw near the trackpad of a laptop. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000037707.jpg"
+ },
+ {
+  "id": "coco_312388",
+  "file": "data/coco_photos/coco_312388.jpg",
+  "captions": [
+   "An orange cat sleeping inside of a piece of luggage.",
+   "An orange cat laying on its' side. ",
+   "An orange cat lies curled up on some fabric.",
+   "an image of a cat lying in a bag",
+   "An orange cat sitting inside a zippered bag."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000312388.jpg"
+ },
+ {
+  "id": "coco_308739",
+  "file": "data/coco_photos/coco_308739.jpg",
+  "captions": [
+   "Two cats sleeping on a blanket on a bench",
+   "Two cats laying on a blanket on a blue bench.",
+   "Small grey cat and white and orange cat sitting on a blanket on a bench. ",
+   "A gray cat sitting on a blanket next to an orange and white cat.",
+   "Two cats laying on a blanket on a wooden bench."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000308739.jpg"
+ },
+ {
+  "id": "coco_222741",
+  "file": "data/coco_photos/coco_222741.jpg",
+  "captions": [
+   "A cat stares at the rug it is perched upon.",
+   "Cat sitting on a rug staring a something on the floor.",
+   "A cat sleeping on a throw rug under a table.",
+   "A cat is looking at a paper while lying on the rug.",
+   "A cat lying on a carpet with a newspaper next to it"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000222741.jpg"
+ },
+ {
+  "id": "coco_565391",
+  "file": "data/coco_photos/coco_565391.jpg",
+  "captions": [
+   "A jeep with a dead bird on the windshield.",
+   "A cat sleeps on top of a parked jeep.",
+   "A parked jeep with a cat laying on it's hood.",
+   "A black and white cat laying on top of a jeep. ",
+   "Cat sleeping on the hood of a convertible jeep"
+  ],
+  "coco_url": "http://images.cocodataset.org/val2017/000000565391.jpg"
+ },
+ {
+  "id": "coco_219578",
+  "file": "data/coco_photos/coco_219578.jpg",
+  "captions": [
+   "A dog and cat lying  together on an orange couch. ",
+   "A dog and a cat curled up together on a couch.",
+   "A cat and dog napping together on the couch.",
+   "A dog and cat are sleeping together on an orange couch.",
+   "A cat and a dog rest together on a hideous orange couch."
+  ],
+  "coco_url": "http://images.cocodataset.org/val2017/000000219578.jpg"
+ },
+ {
+  "id": "coco_188648",
+  "file": "data/coco_photos/coco_188648.jpg",
+  "captions": [
+   "Kitten staring at a laptop screen as its paws are on the keyboard.",
+   "A cat is looking at a monitor on a laptop.",
+   "The cat is sitting on the computer keyboard.",
+   "A cat sitting on top of an open laptop computer.",
+   "A small cat on top of a laptop."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000188648.jpg"
+ },
+ {
+  "id": "coco_397358",
+  "file": "data/coco_photos/coco_397358.jpg",
+  "captions": [
+   "Two cats laying next to a window sleeping.",
+   "Two cats sleeping on their beds beside a window.",
+   "Two cats near a window sleeping in the sun.",
+   "Two cats sitting in their beds beside a window",
+   "A couple of cats laying on top of a bed."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000397358.jpg"
+ },
+ {
+  "id": "coco_357881",
+  "file": "data/coco_photos/coco_357881.jpg",
+  "captions": [
+   "A cat sitting on top of a wooden table.",
+   "A cat sitting on a wooden dining table that has been set with plates and silverware.",
+   "A cat sitting on the dining table that is set for four",
+   "A cat standing on a end table near a bowl of food .",
+   "A cat sits on a table in a living room."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000357881.jpg"
+ },
+ {
+  "id": "coco_343552",
+  "file": "data/coco_photos/coco_343552.jpg",
+  "captions": [
+   "A cat on a table with a computer mouse.",
+   "A orange and white cat laying on a computer mouse.",
+   "A buff and white cat on a desk curls up with a computer mouse.",
+   "A CAT WITH LYING BEHIND THE MOUSE ON A TABLE.",
+   "A white cat lays with his head next to a mouse."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000343552.jpg"
+ },
+ {
+  "id": "coco_367401",
+  "file": "data/coco_photos/coco_367401.jpg",
+  "captions": [
+   "A small black kitten scratching at a shoe.",
+   "A dark cat with its paw on a sneaker.",
+   "Black kitten on a wood floor next to a sneaker and a plastic bag.",
+   "A kitten playing with a tennis shoe near a sheet of plastic.",
+   "A cat curiously paws at a pair of sneakers."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000367401.jpg"
+ },
+ {
+  "id": "coco_9830",
+  "file": "data/coco_photos/coco_9830.jpg",
+  "captions": [
+   "a cat sitting on a floor in front of a laptop",
+   "An orange and black cat sitting on top of a laptop computer.",
+   "Cat laying  on a desk and watching a computer screen.",
+   "A cat laying on a laptop looking as if it;s reading the screen.",
+   "The cat is laying on top of the laptop. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000009830.jpg"
+ },
+ {
+  "id": "coco_28698",
+  "file": "data/coco_photos/coco_28698.jpg",
+  "captions": [
+   "A stuffed back cat in front of other stuffed animals in a display.",
+   "A cat stuffed animal hanging from a rack",
+   "A black stuffed animal with big eyes and fangs",
+   "A black stuffed cat with fangs is hanging on a rack with others.",
+   "A balloon in the shape of a black cat with big eyes and sharp teeth."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000028698.jpg"
+ },
+ {
+  "id": "coco_297108",
+  "file": "data/coco_photos/coco_297108.jpg",
+  "captions": [
+   "A cat in a birthday hat is lying on a couch.",
+   "A cat is sitting on a couch and wearing a party hat. ",
+   "A black and white cat laying on a red couch.",
+   "A large black cat with a party hat on is looking at the camera",
+   "Black cat lying on furniture, being annoyed by photographer."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000297108.jpg"
+ },
+ {
+  "id": "coco_318328",
+  "file": "data/coco_photos/coco_318328.jpg",
+  "captions": [
+   "A black cat sitting on the back of a gray chair.",
+   "a cat that is standing on a big chair",
+   "A black cat on a chair in front of a counter. ",
+   "A black cat sitting up on the back of a chair.",
+   "A cat is sitting with his paws perched over a chair and is looking at the camera. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000318328.jpg"
+ },
+ {
+  "id": "coco_546742",
+  "file": "data/coco_photos/coco_546742.jpg",
+  "captions": [
+   "A cat sitting underneath a bed on the floor.",
+   "a tiger striped cat hiding under a bed ",
+   "A cat sitting underneath a bed in a room.",
+   "A cat is hiding under a bed beside a throw rug.",
+   "Striped cat sitting under the bed looking at the camera"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000546742.jpg"
+ },
+ {
+  "id": "coco_313812",
+  "file": "data/coco_photos/coco_313812.jpg",
+  "captions": [
+   "A catting sitting on top of a laptop computer.",
+   "A grey cat sits on a laptop keyboard.",
+   "A cat is sitting on a laptop's keyboard",
+   "A Calico cat sitting on a laptop computer.",
+   "A calico cat sits directly on the keyboard of an open laptop."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000313812.jpg"
+ },
+ {
+  "id": "coco_359283",
+  "file": "data/coco_photos/coco_359283.jpg",
+  "captions": [
+   "Full grown cat lays down on top of a suitcase. ",
+   "A tabby cat rests on a suitcase set on the floor in a room.",
+   "A brown cat is sitting on a black suitcase.",
+   "A grey cat sits on an empty suitcase.",
+   "A grey cat laying on top of a black suitcase."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000359283.jpg"
+ },
+ {
+  "id": "coco_44719",
+  "file": "data/coco_photos/coco_44719.jpg",
+  "captions": [
+   "A woman lying on the ground next to a cat, smiling. ",
+   "A smiling woman lies on the floor next to a cat. ",
+   "A person lies on a rug next to a striped cat.",
+   "a person laying in the floor with a black and gray cat",
+   "A lady lying on the floor with a tabby cat."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000044719.jpg"
+ },
+ {
+  "id": "coco_477862",
+  "file": "data/coco_photos/coco_477862.jpg",
+  "captions": [
+   "A cat sitting on top of a suitcase.",
+   "The cat is sitting on top of the black suitcase.",
+   "A fat kitty sitting in a black suit case",
+   "a cat laying on top of a black piece of luggage.",
+   "A cat is resting on top of a black suitcase."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000477862.jpg"
+ },
+ {
+  "id": "coco_318571",
+  "file": "data/coco_photos/coco_318571.jpg",
+  "captions": [
+   "A black cat sitting in front of a mirror next to a picture frame.",
+   "A black cat looking at its picture in a frame",
+   "A black cat is sitting near a mirror and a picture.",
+   "A black cat next to a photograph of a cat.",
+   "A black cat is looking away from a picture."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000318571.jpg"
+ },
+ {
+  "id": "coco_546210",
+  "file": "data/coco_photos/coco_546210.jpg",
+  "captions": [
+   "A man lying down on a couch with a cat on top of him",
+   "A white and black cat laying on blanket on top of man.",
+   "A man laying asleep on a couch with a kitty cat.",
+   "a person laying on a couch with a laying on him",
+   "a man sleeping on couch with a blanket with a cat sleeping on top of him"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000546210.jpg"
+ },
+ {
+  "id": "coco_201039",
+  "file": "data/coco_photos/coco_201039.jpg",
+  "captions": [
+   "A cat is distracted by something while standing on a bed.",
+   "A BLACK AND WHITE CAT STANDING ON THE TOP OF A BED ",
+   "A cat is in a dimly lit room on a bed.",
+   "Cat jumping off rumpled bed in room with computer table and TV.",
+   "A black cat stands on the edge of a bed, in a room with the TV on"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000201039.jpg"
+ },
+ {
+  "id": "coco_549534",
+  "file": "data/coco_photos/coco_549534.jpg",
+  "captions": [
+   "A bathroom area with a toilet, black cat and a television.",
+   "Part of a bathroom is shown, with a toilet and a television over it and a cat standing on the ledge.",
+   "This is a picture of a cat standing near a toilet.",
+   "A bathroom scene with a cat and a television above the toilet.",
+   "A cat sitting on a wall next to a  toilet under a TV."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000549534.jpg"
+ },
+ {
+  "id": "coco_328957",
+  "file": "data/coco_photos/coco_328957.jpg",
+  "captions": [
+   "A cat sitting on top of a cat post in a living room.",
+   "A cat sitting on top of a pole",
+   "A cat sits at the very top of a scratching pole",
+   "The cat sits on the highest post of the scratching structure.",
+   "A cat sits atop a scratching tree, watching intently. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000328957.jpg"
+ },
+ {
+  "id": "coco_360805",
+  "file": "data/coco_photos/coco_360805.jpg",
+  "captions": [
+   "A cat is sleeping at a computer desk on a keyboard.",
+   "A picture of a black and white cat laying on top of laptop keyboard.",
+   "A black and white cat sleeps on a laptop.",
+   "The fat cat is laying down on the desk and the laptop keyboard. ",
+   "A black cat laying on a laptop keyboard."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000360805.jpg"
+ },
+ {
+  "id": "coco_470521",
+  "file": "data/coco_photos/coco_470521.jpg",
+  "captions": [
+   "A fuzzy cat is sitting in a black purse.",
+   "A cat sitting up against a black bag.",
+   "A gray cat on top of a black purse.",
+   "A close up of a gray cat sitting on a black purse.",
+   "A grey striped cat sitting on top of a black purse."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000470521.jpg"
+ },
+ {
+  "id": "coco_249644",
+  "file": "data/coco_photos/coco_249644.jpg",
+  "captions": [
+   "A cat laying in front of a pile of food.",
+   "a white and gray cat and some carrots",
+   "A cat stinking its tongue out beside food. ",
+   "A gray and white cat sitting in front of a pile of carrot slices.",
+   "Grey and white cat licking its nose in front of food. "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000249644.jpg"
+ },
+ {
+  "id": "coco_86136",
+  "file": "data/coco_photos/coco_86136.jpg",
+  "captions": [
+   "A cat standing over a blue plate with food on top of it.",
+   "A cat is eating food from a blue plate.",
+   "A cat eating his food from a bowl",
+   "A cat is licking up food from a blue plate.",
+   "A cat eating food of a blue plate."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000086136.jpg"
+ },
+ {
+  "id": "coco_228318",
+  "file": "data/coco_photos/coco_228318.jpg",
+  "captions": [
+   "an orange cat tail wraps around the screen of a laptop",
+   "a cat sitting on a desk next to a computer",
+   "The view of a cats tail laying on a computer keyboard.",
+   "orange and white cat tail on a computer keyboard",
+   "a cats tail that is laying on top of a keyboard"
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000228318.jpg"
+ },
+ {
+  "id": "coco_460872",
+  "file": "data/coco_photos/coco_460872.jpg",
+  "captions": [
+   "A brown dog sitting next to a brown cat on a bed.",
+   "A dog and a cat pose for a photo.",
+   "a collie dog and a stripped cat with its tongue out",
+   "A cat licking its face and a reclining dog near each other.",
+   "A cat and a dog next to each other."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000460872.jpg"
+ },
+ {
+  "id": "coco_283286",
+  "file": "data/coco_photos/coco_283286.jpg",
+  "captions": [
+   "A cat is sleeping with his head resting on an electronics box. ",
+   "A cat that is laying down on a computer.",
+   " a cat curled up and laying on a external hard drive disk.",
+   "A cat sleeping soundly with his head resting on a laptop computer.",
+   "A cat is sleeping with its head on a computer."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000283286.jpg"
+ },
+ {
+  "id": "coco_26803",
+  "file": "data/coco_photos/coco_26803.jpg",
+  "captions": [
+   "A cat sitting on a window sill near a window.",
+   "A cat sitting on a window sill looking out a window.",
+   "A gray cat perched atop a window ledge, peering outside",
+   "A cat sitting on a windowsill looking out.",
+   "Cat sitting on the window sill staring out the window."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000026803.jpg"
+ },
+ {
+  "id": "coco_133573",
+  "file": "data/coco_photos/coco_133573.jpg",
+  "captions": [
+   "A cat standing on a desk next to a computer.",
+   "A large fluffy cat standing on a wooden desk",
+   "A cat standing on top of a wooden table next to a computer monitor.",
+   "THERE IS A CAT THAT IS STANDING ON THE DESK ",
+   "A very cute cat standing on a nice wooden desk."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000133573.jpg"
+ },
+ {
+  "id": "coco_138070",
+  "file": "data/coco_photos/coco_138070.jpg",
+  "captions": [
+   "A living room filled with furniture and a flat screen TV.",
+   "A living room area with couches and a television.",
+   "I am unable to see an image above.",
+   "Living room with large television and wooden floors. ",
+   "A cat sits on one of the couches in a living room.  "
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000138070.jpg"
+ },
+ {
+  "id": "coco_77870",
+  "file": "data/coco_photos/coco_77870.jpg",
+  "captions": [
+   "A kitten makes itself comfortable on the keyboard of a laptop computer.",
+   "The kitten is sprawled on the laptop keyboard.",
+   "An orange and white kitten laying on a black computer keyboard.",
+   "A small cat curled up on the keyboard of a laptop.",
+   "An orange cat sleeping on top of a laptop computer."
+  ],
+  "coco_url": "http://images.cocodataset.org/train2017/000000077870.jpg"
+ }
+]

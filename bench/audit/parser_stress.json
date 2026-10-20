@@ -1,0 +1,1092 @@
+{
+ "cases": [
+  {
+   "query": "[A1 안+하다(착용)] 목도리 안 한 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "목도리를 착용한 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "목도리를 착용한 고양이"
+   ],
+   "problem": ""
+  },
+  {
+   "query": "[A2 안+하다(행위)] 그루밍 안 하는 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "그루밍을 착용한 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "그루밍하는 고양이"
+   ],
+   "problem": "WEAR_HEADS prefix '하' treats light verb 그루밍하다 as wearing: '그루밍을 착용한 고양이'."
+  },
+  {
+   "query": "[A3 안+했던(행위,과거)] 목욕 안 했던 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "목욕을 착용한 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "목욕한 고양이"
+   ],
+   "problem": "'했' prefix matched as wearing: '목욕을 착용한 고양이'."
+  },
+  {
+   "query": "[A4 안+차다(발로 차다)] 공을 안 차는 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "공을 착용한 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "공을 차는 고양이"
+   ],
+   "problem": "'차' prefix matched as wearing (차다 = kick here): '공을 착용한 고양이'."
+  },
+  {
+   "query": "[A5 안+매달리다] 나무에 안 매달린 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "나무에를 착용한 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "나무에 매달린 고양이"
+   ],
+   "problem": "'매' prefix matches 매달리다; strip_particle lacks 에 so output is '나무에를 착용한 고양이'."
+  },
+  {
+   "query": "[A6 못+V고 있는] 밥을 못 먹고 있는 슈딩이",
+   "got_pos": "있는 고양이",
+   "got_neg": [
+    "밥을 먹는 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "밥을 먹는 고양이"
+   ],
+   "problem": "Minor: orphan auxiliary '있는' left in pos."
+  },
+  {
+   "query": "[A7 못+V] 높은 데 못 올라가는 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "높은 데 올라가는 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "높은 데 올라가는 고양이"
+   ],
+   "problem": ""
+  },
+  {
+   "query": "[A8 -지 못하-] 밖에 나가지 못한 슈딩이",
+   "got_pos": "밖에 나가지 못한 고양이",
+   "got_neg": [],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "밖에 나간 고양이"
+   ],
+   "problem": "-지 못하- not handled; negated concept stays in pos (polarity inversion)."
+  },
+  {
+   "query": "[A9 안: 장소는 긍정, 행위만 부정] 풀밭에서 눈을 안 감은 슈딩이",
+   "got_pos": "풀밭에서 고양이",
+   "got_neg": [
+    "눈을 감은 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "풀밭에 있는 고양이",
+   "expected_neg": [
+    "눈을 감은 고양이"
+   ],
+   "problem": "Scope stopped at '풀밭에서' only because 서 is in CONNECTIVE (accidental); pos keeps dangling '에서'."
+  },
+  {
+   "query": "[A10 연결어미가 범위 차단] 창가에 있는데 안 자는 슈딩이",
+   "got_pos": "창가에 있는데 고양이",
+   "got_neg": [
+    "자는 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "창가에 있는 고양이",
+   "expected_neg": [
+    "자는 고양이"
+   ],
+   "problem": "Minor: pos keeps '있는데' instead of '있는'."
+  },
+  {
+   "query": "[A11 안: 에-장소는 긍정] 풀밭에 눈을 안 감고 앉은 슈딩이",
+   "got_pos": "앉은 고양이",
+   "got_neg": [
+    "풀밭에 눈을 감는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "풀밭에 앉은 고양이",
+   "expected_neg": [
+    "눈을 감은 고양이"
+   ],
+   "problem": "Scope swallows the positive locative '풀밭에' into neg; pos loses 풀밭."
+  },
+  {
+   "query": "[A12 안: 배경 부사어는 긍정] 햇빛 아래 눈 안 뜬 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "햇빛 아래 눈 뜬 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "햇빛 아래 있는 고양이",
+   "expected_neg": [
+    "눈 뜬 고양이"
+   ],
+   "problem": "Scope swallows the setting '햇빛 아래' into neg; pos loses it."
+  },
+  {
+   "query": "[A13 안 + ㄹ받침 동사] 안 울고 있는 슈딩이",
+   "got_pos": "있는 고양이",
+   "got_neg": [
+    "울 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "우는 고양이"
+   ],
+   "problem": "adnominal() strips 고, sees ㄹ batchim on stem 울 and assumes it is already adnominal: '울 고양이'; orphan '있는' in pos."
+  },
+  {
+   "query": "[A14 안 + ㄴ받침 동사(안다)] 학생이 안 안고 있는 슈딩이",
+   "got_pos": "있는 고양이",
+   "got_neg": [
+    "학생이 안 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "학생이 안고 있는 고양이"
+   ],
+   "problem": "Same batchim bug with ㄴ stem 안다: '학생이 안 고양이'."
+  },
+  {
+   "query": "[B1 -지 않-] 카메라 보지 않는 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "카메라 보는 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "카메라 보는 고양이"
+   ],
+   "problem": ""
+  },
+  {
+   "query": "[B2 -지 않았던(과거)] 눈 감지 않았던 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "눈 감는 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "눈 감은 고양이"
+   ],
+   "problem": "Minor aspect: '감는' (act of closing) instead of resultative '감은'."
+  },
+  {
+   "query": "[B3 -지않- 붙여쓰기] 자지않는 슈딩이",
+   "got_pos": "자지않는 고양이",
+   "got_neg": [],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "자는 고양이"
+   ],
+   "problem": "Glued -지않- token not detected; negated verb stays in pos."
+  },
+  {
+   "query": "[B4 -고 있지 않-] 자고 있지 않은 슈딩이",
+   "got_pos": "자고 고양이",
+   "got_neg": [
+    "있는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "자고 있는 고양이"
+   ],
+   "problem": "Negation on auxiliary 있-: scope stops at connective '자고', so neg='있는 고양이' (matches nearly every photo) and '자고' stays in pos. Polarity inversion."
+  },
+  {
+   "query": "[B5 -고 있지 않-, 이름 없음] 밥 먹고 있지 않은 고양이",
+   "got_pos": "밥 먹고 고양이",
+   "got_neg": [
+    "있는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "밥 먹고 있는 고양이"
+   ],
+   "problem": "Same as B4: neg='있는 고양이', '밥 먹고' kept in pos."
+  },
+  {
+   "query": "[B6 -지도 않- 두 번] 자지도 않고 먹지도 않는 슈딩이",
+   "got_pos": "자지도 않고 먹지도 않는 고양이",
+   "got_neg": [],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "자는 고양이",
+    "먹는 고양이"
+   ],
+   "problem": "-지도 않- (particle between 지 and 않) not handled; both negated verbs stay in pos."
+  },
+  {
+   "query": "[B7 N을 하지 않-(행위)] 산책을 하지 않은 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "산책을 착용한 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "산책하는 고양이"
+   ],
+   "problem": "'하지 않은' -> stem 하 -> wear template: '산책을 착용한 고양이'."
+  },
+  {
+   "query": "[C1 없는 + 곳] 사람이 없는 곳에서 자는 슈딩이",
+   "got_pos": "곳에서 자는 고양이",
+   "got_neg": [
+    "사람과 함께 있는 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "자는 고양이",
+   "expected_neg": [
+    "사람과 함께 있는 고양이"
+   ],
+   "problem": "Minor: pos keeps head noun '곳에서'."
+  },
+  {
+   "query": "[C2 없고] 장난감 없고 혼자 있는 슈딩이",
+   "got_pos": "혼자 있는 고양이",
+   "got_neg": [
+    "장난감과 함께 있는 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "혼자 있는 고양이",
+   "expected_neg": [
+    "장난감과 함께 있는 고양이"
+   ],
+   "problem": ""
+  },
+  {
+   "query": "[C3 없이 붙여쓰기] 목줄없이 산책하는 슈딩이",
+   "got_pos": "목줄없이 산책하는 고양이",
+   "got_neg": [],
+   "correct": false,
+   "expected_pos": "산책하는 고양이",
+   "expected_neg": [
+    "목줄을 착용한 고양이"
+   ],
+   "problem": "Glued '목줄없이' not detected; 목줄 stays in pos."
+  },
+  {
+   "query": "[C4 없는 붙여쓰기] 사람없는 사진 속 슈딩이",
+   "got_pos": "사람없는 사진 속 고양이",
+   "got_neg": [],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "사람과 함께 있는 고양이"
+   ],
+   "problem": "Glued '사람없는' not detected; 사람 stays in pos."
+  },
+  {
+   "query": "[C5 아무도 없는] 아무도 없는 교실의 슈딩이",
+   "got_pos": "교실의 고양이",
+   "got_neg": [
+    "아무와 함께 있는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "교실의 고양이",
+   "expected_neg": [
+    "사람과 함께 있는 고양이"
+   ],
+   "problem": "Quantifier 아무도 stripped to '아무': '아무와 함께 있는 고양이'; should be people."
+  },
+  {
+   "query": "[C6 A나 B 없이(등위)] 사람이나 강아지 없이 혼자 있는 슈딩이",
+   "got_pos": "사람이나 혼자 있는 고양이",
+   "got_neg": [
+    "강아지와 함께 있는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "혼자 있는 고양이",
+   "expected_neg": [
+    "사람과 함께 있는 고양이",
+    "강아지와 함께 있는 고양이"
+   ],
+   "problem": "Coordination 'A이나 B 없이' negates only B; '사람이나' stays in pos."
+  },
+  {
+   "query": "[C7 관용구 '쉴 새 없이'] 쉴 새 없이 뛰어다니는 슈딩이",
+   "got_pos": "쉴 뛰어다니는 고양이",
+   "got_neg": [
+    "새와 함께 있는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "쉴 새 없이 뛰어다니는 고양이",
+   "expected_neg": [],
+   "problem": "Idiom 쉴 새 없이 (non-stop) read as companion negation: '새(bird)와 함께 있는 고양이'."
+  },
+  {
+   "query": "[C8 관용구 '어이 없는'(띄어씀)] 어이 없는 표정의 슈딩이",
+   "got_pos": "표정의 고양이",
+   "got_neg": [
+    "어이와 함께 있는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "어이 없는 표정의 고양이",
+   "expected_neg": [],
+   "problem": "Adjective 어이없다 typed with a space read as negation: '어이와 함께 있는 고양이'; the expression is dropped."
+  },
+  {
+   "query": "[C9 관용구 '힘 없이'(띄어씀)] 힘 없이 누워 있는 슈딩이",
+   "got_pos": "누워 있는 고양이",
+   "got_neg": [
+    "힘과 함께 있는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "힘 없이 누워 있는 고양이",
+   "expected_neg": [],
+   "problem": "Adverb 힘없이 typed with a space: '힘과 함께 있는 고양이'; manner condition dropped."
+  },
+  {
+   "query": "[C10 관용구 '할 일 없는'] 할 일 없는 슈딩이",
+   "got_pos": "할 고양이",
+   "got_neg": [
+    "일과 함께 있는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "할 일 없는 고양이",
+   "expected_neg": [],
+   "problem": "Idiom 할 일 없다 (idle): '일과 함께 있는 고양이', pos '할 고양이'."
+  },
+  {
+   "query": "[D1 말고(장소)] 책상 말고 의자에 앉은 슈딩이",
+   "got_pos": "의자에 앉은 고양이",
+   "got_neg": [
+    "책상 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "의자에 앉은 고양이",
+   "expected_neg": [
+    "책상에 있는 고양이"
+   ],
+   "problem": "Minor: neg is bare compound '책상 고양이' (relation lost, concept clear)."
+  },
+  {
+   "query": "[D2 아닌(장소)] 교실이 아닌 곳에 있는 슈딩이",
+   "got_pos": "곳에 있는 고양이",
+   "got_neg": [
+    "교실에 있는 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "교실에 있는 고양이"
+   ],
+   "problem": "Minor: pos keeps '곳에 있는'."
+  },
+  {
+   "query": "[D3 아니고(장소)] 실내가 아니고 운동장에 있는 슈딩이",
+   "got_pos": "운동장에 있는 고양이",
+   "got_neg": [
+    "실내에 있는 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "운동장에 있는 고양이",
+   "expected_neg": [
+    "실내에 있는 고양이"
+   ],
+   "problem": ""
+  },
+  {
+   "query": "[D4 -ㄴ 게 아니라(절)] 잠든 게 아니라 눈 감고 있는 슈딩이",
+   "got_pos": "잠든 눈 감고 있는 고양이",
+   "got_neg": [
+    "게 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "눈 감고 있는 고양이",
+   "expected_neg": [
+    "잠든 고양이"
+   ],
+   "problem": "아니라 takes only the token '게'; neg='게 고양이' and '잠든' stays in pos (inversion)."
+  },
+  {
+   "query": "[D5 여러 어절 명사구 + 아닌] 흑백 사진이 아닌 슈딩이",
+   "got_pos": "흑백 고양이",
+   "got_neg": [
+    "사진에 있는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "흑백 사진 속 고양이"
+   ],
+   "problem": "아닌 takes only '사진이'; '흑백' stays in pos (inversion); neg uses place template '사진에 있는'."
+  },
+  {
+   "query": "[D6 N의 안 + 아니라] 교실 안이 아니라 복도에 있는 슈딩이",
+   "got_pos": "교실 복도에 있는 고양이",
+   "got_neg": [
+    "안에 있는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "복도에 있는 고양이",
+   "expected_neg": [
+    "교실 안에 있는 고양이"
+   ],
+   "problem": "Only '안이' negated; '교실' stays in pos; neg '안에 있는 고양이' loses 교실."
+  },
+  {
+   "query": "[D7 사람 주어 + 아닌] 선생님이 아닌 학생이 안고 있는 슈딩이",
+   "got_pos": "학생이 안고 있는 고양이",
+   "got_neg": [
+    "선생님에 있는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "학생이 안고 있는 고양이",
+   "expected_neg": [
+    "선생님이 안고 있는 고양이"
+   ],
+   "problem": "이-subject triggers the place template on a person: '선생님에 있는 고양이'."
+  },
+  {
+   "query": "[D8 혼자가 아닌(부정의 부정)] 혼자가 아닌 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "혼자에 있는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "누군가와 함께 있는 고양이",
+   "expected_neg": [
+    "혼자 있는 고양이"
+   ],
+   "problem": "혼자가 아닌 should flip to 'with someone'; output '혼자에 있는 고양이' and pos loses the condition."
+  },
+  {
+   "query": "[D9 빼고(동반)] 사람 빼고 슈딩이만 나온 사진",
+   "got_pos": "고양이만 나온 사진",
+   "got_neg": [
+    "사람 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "고양이만 나온 사진",
+   "expected_neg": [
+    "사람과 함께 있는 고양이"
+   ],
+   "problem": "빼고 gives bare '사람 고양이' (reads as a person-like cat); companion relation lost."
+  },
+  {
+   "query": "[D10 -는 거 말고(절)] 츄르 먹는 거 말고 노는 슈딩이",
+   "got_pos": "츄르 먹는 노는 고양이",
+   "got_neg": [
+    "거 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "노는 고양이",
+   "expected_neg": [
+    "츄르 먹는 고양이"
+   ],
+   "problem": "말고 takes only '거'; neg='거 고양이', '츄르 먹는' stays in pos (inversion)."
+  },
+  {
+   "query": "[D11 -지 말고] 자지 말고 놀고 있는 슈딩이",
+   "got_pos": "놀고 있는 고양이",
+   "got_neg": [
+    "자지 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "놀고 있는 고양이",
+   "expected_neg": [
+    "자는 고양이"
+   ],
+   "problem": "-지 말고 goes through the NP rule: neg='자지 고양이' (raw -지 form, also a vulgar homograph)."
+  },
+  {
+   "query": "[D12 -어 있지 말고] 누워 있지 말고 앉아 있는 슈딩이",
+   "got_pos": "누워 앉아 있는 고양이",
+   "got_neg": [
+    "있지 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "앉아 있는 고양이",
+   "expected_neg": [
+    "누워 있는 고양이"
+   ],
+   "problem": "neg='있지 고양이'; '누워' stays in pos (inversion)."
+  },
+  {
+   "query": "[D13 말고 붙여쓰기] 의자말고 소파에 있는 슈딩이",
+   "got_pos": "의자말고 소파에 있는 고양이",
+   "got_neg": [],
+   "correct": false,
+   "expected_pos": "소파에 있는 고양이",
+   "expected_neg": [
+    "의자에 있는 고양이"
+   ],
+   "problem": "Glued '의자말고' not detected; 의자 stays in pos."
+  },
+  {
+   "query": "[D14 말고 + 고양이 포함 명사구] 검은 고양이 말고 슈딩이",
+   "got_pos": "검은 고양이",
+   "got_neg": [
+    "고양이에 있는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "검은 고양이"
+   ],
+   "problem": "Name->고양이 collapses the contrast; neg='고양이에 있는 고양이', '검은' stays in pos."
+  },
+  {
+   "query": "[D15 -ㄴ 게 아닌] 사람 품에 안긴 게 아닌 슈딩이",
+   "got_pos": "사람 품에 안긴 고양이",
+   "got_neg": [
+    "게 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "사람 품에 안긴 고양이"
+   ],
+   "problem": "Clause '-ㄴ 게 아닌': neg='게 고양이', '사람 품에 안긴' stays in pos (inversion)."
+  },
+  {
+   "query": "[E1 붙여쓰기 모자안쓴] 모자안쓴 슈딩이",
+   "got_pos": "모자안쓴 고양이",
+   "got_neg": [],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "모자를 착용한 고양이"
+   ],
+   "problem": "Glued '모자안쓴' not detected; pos embeds close to a hat-wearing cat."
+  },
+  {
+   "query": "[E2 붙여쓰기 안쓴] 모자 안쓴 슈딩이",
+   "got_pos": "모자 안쓴 고양이",
+   "got_neg": [],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "모자를 착용한 고양이"
+   ],
+   "problem": "'안쓴' is not the exact token '안'; not detected."
+  },
+  {
+   "query": "[E3 붙여쓰기 안경안쓴] 안경안쓴 슈딩이",
+   "got_pos": "안경안쓴 고양이",
+   "got_neg": [],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "안경을 착용한 고양이"
+   ],
+   "problem": "'안경안쓴' not detected."
+  },
+  {
+   "query": "[E4 붙여쓰기 안먹는] 밥 안먹는 슈딩이",
+   "got_pos": "밥 안먹는 고양이",
+   "got_neg": [],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "밥 먹는 고양이"
+   ],
+   "problem": "'안먹는' not detected."
+  },
+  {
+   "query": "[E5 붙여쓰기 안한] 목줄 안한 슈딩이",
+   "got_pos": "목줄 안한 고양이",
+   "got_neg": [],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "목줄을 착용한 고양이"
+   ],
+   "problem": "'안한' not detected."
+  },
+  {
+   "query": "[E6 공백 여러 개] 옷을   안   입은    슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "옷을 착용한 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "옷을 착용한 고양이"
+   ],
+   "problem": ""
+  },
+  {
+   "query": "[F1 존대, 부정이 사람에 걸림] 안경을 안 쓰신 선생님과 같이 있는 슈딩이",
+   "got_pos": "선생님과 같이 있는 고양이",
+   "got_neg": [
+    "안경을 착용한 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "안경을 쓰지 않은 선생님과 같이 있는 고양이",
+   "expected_neg": [],
+   "problem": "Negation modifies 선생님 (honorific 쓰신), but parser emits cat-negative '안경을 착용한 고양이' and drops the teacher attribute."
+  },
+  {
+   "query": "[F2 존대 계시다] 선생님이 안 계신 교실의 슈딩이",
+   "got_pos": "교실의 고양이",
+   "got_neg": [
+    "선생님이 계신 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "교실의 고양이",
+   "expected_neg": [
+    "선생님과 함께 있는 고양이"
+   ],
+   "problem": "Honorific existential 계시다 not mapped to 있다/companion; neg '선생님이 계신 고양이' is ungrammatical."
+  },
+  {
+   "query": "[F3 부정이 사람에 걸림] 모자 안 쓴 사람이랑 있는 슈딩이",
+   "got_pos": "사람이랑 있는 고양이",
+   "got_neg": [
+    "모자를 착용한 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "모자를 쓰지 않은 사람이랑 있는 고양이",
+   "expected_neg": [],
+   "problem": "Relative clause modifies 사람, not the cat; cat-negative '모자를 착용한 고양이' emitted, person attribute dropped."
+  },
+  {
+   "query": "[F4 -지 않-이 사람에 걸림] 웃지 않는 사람 품에 안긴 슈딩이",
+   "got_pos": "사람 품에 안긴 고양이",
+   "got_neg": [
+    "웃는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "웃지 않는 사람 품에 안긴 고양이",
+   "expected_neg": [],
+   "problem": "'웃지 않는' modifies 사람; cat-negative '웃는 고양이' emitted."
+  },
+  {
+   "query": "[F5 고양이가 목적어] 슈딩이를 안 쳐다보는 학생들",
+   "got_pos": "고양이를 학생들",
+   "got_neg": [
+    "쳐다보는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "학생들과 함께 있는 고양이",
+   "expected_neg": [],
+   "problem": "Cat is the object (고양이를); neg='쳐다보는 고양이' and pos '고양이를 학생들' is broken."
+  },
+  {
+   "query": "[F6 쓰다=우산 사용, 사람에 걸림] 우산 안 쓴 학생 옆 슈딩이",
+   "got_pos": "학생 옆 고양이",
+   "got_neg": [
+    "우산을 착용한 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "우산을 안 쓴 학생 옆 고양이",
+   "expected_neg": [],
+   "problem": "쓰다 = use an umbrella, and the clause modifies 학생; emits '우산을 착용한 고양이'."
+  },
+  {
+   "query": "[G1 장소 부정] 밖에 안 나간 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "밖에 나간 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "밖에 나간 고양이"
+   ],
+   "problem": ""
+  },
+  {
+   "query": "[G2 동반+행위 부정] 사람이랑 안 놀고 혼자 있는 슈딩이",
+   "got_pos": "혼자 있는 고양이",
+   "got_neg": [
+    "사람이랑 놀 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "혼자 있는 고양이",
+   "expected_neg": [
+    "사람이랑 노는 고양이"
+   ],
+   "problem": "ㄹ-stem bug: '놀고' -> '놀', neg '사람이랑 놀 고양이' (should be 노는)."
+  },
+  {
+   "query": "[G3 동반 -지 않-] 강아지랑 같이 있지 않은 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "강아지랑 같이 있는 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "강아지랑 같이 있는 고양이"
+   ],
+   "problem": ""
+  },
+  {
+   "query": "[G4 행위 부정 + 긍정 조건] 장난 안 치고 얌전히 있는 슈딩이",
+   "got_pos": "얌전히 있는 고양이",
+   "got_neg": [
+    "장난 치는 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "얌전히 있는 고양이",
+   "expected_neg": [
+    "장난 치는 고양이"
+   ],
+   "problem": ""
+  },
+  {
+   "query": "[G5 -아서 뒤 -지 않-] 창가에 앉아서 자지 않는 슈딩이",
+   "got_pos": "창가에 앉아서 고양이",
+   "got_neg": [
+    "자는 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "창가에 앉아 있는 고양이",
+   "expected_neg": [
+    "자는 고양이"
+   ],
+   "problem": "Minor: pos keeps the connective form '앉아서'."
+  },
+  {
+   "query": "[G6 안 V고 있었던(과거)] 안 자고 있었던 슈딩이",
+   "got_pos": "있었던 고양이",
+   "got_neg": [
+    "자는 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "자고 있는 고양이"
+   ],
+   "problem": "Minor: orphan '있었던' left in pos."
+  },
+  {
+   "query": "[G7 안 V었던(과거)] 밥을 안 먹었던 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "밥을 먹었던 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "밥을 먹은 고양이"
+   ],
+   "problem": ""
+  },
+  {
+   "query": "[G8 아무것도 안 입은] 아무것도 안 입은 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "아무것을 착용한 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "옷을 착용한 고양이"
+   ],
+   "problem": "아무것도 + 입다 means clothes; output '아무것을 착용한 고양이'."
+  },
+  {
+   "query": "[H1 부정 2개(안+안)] 모자도 안 쓰고 옷도 안 입은 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "모자를 착용한 고양이",
+    "옷을 착용한 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "모자를 착용한 고양이",
+    "옷을 착용한 고양이"
+   ],
+   "problem": ""
+  },
+  {
+   "query": "[H2 부정 2개(없고+없는)] 사람도 없고 장난감도 없는 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "사람과 함께 있는 고양이",
+    "장난감과 함께 있는 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "사람과 함께 있는 고양이",
+    "장난감과 함께 있는 고양이"
+   ],
+   "problem": ""
+  },
+  {
+   "query": "[H3 부정 2개(안+없이)+장소] 안경 안 쓰고 사람 없이 창가에 있는 슈딩이",
+   "got_pos": "창가에 있는 고양이",
+   "got_neg": [
+    "안경을 착용한 고양이",
+    "사람과 함께 있는 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "창가에 있는 고양이",
+   "expected_neg": [
+    "안경을 착용한 고양이",
+    "사람과 함께 있는 고양이"
+   ],
+   "problem": ""
+  },
+  {
+   "query": "[H4 부정 2개(말고+아닌)] 소파 말고 침대도 아닌 곳의 슈딩이",
+   "got_pos": "곳의 고양이",
+   "got_neg": [
+    "소파 고양이",
+    "침대 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "소파에 있는 고양이",
+    "침대에 있는 고양이"
+   ],
+   "problem": "Minor: bare compounds '소파 고양이', '침대 고양이'; pos keeps '곳의'."
+  },
+  {
+   "query": "[I1 이름 없음] 안경 안 쓴 고양이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "안경을 착용한 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "안경을 착용한 고양이"
+   ],
+   "problem": ""
+  },
+  {
+   "query": "[I2 이름 대신 냥이] 모자 안 쓴 냥이",
+   "got_pos": "냥이 고양이",
+   "got_neg": [
+    "모자를 착용한 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "모자를 착용한 고양이"
+   ],
+   "problem": "Minor: alias 냥이 not normalized, pos '냥이 고양이'."
+  },
+  {
+   "query": "[I3 이름 변형 '슈딩'] 모자 안 쓴 슈딩 사진",
+   "got_pos": "슈딩 사진 고양이",
+   "got_neg": [
+    "모자를 착용한 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "모자를 착용한 고양이"
+   ],
+   "problem": "Name variant '슈딩' not normalized; nonword left in pos."
+  },
+  {
+   "query": "[J1 '안'=안쪽(명사)] 상자 안 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "상자 고양이는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "상자 안 고양이",
+   "expected_neg": [],
+   "problem": "'안' = inside (noun) read as negation adverb: neg '상자 고양이는 고양이', pos loses 상자 안."
+  },
+  {
+   "query": "[J2 '못생기다' 띄어씀] 못 생기게 나온 슈딩이",
+   "got_pos": "나온 고양이",
+   "got_neg": [
+    "생기게는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "못 생기게 나온 고양이",
+   "expected_neg": [],
+   "problem": "Lexicalized 못생기다 typed with a space read as 못+V: neg '생기게는 고양이'; 'ugly' condition lost."
+  },
+  {
+   "query": "[J3 안 + 형용사 -게] 안 예쁘게 나온 슈딩이",
+   "got_pos": "나온 고양이",
+   "got_neg": [
+    "예쁘게는 고양이"
+   ],
+   "correct": false,
+   "expected_pos": "나온 고양이",
+   "expected_neg": [
+    "예쁘게 나온 고양이"
+   ],
+   "problem": "Negated adverb -게 gets '는' appended: '예쁘게는 고양이'; should negate the whole '예쁘게 나온'."
+  },
+  {
+   "query": "[J4 안 + 안기다] 사람한테 안 안기는 슈딩이",
+   "got_pos": "고양이",
+   "got_neg": [
+    "사람한테 안기는 고양이"
+   ],
+   "correct": true,
+   "expected_pos": "고양이",
+   "expected_neg": [
+    "사람한테 안기는 고양이"
+   ],
+   "problem": ""
+  },
+  {
+   "query": "[K1 부정 없음] 햇볕 쬐는 슈딩이",
+   "got_pos": "햇볕 쬐는 고양이",
+   "got_neg": [],
+   "correct": true,
+   "expected_pos": "햇볕 쬐는 고양이",
+   "expected_neg": [],
+   "problem": ""
+  },
+  {
+   "query": "[K2 부정 없음] 급식실 앞에서 밥 기다리는 슈딩이",
+   "got_pos": "급식실 앞에서 밥 기다리는 고양이",
+   "got_neg": [],
+   "correct": true,
+   "expected_pos": "급식실 앞에서 밥 기다리는 고양이",
+   "expected_neg": [],
+   "problem": ""
+  },
+  {
+   "query": "[K3 부정 없음(편안)] 편안하게 누운 슈딩이",
+   "got_pos": "편안하게 누운 고양이",
+   "got_neg": [],
+   "correct": true,
+   "expected_pos": "편안하게 누운 고양이",
+   "expected_neg": [],
+   "problem": ""
+  },
+  {
+   "query": "[K4 부정 없음(안기다)] 학생 품에 안겨 있는 슈딩이",
+   "got_pos": "학생 품에 안겨 있는 고양이",
+   "got_neg": [],
+   "correct": true,
+   "expected_pos": "학생 품에 안겨 있는 고양이",
+   "expected_neg": [],
+   "problem": ""
+  },
+  {
+   "query": "[K5 부정 없음(안쪽)] 창문 안쪽에 앉은 슈딩이",
+   "got_pos": "창문 안쪽에 앉은 고양이",
+   "got_neg": [],
+   "correct": true,
+   "expected_pos": "창문 안쪽에 앉은 고양이",
+   "expected_neg": [],
+   "problem": ""
+  },
+  {
+   "query": "[K6 부정 없음(없어진)] 없어진 장난감을 찾는 슈딩이",
+   "got_pos": "없어진 장난감을 찾는 고양이",
+   "got_neg": [],
+   "correct": true,
+   "expected_pos": "없어진 장난감을 찾는 고양이",
+   "expected_neg": [],
+   "problem": "Passes only because 없어진 is the first token (rule needs i>0)."
+  },
+  {
+   "query": "[K7 부정 없음(안에서)] 가방 안에서 자는 슈딩이",
+   "got_pos": "가방 안에서 자는 고양이",
+   "got_neg": [],
+   "correct": true,
+   "expected_pos": "가방 안에서 자는 고양이",
+   "expected_neg": [],
+   "problem": ""
+  },
+  {
+   "query": "[K8 부정 없음(안경 낀 사람)] 안경 낀 학생 옆에서 자는 슈딩이",
+   "got_pos": "안경 낀 학생 옆에서 자는 고양이",
+   "got_neg": [],
+   "correct": true,
+   "expected_pos": "안경 낀 학생 옆에서 자는 고양이",
+   "expected_neg": [],
+   "problem": ""
+  },
+  {
+   "query": "[K9 부정 없음, 이름 없음] 책상 위에 엎드린 고양이",
+   "got_pos": "책상 위에 엎드린 고양이",
+   "got_neg": [],
+   "correct": true,
+   "expected_pos": "책상 위에 엎드린 고양이",
+   "expected_neg": [],
+   "problem": ""
+  },
+  {
+   "query": "[K10 부정 없음(조사 붙은 이름)] 슈딩이가 하품하는 사진",
+   "got_pos": "고양이가 하품하는 사진",
+   "got_neg": [],
+   "correct": true,
+   "expected_pos": "고양이가 하품하는 사진",
+   "expected_neg": [],
+   "problem": ""
+  }
+ ],
+ "failure_patterns": [
+  "Overall: 36 of 87 new queries correct. Non-negation queries: 10 of 16 (all 10 where 안/없/못 is glued to its word pass, all 6 where it stands as a spaced token fail). Negation queries: 26 of 71. Script and data: <scratchpad>/parser/{cases.py,run.py,judge.py,judged.json}.",
+  "P1 Whitespace-token matching (t in ('안','못'), t.startswith('않'/'없'), exact '말고'). Glued spellings real users type pass through silently and the negated concept stays in pos, which inverts the query: 모자안쓴, 모자 안쓴, 안경안쓴, 밥 안먹는, 목줄 안한, 자지않는, 목줄없이, 사람없는, 의자말고 (E1-E5, B3, C3, C4, D13; 9 cases).",
+  "P2 NP operators (말고/아닌/아니라/빼고/없-) take exactly one preceding token. A multi-word NP or a nominalized clause leaves its modifier in pos and yields junk neg: '잠든 게 아니라' -> pos keeps 잠든, neg '게 고양이'; '흑백 사진이 아닌' -> pos '흑백 고양이'; '츄르 먹는 거 말고' -> neg '거 고양이'; '교실 안이 아니라' -> pos keeps 교실; coordination '사람이나 강아지 없이' negates only 강아지 (D4, D5, D6, D10, D14, D15, C6).",
+  "P3 Negation on an auxiliary (-고 있지 않-, -어 있지 말고). scope_before stops at the main verb's connective 고, so neg becomes '있는 고양이' / '있지 고양이' (matches almost every photo) while the main verb stays in pos: '자고 있지 않은' -> pos '자고 고양이' (B4, B5, D12). The most damaging failure because the subtraction is applied to all candidates.",
+  "P4 Missing negation forms: -지 못하- (A8), -지도/-지는 않- with an intervening particle (B6), and -지 말고 handled by the noun rule, which outputs the raw -지 form ('자지 고양이', a vulgar homograph) (D11, D12).",
+  "P5 Wearing detection by surface prefix (WEAR_HEADS includes 하/했/차/매/쓰). Light verbs and homographs become '착용': '그루밍을 착용한', '목욕을 착용한', '산책을 착용한', '공을 착용한' (차다 = kick), '나무에를 착용한' (매달리다, and strip_particle lacks 에), '우산을 착용한' (쓰다 = use) (A2, A3, A4, A5, B7, F6).",
+  "P6 adnominal() decides 'already adnominal' from the final batchim after stripping the connective 고, so ㄹ/ㄴ-final stems break: 놀고 -> '놀 고양이', 울고 -> '울 고양이', 안고 -> '학생이 안 고양이' (G2, A13, A14). -게 adverbs get 는 appended: '예쁘게는 고양이', '생기게는 고양이' (J2, J3).",
+  "P7 Leftward scope of 안/못/-지 않- runs to the clause start and swallows positive setting adverbials: '풀밭에 눈을 안 감고 앉은' -> neg '풀밭에 눈을 감는 고양이', pos loses 풀밭; '햇빛 아래 눈 안 뜬' loses 햇빛 아래 (A11, A12). It stops at -에서 only by accident, because 서 is in CONNECTIVE (A9).",
+  "P8 No head-noun check. A negated relative clause that modifies a person is turned into a cat negative and the person attribute is dropped: '안경을 안 쓰신 선생님과', '모자 안 쓴 사람이랑', '웃지 않는 사람 품에', '우산 안 쓴 학생 옆' (F1, F3, F4, F6). Cat as object breaks pos: '고양이를 학생들' (F5).",
+  "P9 Lexicalized words typed with a space are read as negation: N+없- adjectives/adverbs ('쉴 새 없이' -> '새(bird)와 함께 있는 고양이', '어이 없는', '힘 없이', '할 일 없는'), '못 생기게', and 안 = inside ('상자 안 슈딩이' -> neg '상자 고양이는 고양이') (C7-C10, J1, J2). K6 '없어진' passes only because it is the first token.",
+  "P10 Neg template chosen by the particle, not by what the noun is: 이/가 -> '에 있는' even for people and 혼자 ('선생님에 있는 고양이', '혼자에 있는 고양이'); otherwise a bare compound ('사람 고양이', '책상 고양이'). Quantifiers 아무도/아무것도 are not resolved ('아무와 함께', '아무것을 착용한'). The honorific existential 계시다 is not mapped to 있다 (D7, D8, D9, C5, G8, F2; D1/H4 minor).",
+  "P11 Name normalization covers only the exact string 슈딩이: '슈딩', '냥이' pass through (I3, I2). Replacing the name with 고양이 also erases contrasts with other cats: '검은 고양이 말고 슈딩이' -> neg '고양이에 있는 고양이' (D14).",
+  "P12 Cosmetic leftovers in pos with no condition lost: orphan auxiliaries and connectives ('있는', '있었던', '있는데', '앉아서') and orphan head nouns ('곳에서', '곳의') (A6, A9, A10, C1, D2, G5, G6, H4). They add noise to the embedding but were not counted as failures."
+ ],
+ "general_fixes": [
+  "F1 Detect negation on morphemes, not whitespace tokens. Run Kiwi (kiwipiepy, pip, CPU only); it also repairs spacing. Read negation from POS tags: 안/MAG, 못/MAG, 않/VX, 못하/VX, 말/VX after -지, 없/VA, 아니/VCN, plus the exceptive particles 말고/빼고. One rule then covers glued and spaced forms and tells apart 안/NNG (inside), 안경/NNG, 안기/VV, 편안/XR and 못생기/VA. If no dependency is allowed, split X안Y / X못Y / X없Y only when X is a noun and Y is a conjugated predicate (it ends in a verbal ending), never when XY or 안Y is a dictionary noun.",
+  "F2 Use a closed inventory of negation constructions, each an operator over a predicate or over an NP: (a) short form 안/못 + PRED; (b) long form PRED-지 (도|는|를|가)? (않|못하|말); (c) existential NP (이|가|도|은|는)? 없-; (d) copular NP (이|가)? 아니-(ㄴ|라|고); (e) exceptive NP 말고/빼고/제외하고. -지 말고 belongs to (b), not to the NP rule.",
+  "F3 Treat main verb + auxiliary (-고 있-, -어 있-, -고 싶-, -어 보-) as one predicate before applying negation. Negation on the auxiliary scopes over the whole unit, so '자고 있지 않은' gives neg '자고 있는 고양이'. When the main verb moves to neg, its auxiliary goes with it, so no orphan '있는' is left in pos.",
+  "F4 Scope for short and long negation = the predicate plus its internal arguments: the nearest 을/를-marked or bare object noun, and a locative only when the verb subcategorizes for one (motion/position verbs such as 나가다, 올라가다, 들어가다, 눕다, 앉다, 있다, 매달리다). Free adverbials (N에서, N 아래/위/옆에 with a non-locative verb, time words, manner adverbs) stay in pos. Stop at the first case-marked phrase the verb does not license, and drop the accidental dependence on 서 in CONNECTIVE.",
+  "F5 Scope for NP operators = the whole NP chunk on the left: adnominal modifiers (-ㄴ/-은/-는/-던), adjectives, N의 N, N + 안/위/옆, and a nominalized clause (-ㄴ/는 것/거/게) as one unit. Distribute the operator over coordinated NPs (A(이)나 / 랑 / 와·과 / 하고 B).",
+  "F6 Head-noun rule: an adnominal predicate modifies the next noun. If that noun is not the cat (고양이, the name, an alias, 얘/쟤), the negation is part of that noun's description, so keep the clause in pos (or drop it) and emit no cat negative. If the cat carries the object marker (고양이를/을), the negated predicate describes another agent.",
+  "F7 Pick the neg template from the semantic class of the excluded thing, not from its particle: person/animal -> 'N과 함께 있는 고양이' (or 'N이 V는 고양이' for agentive verbs such as 안다); place -> 'N에 있는 고양이'; clothing/accessory -> wearing template; action or clause -> 'clause + 고양이'. A few lexical items need their own handling: 혼자가 아닌 flips (pos 'with someone', neg '혼자 있는 고양이'), 아무도 -> 사람, 아무것도 + 입다 -> 옷.",
+  "F8 Detect wearing from (noun class, verb lemma) pairs, not surface prefixes: 쓰다 with headwear/eyewear/masks, 입다 with clothes, 신다 with footwear, 끼다 with glasses/gloves/rings, 차다 with watches/belts/collars, 매다 with ties/ribbons, 하다 with accessory nouns (목도리, 목줄, 리본, 넥타이, 목걸이). Lemmatize first (했->하다, 썼->쓰다, 찼->차다). Any other N + 하다 is a light verb -> 'N하는 고양이'.",
+  "F9 Build adnominals from the lemma: action verbs take present -는, with ㄹ deletion (놀다->노는, 울다->우는) and ㄴ-final stems kept (안다->안는). Resultative state verbs take past -ㄴ/은 (눈을 감다->감은, 앉다->앉은, 잠들다->잠든). Check for an existing adnominal only on the original surface ending, never after a connective was stripped. Under negation, a -게 adverb goes to neg together with the verb it modifies ('안 예쁘게 나온' -> neg '예쁘게 나온 고양이').",
+  "F10 Map honorific lemmas before classification: 계시다->있다, 주무시다->자다, 드시다/잡수시다->먹다; strip -시- from other verbs.",
+  "F11 Keep an exception lexicon of standard-dictionary single words and match it with spaces removed: N+없다 adjectives/adverbs (어이없다, 힘없다, 정신없다, 재미없다, 상관없다, 끝없다, 틀림없다, 쉴새없이, 할일없다), 못+V lexemes (못생기다, 못되다, 못나다), and 안 as a noun after container/space nouns or before a particle or noun (상자 안, 가방 안에). These are dictionary facts, not benchmark tuning.",
+  "F12 Normalize aliases with a pattern (슈딩, 슈딩이, 슈딩아 plus particles) and generic forms (냥이, 냥). When the query contrasts the name with other cats, send the other cat to neg as '다른 고양이' instead of collapsing both into 고양이.",
+  "F13 Sanity-check the output. Drop a neg phrase whose only content is 고양이 plus a generic predicate (있는/하는/있지), or that contains 고양이 twice, since subtracting it hurts every candidate. In pos, convert leftover connective endings to adnominal form (-는데/-고/-서/-며; this generalizes the existing 지만->는 rule) and remove orphan head nouns (곳/데) whose modifier was negated.",
+  "F14 Turn this stress set into parser unit tests kept outside bench/, so the parser can improve without touching the frozen dev/test queries. Failures most likely to cost retrieval quality, in order: P3 (degenerate '있는 고양이' negative), P1 and P2 (polarity inversions), then P8 (false cat negatives from clauses about people)."
+ ]
+}

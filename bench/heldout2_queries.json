@@ -1,0 +1,386 @@
+[
+ {
+  "text": "슈딩이자는 사진",
+  "expr": "x.sl",
+  "type": "single",
+  "neg": [],
+  "brief": "memories"
+ },
+ {
+  "text": "하품하는거",
+  "expr": "x.yw",
+  "type": "single",
+  "neg": [],
+  "brief": "memories"
+ },
+ {
+  "text": "모자 쓴 슈딩이",
+  "expr": "x.ht",
+  "type": "single",
+  "neg": [],
+  "brief": "memories"
+ },
+ {
+  "text": "창가에있는 사진",
+  "expr": "x.wd",
+  "type": "single",
+  "neg": [],
+  "brief": "memories"
+ },
+ {
+  "text": "누가 안고 있거나 무릎에 올라가 있는 사진",
+  "expr": "x.hd",
+  "type": "single",
+  "neg": [],
+  "brief": "memories"
+ },
+ {
+  "text": "강아지랑 같이 찍힌 슈딩이",
+  "expr": "x.dg",
+  "type": "single",
+  "neg": [],
+  "brief": "memories"
+ },
+ {
+  "text": "밖에서 사람이랑 있는 사진",
+  "expr": "x.out and x.pr",
+  "type": "compound",
+  "neg": [],
+  "brief": "memories"
+ },
+ {
+  "text": "침대나 담요 위에 누워 있는 슈딩이",
+  "expr": "x.bd and x.L",
+  "type": "compound",
+  "neg": [],
+  "brief": "memories"
+ },
+ {
+  "text": "앉아서 카메라 보는거",
+  "expr": "x.S and x.lk",
+  "type": "compound",
+  "neg": [],
+  "brief": "memories"
+ },
+ {
+  "text": "사람 없이 밖에 있는 사진",
+  "expr": "x.out and not x.pr",
+  "type": "negation",
+  "neg": [
+   "pr"
+  ],
+  "brief": "memories"
+ },
+ {
+  "text": "슈딩이 카메라 안 보고 누워있는 거",
+  "expr": "x.L and not x.lk",
+  "type": "negation",
+  "neg": [
+   "lk"
+  ],
+  "brief": "memories"
+ },
+ {
+  "text": "침대나 이불말고 다른 데서 자는 사진",
+  "expr": "x.sl and not x.bd",
+  "type": "negation",
+  "neg": [
+   "bd"
+  ],
+  "brief": "memories"
+ },
+ {
+  "text": "고양이 여러 마리 있는데 강아지는 없는 사진",
+  "expr": "x.mc and not x.dg",
+  "type": "negation",
+  "neg": [
+   "dg"
+  ],
+  "brief": "memories"
+ },
+ {
+  "text": "모자 안 쓰고 사람한테 안기거나 무릎에 올라간 슈딩이",
+  "expr": "x.hd and not x.ht",
+  "type": "negation",
+  "neg": [
+   "ht"
+  ],
+  "brief": "negation"
+ },
+ {
+  "text": "안경 안쓴 채 노트북이나 컴퓨터 옆에 있는 슈딩이",
+  "expr": "x.lp and not x.gl",
+  "type": "negation",
+  "neg": [
+   "gl"
+  ],
+  "brief": "negation"
+ },
+ {
+  "text": "침대나 담요 위에서 안자고 있는 슈딩이",
+  "expr": "x.bd and not x.sl",
+  "type": "negation",
+  "neg": [
+   "sl"
+  ],
+  "brief": "negation"
+ },
+ {
+  "text": "카메라를 못 본 채 TV 근처에 있는 슈딩이",
+  "expr": "x.tv and not x.lk",
+  "type": "negation",
+  "neg": [
+   "lk"
+  ],
+  "brief": "negation"
+ },
+ {
+  "text": "창가에 있는데 사람은 보이지 않는 슈딩이",
+  "expr": "x.wd and not x.pr",
+  "type": "negation",
+  "neg": [
+   "pr"
+  ],
+  "brief": "negation"
+ },
+ {
+  "text": "하품하지 않고 입을 벌려 이빨이 보이는 슈딩이",
+  "expr": "x.mo and not x.yw",
+  "type": "negation",
+  "neg": [
+   "yw"
+  ],
+  "brief": "negation"
+ },
+ {
+  "text": "사람은 없고 강아지도 없이 밖에 나와 있는 슈딩이",
+  "expr": "x.out and not x.pr and not x.dg",
+  "type": "negation",
+  "neg": [
+   "dg",
+   "pr"
+  ],
+  "brief": "negation"
+ },
+ {
+  "text": "강아지없이 다른 고양이랑 같이 있는 슈딩이",
+  "expr": "x.mc and not x.dg",
+  "type": "negation",
+  "neg": [
+   "dg"
+  ],
+  "brief": "negation"
+ },
+ {
+  "text": "다른 고양이도 사람도 없는 실내의 슈딩이",
+  "expr": "x.__getattr__('in') and not x.mc and not x.pr",
+  "type": "negation",
+  "neg": [
+   "mc",
+   "pr"
+  ],
+  "brief": "negation"
+ },
+ {
+  "text": "소파 말고 침대나 이불 위에 누워 있는 슈딩이",
+  "expr": "x.bd and x.L and not x.sf",
+  "type": "negation",
+  "neg": [
+   "sf"
+  ],
+  "brief": "negation"
+ },
+ {
+  "text": "사람 품이나 무릎에 있는 사진 빼고 실내에 앉아 있는 슈딩이",
+  "expr": "x.S and x.__getattr__('in') and not x.hd",
+  "type": "negation",
+  "neg": [
+   "hd"
+  ],
+  "brief": "negation"
+ },
+ {
+  "text": "상자나 가방, 바구니 안이 아닌 곳에서 자는 슈딩이",
+  "expr": "x.sl and not x.bx",
+  "type": "negation",
+  "neg": [
+   "bx"
+  ],
+  "brief": "negation"
+ },
+ {
+  "text": "침대나 담요 위는 아니고 소파나 안락의자에 있는 슈딩이",
+  "expr": "x.sf and not x.bd",
+  "type": "negation",
+  "neg": [
+   "bd"
+  ],
+  "brief": "negation"
+ },
+ {
+  "text": "실내가 아니라 밖에서 누워 있는 슈딩이",
+  "expr": "x.out and x.L and not x.__getattr__('in')",
+  "type": "negation",
+  "neg": [
+   "in"
+  ],
+  "brief": "negation"
+ },
+ {
+  "text": "안경을 쓰지 않은 슈딩이",
+  "expr": "not x.gl",
+  "type": "negation",
+  "neg": [
+   "gl"
+  ],
+  "brief": "paraphrase"
+ },
+ {
+  "text": "안경 안 끼고 있는 사진 보여줘",
+  "expr": "not x.gl",
+  "type": "negation",
+  "neg": [
+   "gl"
+  ],
+  "brief": "paraphrase"
+ },
+ {
+  "text": "아무도 없이 슈딩이 혼자 찍힌 사진",
+  "expr": "not x.pr and not x.mc and not x.dg",
+  "type": "negation",
+  "neg": [
+   "dg",
+   "mc",
+   "pr"
+  ],
+  "brief": "paraphrase"
+ },
+ {
+  "text": "사람이나 다른 고양이, 강아지 없이 홀로 있는 슈딩이",
+  "expr": "not x.pr and not x.mc and not x.dg",
+  "type": "negation",
+  "neg": [
+   "dg",
+   "mc",
+   "pr"
+  ],
+  "brief": "paraphrase"
+ },
+ {
+  "text": "사람은 안 보이고 소파에 있는 슈딩이",
+  "expr": "x.sf and not x.pr",
+  "type": "negation",
+  "neg": [
+   "pr"
+  ],
+  "brief": "paraphrase"
+ },
+ {
+  "text": "슈딩이가 소파에 있고 사람은 없는 사진",
+  "expr": "x.sf and not x.pr",
+  "type": "negation",
+  "neg": [
+   "pr"
+  ],
+  "brief": "paraphrase"
+ },
+ {
+  "text": "실내에서 모자를 쓰지 않은 슈딩이",
+  "expr": "x.__getattr__('in') and not x.ht",
+  "type": "negation",
+  "neg": [
+   "ht"
+  ],
+  "brief": "paraphrase"
+ },
+ {
+  "text": "모자 없이 실내에 있는 사진",
+  "expr": "x.__getattr__('in') and not x.ht",
+  "type": "negation",
+  "neg": [
+   "ht"
+  ],
+  "brief": "paraphrase"
+ },
+ {
+  "text": "야외에서 옷을 입지 않은 슈딩이",
+  "expr": "x.out and not x.cl",
+  "type": "negation",
+  "neg": [
+   "cl"
+  ],
+  "brief": "paraphrase"
+ },
+ {
+  "text": "옷 없이 바깥에 있는 사진",
+  "expr": "x.out and not x.cl",
+  "type": "negation",
+  "neg": [
+   "cl"
+  ],
+  "brief": "paraphrase"
+ },
+ {
+  "text": "창가에 있고 다른 고양이는 없는 슈딩이",
+  "expr": "x.wd and not x.mc",
+  "type": "negation",
+  "neg": [
+   "mc"
+  ],
+  "brief": "paraphrase"
+ },
+ {
+  "text": "창문 근처에 있는데 다른 고양이는 안 보이는 사진",
+  "expr": "x.wd and not x.mc",
+  "type": "negation",
+  "neg": [
+   "mc"
+  ],
+  "brief": "paraphrase"
+ },
+ {
+  "text": "옷은 입었는데 안경은 쓰지 않은 슈딩이",
+  "expr": "x.cl and not x.gl",
+  "type": "negation",
+  "neg": [
+   "gl"
+  ],
+  "brief": "paraphrase"
+ },
+ {
+  "text": "안경 없이 옷을 입고 있는 사진",
+  "expr": "x.cl and not x.gl",
+  "type": "negation",
+  "neg": [
+   "gl"
+  ],
+  "brief": "paraphrase"
+ },
+ {
+  "text": "풀밭에서 안경을 쓰지 않은 슈딩이",
+  "expr": "x.gs and not x.gl",
+  "type": "negation",
+  "neg": [
+   "gl"
+  ],
+  "brief": "paraphrase"
+ },
+ {
+  "text": "잔디 위에 있고 안경은 안 낀 사진",
+  "expr": "x.gs and not x.gl",
+  "type": "negation",
+  "neg": [
+   "gl"
+  ],
+  "brief": "paraphrase"
+ },
+ {
+  "text": "사람은 보이지만 안기거나 무릎 위에 있지 않은 사진",
+  "expr": "x.pr and not x.hd",
+  "type": "negation",
+  "neg": [
+   "hd"
+  ],
+  "brief": "paraphrase"
+ }
+]

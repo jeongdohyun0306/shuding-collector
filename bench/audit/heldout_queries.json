@@ -1,0 +1,189 @@
+[
+ {
+  "text": "누워 있는 슈딩이",
+  "expr": "x.L",
+  "type": "single"
+ },
+ {
+  "text": "앉아 있는 슈딩이",
+  "expr": "x.S",
+  "type": "single"
+ },
+ {
+  "text": "서 있거나 걸어 다니는 슈딩이",
+  "expr": "x.T",
+  "type": "single"
+ },
+ {
+  "text": "사람 손이나 몸이 같이 찍힌 슈딩이",
+  "expr": "x.pr",
+  "type": "single"
+ },
+ {
+  "text": "집 안에 있는 슈딩이",
+  "expr": "x.__getattr__('in')",
+  "type": "single"
+ },
+ {
+  "text": "침대나 이불 위에서 자는 슈딩이",
+  "expr": "x.bd and x.sl",
+  "type": "compound"
+ },
+ {
+  "text": "사람 품이나 무릎 위에서 카메라를 보는 슈딩이",
+  "expr": "x.hd and x.lk",
+  "type": "compound"
+ },
+ {
+  "text": "밖에서 서 있거나 걷고 있는 슈딩이",
+  "expr": "x.out and x.T",
+  "type": "compound"
+ },
+ {
+  "text": "강아지나 다른 고양이와 함께 있는 슈딩이",
+  "expr": "x.dg or x.mc",
+  "type": "compound"
+ },
+ {
+  "text": "사람도 강아지도 없이 밖에 나와 있는 슈딩이",
+  "expr": "x.out and not x.pr and not x.dg",
+  "type": "negation",
+  "neg": [
+   "pr",
+   "dg"
+  ]
+ },
+ {
+  "text": "누워 있지만 자지 않고 눈을 뜨고 있는 슈딩이",
+  "expr": "x.L and not x.sl",
+  "type": "negation",
+  "neg": [
+   "sl"
+  ]
+ },
+ {
+  "text": "다른 고양이는 없고 강아지가 같이 있는 슈딩이",
+  "expr": "x.dg and not x.mc",
+  "type": "negation",
+  "neg": [
+   "mc"
+  ]
+ },
+ {
+  "text": "사람 없이 상자나 가방 안에 들어가 있는 슈딩이",
+  "expr": "x.bx and not x.pr",
+  "type": "negation",
+  "neg": [
+   "pr"
+  ]
+ },
+ {
+  "text": "창가에 있지만 카메라는 안 보는 슈딩이",
+  "expr": "x.wd and not x.lk",
+  "type": "negation",
+  "neg": [
+   "lk"
+  ]
+ },
+ {
+  "text": "세면대나 화장실에 있지만 뭘 먹거나 마시지는 않는 슈딩이",
+  "expr": "x.sk and not x.ea",
+  "type": "negation",
+  "neg": [
+   "ea"
+  ]
+ },
+ {
+  "text": "슈딩이 누워있는거",
+  "expr": "x.L",
+  "type": "single"
+ },
+ {
+  "text": "앉아있는슈딩이",
+  "expr": "x.S",
+  "type": "single"
+ },
+ {
+  "text": "서있거나 걸어다니는 슈딩",
+  "expr": "x.T",
+  "type": "single"
+ },
+ {
+  "text": "사람 나온 사진",
+  "expr": "x.pr",
+  "type": "single"
+ },
+ {
+  "text": "실내에있는 슈딩이",
+  "expr": "x.__getattr__('in')",
+  "type": "single"
+ },
+ {
+  "text": "누워서 카메라보는거",
+  "expr": "x.L and x.lk",
+  "type": "compound"
+ },
+ {
+  "text": "노트북옆에 누워있는 슈딩",
+  "expr": "x.lp and x.L",
+  "type": "compound"
+ },
+ {
+  "text": "쇼파나 침대위에 있는 슈딩이",
+  "expr": "x.sf or x.bd",
+  "type": "compound"
+ },
+ {
+  "text": "밖에서 카메라 쳐다보는 슈딩이",
+  "expr": "x.out and x.lk",
+  "type": "compound"
+ },
+ {
+  "text": "누워있는데 안자는 슈딩이",
+  "expr": "x.L and not x.sl",
+  "type": "negation",
+  "neg": [
+   "sl"
+  ]
+ },
+ {
+  "text": "카메라 안쳐다보는거",
+  "expr": "not x.lk",
+  "type": "negation",
+  "neg": [
+   "lk"
+  ]
+ },
+ {
+  "text": "밖인데 사람 안나온 사진",
+  "expr": "x.out and not x.pr",
+  "type": "negation",
+  "neg": [
+   "pr"
+  ]
+ },
+ {
+  "text": "침대말고 딴데 누워있는 슈딩",
+  "expr": "x.L and not x.bd",
+  "type": "negation",
+  "neg": [
+   "bd"
+  ]
+ },
+ {
+  "text": "강아지 없이 다른 고양이랑 있는 슈딩이",
+  "expr": "x.mc and not x.dg",
+  "type": "negation",
+  "neg": [
+   "dg"
+  ]
+ },
+ {
+  "text": "사람없이 카메라 보는 슈딩이",
+  "expr": "x.lk and not x.pr",
+  "type": "negation",
+  "neg": [
+   "pr"
+  ]
+ }
+]

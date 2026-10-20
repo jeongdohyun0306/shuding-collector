@@ -1,0 +1,941 @@
+{
+  "summary": "Write a fresh held-out Korean query set (new queries + paraphrases) and adversarially check each query against its ground-truth expression",
+  "agentCount": 6,
+  "logs": [],
+  "result": [
+    {
+      "key": "memories",
+      "queries": [
+        {
+          "text": "슈딩이자는 사진",
+          "expr": "x.sl",
+          "type": "single",
+          "neg": [],
+          "source": "manual"
+        },
+        {
+          "text": "하품하는거",
+          "expr": "x.yw",
+          "type": "single",
+          "neg": [],
+          "source": "manual"
+        },
+        {
+          "text": "모자 쓴 슈딩이",
+          "expr": "x.ht",
+          "type": "single",
+          "neg": [],
+          "source": "manual"
+        },
+        {
+          "text": "창가에있는 사진",
+          "expr": "x.wd",
+          "type": "single",
+          "neg": [],
+          "source": "manual"
+        },
+        {
+          "text": "누가 안고 있거나 무릎에 올라가 있는 사진",
+          "expr": "x.hd",
+          "type": "single",
+          "neg": [],
+          "source": "manual"
+        },
+        {
+          "text": "강아지랑 같이 찍힌 슈딩이",
+          "expr": "x.dg",
+          "type": "single",
+          "neg": [],
+          "source": "manual"
+        },
+        {
+          "text": "밖에서 사람이랑 있는 사진",
+          "expr": "x.out and x.pr",
+          "type": "compound",
+          "neg": [],
+          "source": "manual"
+        },
+        {
+          "text": "침대나 담요 위에 누워 있는 슈딩이",
+          "expr": "x.bd and x.L",
+          "type": "compound",
+          "neg": [],
+          "source": "manual"
+        },
+        {
+          "text": "앉아서 카메라 보는거",
+          "expr": "x.S and x.lk",
+          "type": "compound",
+          "neg": [],
+          "source": "manual"
+        },
+        {
+          "text": "노트북옆에 누워있는 거",
+          "expr": "x.lp and x.L",
+          "type": "compound",
+          "neg": [],
+          "source": "manual"
+        },
+        {
+          "text": "사람 없이 밖에 있는 사진",
+          "expr": "x.out and not x.pr",
+          "type": "negation",
+          "neg": [
+            "pr"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "슈딩이 카메라 안 보고 누워있는 거",
+          "expr": "x.L and not x.lk",
+          "type": "negation",
+          "neg": [
+            "lk"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "침대나 이불말고 다른 데서 자는 사진",
+          "expr": "x.sl and not x.bd",
+          "type": "negation",
+          "neg": [
+            "bd"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "안겨 있진 않은데 사람이랑 같이 찍힌 거",
+          "expr": "x.pr and not x.hd",
+          "type": "negation",
+          "neg": [
+            "hd"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "고양이 여러 마리 있는데 강아지는 없는 사진",
+          "expr": "x.mc and not x.dg",
+          "type": "negation",
+          "neg": [
+            "dg"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "노트북 옆에 있는데 안 자는 슈딩이",
+          "expr": "x.lp and not x.sl",
+          "type": "negation",
+          "neg": [
+            "sl"
+          ],
+          "source": "manual"
+        }
+      ],
+      "verdicts": [
+        {
+          "text": "슈딩이자는 사진",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "하품하는거",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "모자 쓴 슈딩이",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "창가에있는 사진",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "누가 안고 있거나 무릎에 올라가 있는 사진",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "강아지랑 같이 찍힌 슈딩이",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "밖에서 사람이랑 있는 사진",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "침대나 담요 위에 누워 있는 슈딩이",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "앉아서 카메라 보는거",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "노트북옆에 누워있는 거",
+          "matches": false,
+          "problem": "'노트북'은 랩톱만 가리키는데 lp는 키보드와 데스크톱 컴퓨터까지 포함한다. 데스크톱 키보드나 모니터 옆에 누운 사진은 정답에 들어가지만 텍스트로는 해당하지 않는다. 식으로는 좁힐 수 없으니 텍스트를 '노트북이나 컴퓨터 옆에 누워 있는 거'로 바꿔야 한다."
+        },
+        {
+          "text": "사람 없이 밖에 있는 사진",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "슈딩이 카메라 안 보고 누워있는 거",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "침대나 이불말고 다른 데서 자는 사진",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "안겨 있진 않은데 사람이랑 같이 찍힌 거",
+          "matches": false,
+          "problem": "hd는 '안겨 있음'과 '무릎 위에 있음'을 함께 묶는다. 안기지 않고 사람 무릎에 올라가 있기만 한 사진은 텍스트로는 해당하지만 not x.hd 때문에 빠진다. '무릎에 안겨'라는 표현도 흔해서 두 가지로 읽힌다. 식으로는 고칠 수 없으니 텍스트를 '안겨 있거나 무릎에 올라가 있진 않은데 사람이랑 같이 찍힌 거'로 바꿔야 한다."
+        },
+        {
+          "text": "고양이 여러 마리 있는데 강아지는 없는 사진",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "노트북 옆에 있는데 안 자는 슈딩이",
+          "matches": false,
+          "problem": "10번과 같은 문제다. '노트북'은 랩톱만 가리키는데 lp는 키보드와 데스크톱 컴퓨터까지 포함한다. 부정(안 자는)은 고양이에 제대로 걸려 있다. 텍스트를 '노트북이나 컴퓨터 옆에 있는데 안 자는 슈딩이'로 바꿔야 한다."
+        }
+      ]
+    },
+    {
+      "key": "negation",
+      "queries": [
+        {
+          "text": "모자 안 쓰고 사람한테 안기거나 무릎에 올라간 슈딩이",
+          "expr": "x.hd and not x.ht",
+          "type": "negation",
+          "neg": [
+            "ht"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "안경 안쓴 채 노트북이나 컴퓨터 옆에 있는 슈딩이",
+          "expr": "x.lp and not x.gl",
+          "type": "negation",
+          "neg": [
+            "gl"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "침대나 담요 위에서 안자고 있는 슈딩이",
+          "expr": "x.bd and not x.sl",
+          "type": "negation",
+          "neg": [
+            "sl"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "카메라를 못 본 채 TV 근처에 있는 슈딩이",
+          "expr": "x.tv and not x.lk",
+          "type": "negation",
+          "neg": [
+            "lk"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "창가에 있는데 사람은 보이지 않는 슈딩이",
+          "expr": "x.wd and not x.pr",
+          "type": "negation",
+          "neg": [
+            "pr"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "하품하지 않고 입을 벌려 이빨이 보이는 슈딩이",
+          "expr": "x.mo and not x.yw",
+          "type": "negation",
+          "neg": [
+            "yw"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "노트북이나 키보드 옆에서 자지도 않고 카메라를 보지도 않는 슈딩이",
+          "expr": "x.lp and not x.sl and not x.lk",
+          "type": "negation",
+          "neg": [
+            "sl",
+            "lk"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "사람은 없고 강아지도 없이 밖에 나와 있는 슈딩이",
+          "expr": "x.out and not x.pr and not x.dg",
+          "type": "negation",
+          "neg": [
+            "pr",
+            "dg"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "강아지없이 다른 고양이랑 같이 있는 슈딩이",
+          "expr": "x.mc and not x.dg",
+          "type": "negation",
+          "neg": [
+            "dg"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "다른 고양이도 사람도 없는 실내의 슈딩이",
+          "expr": "x.__getattr__('in') and not x.mc and not x.pr",
+          "type": "negation",
+          "neg": [
+            "mc",
+            "pr"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "사람없는 세면대나 화장실에 있는 슈딩이",
+          "expr": "x.sk and not x.pr",
+          "type": "negation",
+          "neg": [
+            "pr"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "소파 말고 침대나 이불 위에 누워 있는 슈딩이",
+          "expr": "x.bd and x.L and not x.sf",
+          "type": "negation",
+          "neg": [
+            "sf"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "사람 품이나 무릎에 있는 사진 빼고 실내에 앉아 있는 슈딩이",
+          "expr": "x.S and x.__getattr__('in') and not x.hd",
+          "type": "negation",
+          "neg": [
+            "hd"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "상자나 가방, 바구니 안이 아닌 곳에서 자는 슈딩이",
+          "expr": "x.sl and not x.bx",
+          "type": "negation",
+          "neg": [
+            "bx"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "침대나 담요 위는 아니고 소파나 안락의자에 있는 슈딩이",
+          "expr": "x.sf and not x.bd",
+          "type": "negation",
+          "neg": [
+            "bd"
+          ],
+          "source": "manual"
+        },
+        {
+          "text": "실내가 아니라 밖에서 누워 있는 슈딩이",
+          "expr": "x.out and x.L and not x.__getattr__('in')",
+          "type": "negation",
+          "neg": [
+            "in"
+          ],
+          "source": "manual"
+        }
+      ],
+      "verdicts": [
+        {
+          "text": "모자 안 쓰고 사람한테 안기거나 무릎에 올라간 슈딩이",
+          "matches": true,
+          "problem": "None. The -고 clause shares its subject with 안기거나, so the hat negation applies to the cat. Being held or sitting on a lap maps exactly to hd."
+        },
+        {
+          "text": "안경 안쓴 채 노트북이나 컴퓨터 옆에 있는 슈딩이",
+          "matches": true,
+          "problem": "None. 노트북이나 컴퓨터 covers laptop, keyboard and computer (lp). The glasses negation applies to the cat. 안쓴 should be spaced 안 쓴, but that does not change the meaning."
+        },
+        {
+          "text": "침대나 담요 위에서 안자고 있는 슈딩이",
+          "matches": false,
+          "problem": "The scope of the negation is ambiguous. '침대 위에서 안 자고 있는' can mean 'on the bed and awake' (bd and not sl). It can also mean 'not sleeping on the bed', for example sleeping somewhere else, which is not (bd and sl). Rephrase so the location is stated and only the sleeping is negated, e.g. '침대나 담요 위에 있는데 자고 있지는 않은 슈딩이'.",
+          "fixed_expr": "x.bd and not x.sl"
+        },
+        {
+          "text": "카메라를 못 본 채 TV 근처에 있는 슈딩이",
+          "matches": false,
+          "problem": "'못 본 채' means the cat did not see or notice the camera. That is a claim about awareness, not gaze. lk only says whether the cat is looking at the camera. A cat glancing away after noticing the photographer is not lk, yet a reader would not describe it as '카메라를 못 본'. Use '카메라를 보지 않고 TV 근처에 있는 슈딩이'.",
+          "fixed_expr": "x.tv and not x.lk"
+        },
+        {
+          "text": "창가에 있는데 사람은 보이지 않는 슈딩이",
+          "matches": true,
+          "problem": "None. 창가 maps to wd, and '사람은 보이지 않는' maps to not pr (person visible)."
+        },
+        {
+          "text": "하품하지 않고 입을 벌려 이빨이 보이는 슈딩이",
+          "matches": true,
+          "problem": "None. The text says mouth open with teeth visible (mo) and not yawning (not yw)."
+        },
+        {
+          "text": "노트북이나 키보드 옆에서 자지도 않고 카메라를 보지도 않는 슈딩이",
+          "matches": false,
+          "problem": "The text names only a laptop or keyboard, but lp also includes a computer. A photo where the cat is next to a desktop monitor or tower with no keyboard visible counts in the expression but not in the text. Changing the text to '노트북이나 컴퓨터 옆에서 자지도 않고 카메라를 보지도 않는 슈딩이' makes it exact. The negation scope is fine because 도 puts the focus on the verbs."
+        },
+        {
+          "text": "사람은 없고 강아지도 없이 밖에 나와 있는 슈딩이",
+          "matches": true,
+          "problem": "None. Outdoors (out), no person (not pr), no dog (not dg)."
+        },
+        {
+          "text": "강아지없이 다른 고양이랑 같이 있는 슈딩이",
+          "matches": true,
+          "problem": "None. With another cat (mc) and no dog (not dg)."
+        },
+        {
+          "text": "다른 고양이도 사람도 없는 실내의 슈딩이",
+          "matches": true,
+          "problem": "None. Indoors, with no other cat (not mc) and no person (not pr)."
+        },
+        {
+          "text": "사람없는 세면대나 화장실에 있는 슈딩이",
+          "matches": false,
+          "problem": "'세면대' means a bathroom washbasin. sk is defined as any sink, bathroom or toilet, so a cat in a kitchen sink (싱크대) is sk but does not fit '세면대나 화장실'. '사람없는' also describes the room rather than the photo, which is minor. Use e.g. '세면대·싱크대나 화장실에 있는데 사람은 보이지 않는 슈딩이'."
+        },
+        {
+          "text": "소파 말고 침대나 이불 위에 누워 있는 슈딩이",
+          "matches": true,
+          "problem": "None that matters. 이불 maps to bd, 누워 있는 maps to L (C photos also have L), and '소파 말고' maps to not sf. An armchair is commonly called 1인용 소파 in Korean, so 소파 covers sf."
+        },
+        {
+          "text": "사람 품이나 무릎에 있는 사진 빼고 실내에 앉아 있는 슈딩이",
+          "matches": true,
+          "problem": "None. Sitting (S), indoors, and excluding photos where the cat is held or on a lap (not hd)."
+        },
+        {
+          "text": "상자나 가방, 바구니 안이 아닌 곳에서 자는 슈딩이",
+          "matches": true,
+          "problem": "None. A suitcase is a 가방 (여행가방) in Korean, so 상자·가방·바구니 covers bx. 자는 maps to sl."
+        },
+        {
+          "text": "침대나 담요 위는 아니고 소파나 안락의자에 있는 슈딩이",
+          "matches": true,
+          "problem": "None. On a sofa or armchair (sf) and not on a bed or blanket (not bd). A blanket on a sofa is excluded by both the text and the expression."
+        },
+        {
+          "text": "실내가 아니라 밖에서 누워 있는 슈딩이",
+          "matches": true,
+          "problem": "None. Outdoors, lying, and not indoors. '실내가 아니라' explicitly adds 'not in', so photos tagged both in and out are excluded."
+        }
+      ]
+    },
+    {
+      "key": "paraphrase",
+      "queries": [
+        {
+          "text": "안경을 쓰지 않은 슈딩이",
+          "expr": "not x.gl",
+          "type": "negation",
+          "neg": [
+            "gl"
+          ],
+          "source": "안경을 안 쓴 슈딩이"
+        },
+        {
+          "text": "안경 안 끼고 있는 사진 보여줘",
+          "expr": "not x.gl",
+          "type": "negation",
+          "neg": [
+            "gl"
+          ],
+          "source": "안경을 안 쓴 슈딩이"
+        },
+        {
+          "text": "아무도 없이 슈딩이 혼자 찍힌 사진",
+          "expr": "not x.pr and not x.mc and not x.dg",
+          "type": "negation",
+          "neg": [
+            "pr",
+            "mc",
+            "dg"
+          ],
+          "source": "사람 없이 혼자 있는 슈딩이"
+        },
+        {
+          "text": "사람이나 다른 고양이, 강아지 없이 홀로 있는 슈딩이",
+          "expr": "not x.pr and not x.mc and not x.dg",
+          "type": "negation",
+          "neg": [
+            "pr",
+            "mc",
+            "dg"
+          ],
+          "source": "사람 없이 혼자 있는 슈딩이"
+        },
+        {
+          "text": "침대에 있는데 잠들지 않은 슈딩이",
+          "expr": "x.bd and not x.sl",
+          "type": "negation",
+          "neg": [
+            "sl"
+          ],
+          "source": "자지 않고 침대 위에 있는 슈딩이"
+        },
+        {
+          "text": "슈딩이가 침대 위에서 안 자고 있는 사진",
+          "expr": "x.bd and not x.sl",
+          "type": "negation",
+          "neg": [
+            "sl"
+          ],
+          "source": "자지 않고 침대 위에 있는 슈딩이"
+        },
+        {
+          "text": "사람은 안 보이고 소파에 있는 슈딩이",
+          "expr": "x.sf and not x.pr",
+          "type": "negation",
+          "neg": [
+            "pr"
+          ],
+          "source": "사람 없이 소파에 있는 슈딩이"
+        },
+        {
+          "text": "슈딩이가 소파에 있고 사람은 없는 사진",
+          "expr": "x.sf and not x.pr",
+          "type": "negation",
+          "neg": [
+            "pr"
+          ],
+          "source": "사람 없이 소파에 있는 슈딩이"
+        },
+        {
+          "text": "실내에서 모자를 쓰지 않은 슈딩이",
+          "expr": "x.__getattr__('in') and not x.ht",
+          "type": "negation",
+          "neg": [
+            "ht"
+          ],
+          "source": "모자 안 쓰고 실내에 있는 슈딩이"
+        },
+        {
+          "text": "모자 없이 실내에 있는 사진",
+          "expr": "x.__getattr__('in') and not x.ht",
+          "type": "negation",
+          "neg": [
+            "ht"
+          ],
+          "source": "모자 안 쓰고 실내에 있는 슈딩이"
+        },
+        {
+          "text": "침대 위에 있고 강아지는 없는 슈딩이",
+          "expr": "x.bd and not x.dg",
+          "type": "negation",
+          "neg": [
+            "dg"
+          ],
+          "source": "강아지 없이 침대에 있는 슈딩이"
+        },
+        {
+          "text": "개가 안 보이는 침대 위 슈딩이 사진",
+          "expr": "x.bd and not x.dg",
+          "type": "negation",
+          "neg": [
+            "dg"
+          ],
+          "source": "강아지 없이 침대에 있는 슈딩이"
+        },
+        {
+          "text": "사람 없이 노트북 옆에 있는 슈딩이",
+          "expr": "x.lp and not x.pr",
+          "type": "negation",
+          "neg": [
+            "pr"
+          ],
+          "source": "노트북 옆에 있지만 사람은 없는 슈딩이"
+        },
+        {
+          "text": "노트북 곁에 있고 사람은 안 보이는 사진",
+          "expr": "x.lp and not x.pr",
+          "type": "negation",
+          "neg": [
+            "pr"
+          ],
+          "source": "노트북 옆에 있지만 사람은 없는 슈딩이"
+        },
+        {
+          "text": "야외에서 옷을 입지 않은 슈딩이",
+          "expr": "x.out and not x.cl",
+          "type": "negation",
+          "neg": [
+            "cl"
+          ],
+          "source": "옷을 안 입고 밖에 있는 슈딩이"
+        },
+        {
+          "text": "옷 없이 바깥에 있는 사진",
+          "expr": "x.out and not x.cl",
+          "type": "negation",
+          "neg": [
+            "cl"
+          ],
+          "source": "옷을 안 입고 밖에 있는 슈딩이"
+        },
+        {
+          "text": "창가에 있고 다른 고양이는 없는 슈딩이",
+          "expr": "x.wd and not x.mc",
+          "type": "negation",
+          "neg": [
+            "mc"
+          ],
+          "source": "다른 고양이 없이 창가에 있는 슈딩이"
+        },
+        {
+          "text": "창문 근처에 있는데 다른 고양이는 안 보이는 사진",
+          "expr": "x.wd and not x.mc",
+          "type": "negation",
+          "neg": [
+            "mc"
+          ],
+          "source": "다른 고양이 없이 창가에 있는 슈딩이"
+        },
+        {
+          "text": "옷은 입었는데 안경은 쓰지 않은 슈딩이",
+          "expr": "x.cl and not x.gl",
+          "type": "negation",
+          "neg": [
+            "gl"
+          ],
+          "source": "안경은 안 썼지만 옷을 입은 슈딩이"
+        },
+        {
+          "text": "안경 없이 옷을 입고 있는 사진",
+          "expr": "x.cl and not x.gl",
+          "type": "negation",
+          "neg": [
+            "gl"
+          ],
+          "source": "안경은 안 썼지만 옷을 입은 슈딩이"
+        },
+        {
+          "text": "풀밭에서 안경을 쓰지 않은 슈딩이",
+          "expr": "x.gs and not x.gl",
+          "type": "negation",
+          "neg": [
+            "gl"
+          ],
+          "source": "안경 안 쓰고 풀밭에 있는 슈딩이"
+        },
+        {
+          "text": "잔디 위에 있고 안경은 안 낀 사진",
+          "expr": "x.gs and not x.gl",
+          "type": "negation",
+          "neg": [
+            "gl"
+          ],
+          "source": "안경 안 쓰고 풀밭에 있는 슈딩이"
+        },
+        {
+          "text": "사람과 함께 있는데 안겨 있지 않은 슈딩이",
+          "expr": "x.pr and not x.hd",
+          "type": "negation",
+          "neg": [
+            "hd"
+          ],
+          "source": "사람 옆에 있지만 안기지 않은 슈딩이"
+        },
+        {
+          "text": "사람은 보이지만 안기거나 무릎 위에 있지 않은 사진",
+          "expr": "x.pr and not x.hd",
+          "type": "negation",
+          "neg": [
+            "hd"
+          ],
+          "source": "사람 옆에 있지만 안기지 않은 슈딩이"
+        }
+      ],
+      "verdicts": [
+        {
+          "text": "안경을 쓰지 않은 슈딩이",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "안경 안 끼고 있는 사진 보여줘",
+          "matches": true,
+          "problem": "주어가 빠졌지만 슈딩이 사진 모음이라 고양이가 안경을 안 낀 사진으로 읽힌다."
+        },
+        {
+          "text": "아무도 없이 슈딩이 혼자 찍힌 사진",
+          "matches": true,
+          "problem": "'아무도 없이'는 사람, '혼자'는 다른 고양이와 개까지 빼는 뜻이라 세 조건과 맞는다."
+        },
+        {
+          "text": "사람이나 다른 고양이, 강아지 없이 홀로 있는 슈딩이",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "침대에 있는데 잠들지 않은 슈딩이",
+          "matches": false,
+          "problem": "bd는 '침대 또는 담요'인데 문장은 침대만 말한다. 바닥이나 소파 위 담요에 있는 사진은 식에는 걸리고 문장에는 안 걸린다. '침대나 담요 위에 있는데 잠들지 않은'처럼 고쳐야 한다. 덧붙여 sl은 눈 감고 쉬는 것까지 포함해서 '잠들지 않은'보다 넓다(작은 차이)."
+        },
+        {
+          "text": "슈딩이가 침대 위에서 안 자고 있는 사진",
+          "matches": false,
+          "problem": "bd는 '침대 또는 담요'인데 문장은 침대만 말한다. 침대가 아닌 곳의 담요 위 사진도 식에 걸린다. '침대나 담요 위에서'로 고쳐야 한다."
+        },
+        {
+          "text": "사람은 안 보이고 소파에 있는 슈딩이",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "슈딩이가 소파에 있고 사람은 없는 사진",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "실내에서 모자를 쓰지 않은 슈딩이",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "모자 없이 실내에 있는 사진",
+          "matches": true,
+          "problem": "주어가 빠졌지만 고양이가 모자를 안 쓰고 실내에 있다는 뜻으로 읽힌다."
+        },
+        {
+          "text": "침대 위에 있고 강아지는 없는 슈딩이",
+          "matches": false,
+          "problem": "bd는 '침대 또는 담요'인데 문장은 침대만 말한다. 침대 밖 담요 위 사진도 식에 걸린다. '침대나 담요 위에 있고'로 고쳐야 한다."
+        },
+        {
+          "text": "개가 안 보이는 침대 위 슈딩이 사진",
+          "matches": false,
+          "problem": "bd는 '침대 또는 담요'인데 문장은 침대만 말한다. 침대 밖 담요 위 사진도 식에 걸린다. '침대나 담요 위'로 고쳐야 한다."
+        },
+        {
+          "text": "사람 없이 노트북 옆에 있는 슈딩이",
+          "matches": false,
+          "problem": "lp는 노트북, 키보드, 컴퓨터를 모두 포함하는데 문장은 노트북만 말한다. 데스크톱 키보드 옆 사진은 식에는 걸리고 문장에는 안 걸린다. '노트북이나 컴퓨터 옆에'로 고쳐야 한다."
+        },
+        {
+          "text": "노트북 곁에 있고 사람은 안 보이는 사진",
+          "matches": false,
+          "problem": "lp는 노트북, 키보드, 컴퓨터를 모두 포함하는데 문장은 노트북만 말한다. '노트북이나 컴퓨터 곁에'로 고쳐야 한다."
+        },
+        {
+          "text": "야외에서 옷을 입지 않은 슈딩이",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "옷 없이 바깥에 있는 사진",
+          "matches": true,
+          "problem": "주어가 빠졌지만 고양이가 옷을 안 입고 밖에 있다는 뜻으로 읽힌다."
+        },
+        {
+          "text": "창가에 있고 다른 고양이는 없는 슈딩이",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "창문 근처에 있는데 다른 고양이는 안 보이는 사진",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "옷은 입었는데 안경은 쓰지 않은 슈딩이",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "안경 없이 옷을 입고 있는 사진",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "풀밭에서 안경을 쓰지 않은 슈딩이",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "잔디 위에 있고 안경은 안 낀 사진",
+          "matches": true,
+          "problem": ""
+        },
+        {
+          "text": "사람과 함께 있는데 안겨 있지 않은 슈딩이",
+          "matches": false,
+          "problem": "hd는 안긴 것과 무릎 위에 있는 것을 모두 포함한다. 안기지 않고 무릎 위에만 있는 사진은 문장에는 걸리는데 식(not hd)에서는 빠진다. 24번처럼 '안기거나 무릎 위에 있지 않은'으로 고쳐야 한다. 안긴 것만 나타내는 코드가 없어서 식으로는 고칠 수 없다."
+        },
+        {
+          "text": "사람은 보이지만 안기거나 무릎 위에 있지 않은 사진",
+          "matches": true,
+          "problem": ""
+        }
+      ]
+    }
+  ],
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Write"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 2,
+      "title": "Check"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "write:memories",
+      "phaseIndex": 1,
+      "phaseTitle": "Write",
+      "agentId": "ae377d45a876ed0f2",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792478839792,
+      "queuedAt": 1792478839764,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are a member of a high-school club that looks after the school cat 슈딩이. Write 16 Korean search queries you would type into a photo search box to find specific photos of 슈딩이. Mix: about 6 single-condition, 4 two-condition, and 6 that exclude something (negation). Write the way a real student types: some with the name, some without, some casual endings (~하는 거, ~한 사진), some spacing slips. Each ne…",
+      "promptFramed": true,
+      "lastProgressAt": 1792478895598,
+      "tokens": 93372,
+      "toolCalls": 1,
+      "durationMs": 55804,
+      "resultPreview": "{\"queries\":[{\"text\":\"슈딩이자는 사진\",\"expr\":\"x.sl\",\"type\":\"single\",\"neg\":[],\"source\":\"manual\"},{\"text\":\"하품하는거\",\"expr\":\"x.yw\",\"type\":\"single\",\"neg\":[],\"source\":\"manual\"},{\"text\":\"모자 쓴 슈딩이\",\"expr\":\"x.ht\",\"type\":\"single\",\"neg\":[],\"source\":\"manual\"},{\"text\":\"창가에있는 사진\",\"expr\":\"x.wd\",\"type\":\"single\",\"neg\":[],\"source\":\"manual\"},{\"text\":\"누가 안고 있거나 무릎에 올라가 있는 사진\",\"expr\":\"x.hd\",\"type\":\"single\",\"neg\":[],\"source\":\"…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "write:negation",
+      "phaseIndex": 1,
+      "phaseTitle": "Write",
+      "agentId": "aa0314d52e6e9018e",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792478839793,
+      "queuedAt": 1792478839765,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "Write 16 Korean search queries for photos of a cat named 슈딩이 where at least 12 exclude something. Vary the Korean negation forms widely and naturally: 안/못 + verb (spaced and glued, e.g. 안쓴, 안자는), -지 않-, -지 않고, -지도 않-, 없이/없는/없고 (spaced and glued), 말고, 빼고, 아닌, 아니고, 아니라, two exclusions in one query, exclusions about place, action, accessory and companions. Each query needs >= 3 matching photos by the…",
+      "promptFramed": true,
+      "lastProgressAt": 1792478985185,
+      "tokens": 93424,
+      "toolCalls": 1,
+      "durationMs": 140391,
+      "resultPreview": "{\"queries\":[{\"text\":\"모자 안 쓰고 사람한테 안기거나 무릎에 올라간 슈딩이\",\"expr\":\"x.hd and not x.ht\",\"type\":\"negation\",\"neg\":[\"ht\"],\"source\":\"manual\"},{\"text\":\"안경 안쓴 채 노트북이나 컴퓨터 옆에 있는 슈딩이\",\"expr\":\"x.lp and not x.gl\",\"type\":\"negation\",\"neg\":[\"gl\"],\"source\":\"manual\"},{\"text\":\"침대나 담요 위에서 안자고 있는 슈딩이\",\"expr\":\"x.bd and not x.sl\",\"type\":\"negation\",\"neg\":[\"sl\"],\"source\":\"manual\"},{\"text\":\"카메라를 못 본 채 TV 근처에 있는 슈딩이\",\"expr\":\"x.tv…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "write:paraphrase",
+      "phaseIndex": 1,
+      "phaseTitle": "Write",
+      "agentId": "af48f2a8e84c646f5",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792478839793,
+      "queuedAt": 1792478839765,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "Here are 12 existing Korean queries with their expressions. For each one write 2 paraphrases that keep exactly the same meaning and the same expression but use different words and a different negation form or word order (e.g. 안 쓴 -> 쓰지 않은, 없이 -> 없는, add or drop the name, casual ending). Mark each with source = the original text. Output 24 queries.\n[{\"text\":\"안경을 안 쓴 슈딩이\",\"expr\":\"not x.gl\",\"neg\":[\"g…",
+      "promptFramed": true,
+      "lastProgressAt": 1792478886751,
+      "tokens": 93967,
+      "toolCalls": 1,
+      "durationMs": 41933,
+      "resultPreview": "{\"queries\":[{\"text\":\"안경을 쓰지 않은 슈딩이\",\"expr\":\"not x.gl\",\"type\":\"negation\",\"neg\":[\"gl\"],\"source\":\"안경을 안 쓴 슈딩이\"},{\"text\":\"안경 안 끼고 있는 사진 보여줘\",\"expr\":\"not x.gl\",\"type\":\"negation\",\"neg\":[\"gl\"],\"source\":\"안경을 안 쓴 슈딩이\"},{\"text\":\"아무도 없이 슈딩이 혼자 찍힌 사진\",\"expr\":\"not x.pr and not x.mc and not x.dg\",\"type\":\"negation\",\"neg\":[\"pr\",\"mc\",\"dg\"],\"source\":\"사람 없이 혼자 있는 슈딩이\"},{\"text\":\"사람이나 다른 고양이, 강아지 없이 홀로 있는 슈딩이\",\"expr\":…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "check:paraphrase",
+      "phaseIndex": 2,
+      "phaseTitle": "Check",
+      "agentId": "afb207c1c71377c40",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792478886767,
+      "queuedAt": 1792478886756,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are a strict Korean-language checker for a search benchmark. For each query below decide whether the Korean text means EXACTLY its boolean expression over the photo codes (nothing more, nothing less). Common problems: the text asks for something the expression does not encode (extra condition), the expression requires something the text does not say, wrong polarity, a negation that applies to …",
+      "promptFramed": true,
+      "lastProgressAt": 1792478958411,
+      "tokens": 96006,
+      "toolCalls": 1,
+      "durationMs": 71643,
+      "resultPreview": "{\"verdicts\":[{\"text\":\"안경을 쓰지 않은 슈딩이\",\"matches\":true,\"problem\":\"\"},{\"text\":\"안경 안 끼고 있는 사진 보여줘\",\"matches\":true,\"problem\":\"주어가 빠졌지만 슈딩이 사진 모음이라 고양이가 안경을 안 낀 사진으로 읽힌다.\"},{\"text\":\"아무도 없이 슈딩이 혼자 찍힌 사진\",\"matches\":true,\"problem\":\"'아무도 없이'는 사람, '혼자'는 다른 고양이와 개까지 빼는 뜻이라 세 조건과 맞는다.\"},{\"text\":\"사람이나 다른 고양이, 강아지 없이 홀로 있는 슈딩이\",\"matches\":true,\"problem\":\"\"},{\"text\":\"침대에 있는데 잠들지 않은 슈딩이\",\"matches\":false,\"problem\":\"b…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "check:memories",
+      "phaseIndex": 2,
+      "phaseTitle": "Check",
+      "agentId": "a4acb21fbf2bb8555",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792478895604,
+      "queuedAt": 1792478895600,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are a strict Korean-language checker for a search benchmark. For each query below decide whether the Korean text means EXACTLY its boolean expression over the photo codes (nothing more, nothing less). Common problems: the text asks for something the expression does not encode (extra condition), the expression requires something the text does not say, wrong polarity, a negation that applies to …",
+      "promptFramed": true,
+      "lastProgressAt": 1792478941028,
+      "tokens": 94584,
+      "toolCalls": 1,
+      "durationMs": 45422,
+      "resultPreview": "{\"verdicts\":[{\"text\":\"슈딩이자는 사진\",\"matches\":true,\"problem\":\"\"},{\"text\":\"하품하는거\",\"matches\":true,\"problem\":\"\"},{\"text\":\"모자 쓴 슈딩이\",\"matches\":true,\"problem\":\"\"},{\"text\":\"창가에있는 사진\",\"matches\":true,\"problem\":\"\"},{\"text\":\"누가 안고 있거나 무릎에 올라가 있는 사진\",\"matches\":true,\"problem\":\"\"},{\"text\":\"강아지랑 같이 찍힌 슈딩이\",\"matches\":true,\"problem\":\"\"},{\"text\":\"밖에서 사람이랑 있는 사진\",\"matches\":true,\"problem\":\"\"},{\"text\":\"침대나 담요 위에 누워 있는 슈딩…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "check:negation",
+      "phaseIndex": 2,
+      "phaseTitle": "Check",
+      "agentId": "ab6f65f4fee57eff1",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792478985194,
+      "queuedAt": 1792478985188,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are a strict Korean-language checker for a search benchmark. For each query below decide whether the Korean text means EXACTLY its boolean expression over the photo codes (nothing more, nothing less). Common problems: the text asks for something the expression does not encode (extra condition), the expression requires something the text does not say, wrong polarity, a negation that applies to …",
+      "promptFramed": true,
+      "lastProgressAt": 1792479096786,
+      "tokens": 94979,
+      "toolCalls": 1,
+      "durationMs": 111591,
+      "resultPreview": "{\"verdicts\":[{\"text\":\"모자 안 쓰고 사람한테 안기거나 무릎에 올라간 슈딩이\",\"matches\":true,\"problem\":\"None. The -고 clause shares its subject with 안기거나, so the hat negation applies to the cat. Being held or sitting on a lap maps exactly to hd.\"},{\"text\":\"안경 안쓴 채 노트북이나 컴퓨터 옆에 있는 슈딩이\",\"matches\":true,\"problem\":\"None. 노트북이나 컴퓨터 covers laptop, keyboard and computer (lp). The glasses negation applies to the cat. 안쓴 should be s…"
+    }
+  ],
+  "totalTokens": 566332,
+  "totalToolCalls": 6
+}

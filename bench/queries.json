@@ -1,0 +1,369 @@
+[
+ {
+  "id": "s01",
+  "type": "single",
+  "split": "dev",
+  "text": "하품하는 슈딩이",
+  "expr": "x.yw"
+ },
+ {
+  "id": "s02",
+  "type": "single",
+  "split": "test",
+  "text": "이빨 보여주는 슈딩이",
+  "expr": "x.mo"
+ },
+ {
+  "id": "s03",
+  "type": "single",
+  "split": "dev",
+  "text": "풀밭에 있는 슈딩이",
+  "expr": "x.gs"
+ },
+ {
+  "id": "s04",
+  "type": "single",
+  "split": "test",
+  "text": "자고 있는 슈딩이",
+  "expr": "x.sl"
+ },
+ {
+  "id": "s05",
+  "type": "single",
+  "split": "dev",
+  "text": "소파 위의 슈딩이",
+  "expr": "x.sf"
+ },
+ {
+  "id": "s06",
+  "type": "single",
+  "split": "test",
+  "text": "침대나 이불 위에 있는 슈딩이",
+  "expr": "x.bd"
+ },
+ {
+  "id": "s07",
+  "type": "single",
+  "split": "dev",
+  "text": "상자나 가방 안에 들어간 슈딩이",
+  "expr": "x.bx"
+ },
+ {
+  "id": "s08",
+  "type": "single",
+  "split": "test",
+  "text": "세면대나 화장실에 있는 슈딩이",
+  "expr": "x.sk"
+ },
+ {
+  "id": "s09",
+  "type": "single",
+  "split": "dev",
+  "text": "창가에 있는 슈딩이",
+  "expr": "x.wd"
+ },
+ {
+  "id": "s10",
+  "type": "single",
+  "split": "test",
+  "text": "자동차 위에 올라간 슈딩이",
+  "expr": "x.cr"
+ },
+ {
+  "id": "s11",
+  "type": "single",
+  "split": "dev",
+  "text": "노트북 앞에 있는 슈딩이",
+  "expr": "x.lp"
+ },
+ {
+  "id": "s12",
+  "type": "single",
+  "split": "test",
+  "text": "안경 쓴 슈딩이",
+  "expr": "x.gl"
+ },
+ {
+  "id": "s13",
+  "type": "single",
+  "split": "dev",
+  "text": "모자 쓴 슈딩이",
+  "expr": "x.ht"
+ },
+ {
+  "id": "s14",
+  "type": "single",
+  "split": "test",
+  "text": "옷 입은 슈딩이",
+  "expr": "x.cl"
+ },
+ {
+  "id": "s15",
+  "type": "single",
+  "split": "dev",
+  "text": "넥타이 맨 슈딩이",
+  "expr": "x.tie"
+ },
+ {
+  "id": "s16",
+  "type": "single",
+  "split": "test",
+  "text": "사람한테 안긴 슈딩이",
+  "expr": "x.hd"
+ },
+ {
+  "id": "s17",
+  "type": "single",
+  "split": "dev",
+  "text": "강아지랑 같이 있는 슈딩이",
+  "expr": "x.dg"
+ },
+ {
+  "id": "s18",
+  "type": "single",
+  "split": "test",
+  "text": "다른 고양이들과 함께 있는 슈딩이",
+  "expr": "x.mc"
+ },
+ {
+  "id": "s19",
+  "type": "single",
+  "split": "dev",
+  "text": "동그랗게 웅크린 슈딩이",
+  "expr": "x.C"
+ },
+ {
+  "id": "s20",
+  "type": "single",
+  "split": "test",
+  "text": "밥 먹거나 물 마시는 슈딩이",
+  "expr": "x.ea"
+ },
+ {
+  "id": "s21",
+  "type": "single",
+  "split": "dev",
+  "text": "텔레비전 앞에 있는 슈딩이",
+  "expr": "x.tv"
+ },
+ {
+  "id": "s22",
+  "type": "single",
+  "split": "test",
+  "text": "신발 옆에 있는 슈딩이",
+  "expr": "x.sh"
+ },
+ {
+  "id": "s23",
+  "type": "single",
+  "split": "dev",
+  "text": "밖에 나와 있는 슈딩이",
+  "expr": "x.out"
+ },
+ {
+  "id": "s24",
+  "type": "single",
+  "split": "test",
+  "text": "카메라를 똑바로 쳐다보는 슈딩이",
+  "expr": "x.lk"
+ },
+ {
+  "id": "s25",
+  "type": "single",
+  "split": "dev",
+  "text": "장난감 갖고 노는 슈딩이",
+  "expr": "x.pl"
+ },
+ {
+  "id": "c01",
+  "type": "compound",
+  "split": "dev",
+  "text": "소파에서 자는 슈딩이",
+  "expr": "x.sf and x.sl"
+ },
+ {
+  "id": "c02",
+  "type": "compound",
+  "split": "test",
+  "text": "노트북 위에서 자는 슈딩이",
+  "expr": "x.lp and x.sl"
+ },
+ {
+  "id": "c03",
+  "type": "compound",
+  "split": "dev",
+  "text": "침대 위에서 사람이랑 같이 있는 슈딩이",
+  "expr": "x.bd and x.pr"
+ },
+ {
+  "id": "c04",
+  "type": "compound",
+  "split": "test",
+  "text": "창가에 앉아 있는 슈딩이",
+  "expr": "x.wd and x.S"
+ },
+ {
+  "id": "c05",
+  "type": "compound",
+  "split": "dev",
+  "text": "자동차 위에 누워 있는 슈딩이",
+  "expr": "x.cr and x.L"
+ },
+ {
+  "id": "c06",
+  "type": "compound",
+  "split": "test",
+  "text": "밖에서 자는 슈딩이",
+  "expr": "x.out and x.sl"
+ },
+ {
+  "id": "c07",
+  "type": "compound",
+  "split": "dev",
+  "text": "안경 쓰고 옷 입은 슈딩이",
+  "expr": "x.gl and x.cl"
+ },
+ {
+  "id": "c08",
+  "type": "compound",
+  "split": "test",
+  "text": "상자 안에서 카메라를 보는 슈딩이",
+  "expr": "x.bx and x.lk"
+ },
+ {
+  "id": "c09",
+  "type": "compound",
+  "split": "dev",
+  "text": "풀밭에 앉아 있는 슈딩이",
+  "expr": "x.gs and x.S"
+ },
+ {
+  "id": "c10",
+  "type": "compound",
+  "split": "test",
+  "text": "세면대에서 물 마시는 슈딩이",
+  "expr": "x.sk and x.ea"
+ },
+ {
+  "id": "n01",
+  "type": "negation",
+  "split": "dev",
+  "text": "안경을 안 쓴 슈딩이",
+  "expr": "not x.gl",
+  "neg": [
+   "gl"
+  ]
+ },
+ {
+  "id": "n02",
+  "type": "negation",
+  "split": "test",
+  "text": "사람 없이 혼자 있는 슈딩이",
+  "expr": "not x.pr and not x.mc and not x.dg",
+  "neg": [
+   "pr",
+   "mc",
+   "dg"
+  ]
+ },
+ {
+  "id": "n03",
+  "type": "negation",
+  "split": "dev",
+  "text": "자지 않고 침대 위에 있는 슈딩이",
+  "expr": "x.bd and not x.sl",
+  "neg": [
+   "sl"
+  ]
+ },
+ {
+  "id": "n04",
+  "type": "negation",
+  "split": "test",
+  "text": "사람 없이 소파에 있는 슈딩이",
+  "expr": "x.sf and not x.pr",
+  "neg": [
+   "pr"
+  ]
+ },
+ {
+  "id": "n05",
+  "type": "negation",
+  "split": "dev",
+  "text": "모자 안 쓰고 실내에 있는 슈딩이",
+  "expr": "x.__getattr__('in') and not x.ht",
+  "neg": [
+   "ht"
+  ]
+ },
+ {
+  "id": "n06",
+  "type": "negation",
+  "split": "test",
+  "text": "강아지 없이 침대에 있는 슈딩이",
+  "expr": "x.bd and not x.dg",
+  "neg": [
+   "dg"
+  ]
+ },
+ {
+  "id": "n07",
+  "type": "negation",
+  "split": "dev",
+  "text": "노트북 옆에 있지만 사람은 없는 슈딩이",
+  "expr": "x.lp and not x.pr",
+  "neg": [
+   "pr"
+  ]
+ },
+ {
+  "id": "n08",
+  "type": "negation",
+  "split": "test",
+  "text": "옷을 안 입고 밖에 있는 슈딩이",
+  "expr": "x.out and not x.cl",
+  "neg": [
+   "cl"
+  ]
+ },
+ {
+  "id": "n09",
+  "type": "negation",
+  "split": "dev",
+  "text": "다른 고양이 없이 창가에 있는 슈딩이",
+  "expr": "x.wd and not x.mc",
+  "neg": [
+   "mc"
+  ]
+ },
+ {
+  "id": "n10",
+  "type": "negation",
+  "split": "test",
+  "text": "안경은 안 썼지만 옷을 입은 슈딩이",
+  "expr": "x.cl and not x.gl",
+  "neg": [
+   "gl"
+  ]
+ },
+ {
+  "id": "n11",
+  "type": "negation",
+  "split": "dev",
+  "text": "안경 안 쓰고 풀밭에 있는 슈딩이",
+  "expr": "x.gs and not x.gl",
+  "neg": [
+   "gl"
+  ]
+ },
+ {
+  "id": "n12",
+  "type": "negation",
+  "split": "test",
+  "text": "사람 옆에 있지만 안기지 않은 슈딩이",
+  "expr": "x.pr and not x.hd",
+  "neg": [
+   "hd"
+  ]
+ }
+]
