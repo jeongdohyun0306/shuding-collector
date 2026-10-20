@@ -3,3 +3,4 @@
 d57a51c1306e4a93264e289cd496afccb820ffff752f56441d78cbb8297e4142 *sc/v1.py
 976e39cf0995597ae521036970e1f60f61ad36b6a1a09fac7678d26b0d90225b *app/config.json
 # 2차 held-out 검색어를 받기 전에 고정. v1.py는 설명 문자열만 지운 뒤 다시 계산했다(동작 같음).
+# 2026-10-20 sc/kparse.py를 고쳤다(2차 held-out에서 진 검색어 중 분해기 범위 오류 3건과 "다른 데서" 처리). 위 해시는 고치기 전 판(커밋 0b8196e, 윈도우 CRLF 줄바꿈 기준)이고, results/heldout2.json은 그 판의 결과다. 고친 판의 결과는 results/heldout2_after_fix.json이며 처음 보는 검색어 결과로 볼 수 없다.

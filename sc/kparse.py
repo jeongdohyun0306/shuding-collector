@@ -36,6 +36,10 @@ EXISTENTIAL = {"있", "계시"}
 GENERIC = {"있는", "하는", "되는", "있는데", "함께", "같이", "는", "은", CAT}
 POSITIONAL = {"안", "위", "밑", "옆", "속", "아래", "앞", "뒤", "근처", "사이", "쪽"}
 BOUND_PLACES = {"데", "곳", "쪽", "것", "거"}
+FRAME_NOUNS = {"사진", "모습", "장면", "컷", "짤", "순간", "때"}
+OTHER_MM = {"다른", "딴"}
+COORD_JX = {"이나", "나", "이든", "든", "이든지", "든지"}
+VISIBLE = {"보이", "나오", "찍히"}
 
 
 @lru_cache(maxsize=1)
@@ -159,7 +163,7 @@ class Parse:
                 break
             start -= 1
         if self.tag(start - 1) == "ETM" and self.tag(start - 2) in PRED_TAGS:
-            if self.form(start) in BOUND_PLACES:
+            if self.form(start) in BOUND_PLACES or self.form(start) in FRAME_NOUNS:
                 ps = self.pred_start(start - 2)
                 a = self.args_left(ps, self.form(ps))
                 start = a[0][0] if a else ps
@@ -172,6 +176,21 @@ class Parse:
             if self.tag(k) in ("NNG", "NNP", "NP", "NNB"):
                 return self.form(k)
         return self.form(e)
+
+    def self_cat(self, s, e):
+        if CAT not in self.span(s, e):
+            return False
+        return not (self.tag(s) == "MM" and self.form(s) in OTHER_MM)
+
+    def coord_at(self, k):
+        return self.tag(k) == "JC" or (self.tag(k) == "JX" and self.form(k) in COORD_JX)
+
+    def noun_kind(self, s, e):
+        h = self.head_of(s, e)
+        for name, group in (("being", BEING_NOUNS), ("wear", ACCESSORY), ("place", PLACE_NOUNS)):
+            if h in group:
+                return name
+        return None
 
     def args_left(self, i, verb):
         args = []
@@ -188,8 +207,13 @@ class Parse:
             if self.tag(k) not in NOUN_TAGS:
                 break
             s = self.noun_chain_left(k)
-            if CAT in self.span(s, k):
+            if self.self_cat(s, k):
                 break
+            while self.coord_at(s - 1) and self.tag(s - 2) in NOUN_TAGS:
+                s2 = self.noun_chain_left(s - 2)
+                if self.self_cat(s2, s - 2):
+                    break
+                s = s2
             ptag = self.tag(p) if p is not None else "BARE"
             if ptag == "JKB" and self.form(p) in COMITATIVE:
                 ptag = "COM"
@@ -230,14 +254,15 @@ class Parse:
         if self.form(i) == "못" and lemma in MOT_LEXICAL:
             return False
         ue = self.unit_end(j)
-        if lemma in EXISTENTIAL:
+        if lemma in EXISTENTIAL or lemma in VISIBLE:
             subj = [(s_, e_) for s_, e_, pt in self.args_left(i, lemma) if pt in ("JKS", "JX", "BARE")]
             if subj:
                 s_, e_ = subj[-1]
                 end = e_ - 1 if self.tag(e_) in ("JKS", "JX") else e_
-                self.neg.append(f"{josa(self.span(s_, end), '과', '와')} 함께 있는 {CAT}")
-                self.mark(subj[0][0], ue)
-                return True
+                if lemma in EXISTENTIAL or self.noun_kind(s_, end) == "being":
+                    self.neg.append(f"{josa(self.span(s_, end), '과', '와')} 함께 있는 {CAT}")
+                    self.mark(subj[0][0], ue)
+                    return True
         if self.tag(ue) == "ETM":
             h = self.head_noun(ue)
             if h is not None and h not in CAT_HEADS:
@@ -295,16 +320,22 @@ class Parse:
         s = self.noun_chain_left(k)
         if self.form(k) in ("것", "거", "게") and s < k:
             return s, k, "clause"
+        if self.form(k) in FRAME_NOUNS and any(self.tag(m) == "ETM" for m in range(s, k)):
+            return s, k, "clause"
         return s, k, "np"
 
-    def coord_left(self, s):
+    def coord_left(self, s, e):
         groups = []
+        kind = self.noun_kind(s, e)
         k = s - 1
         while k >= 0:
-            if self.tag(k) == "JC" or (self.tag(k) == "JX" and self.form(k) == "도"):
+            comma = self.tag(k) == "SP" and self.form(k) == ","
+            if self.coord_at(k) or (self.tag(k) == "JX" and self.form(k) == "도") or comma:
                 if self.tag(k - 1) not in NOUN_TAGS:
                     break
                 s2 = self.noun_chain_left(k - 1)
+                if comma and (kind is None or self.noun_kind(s2, k - 1) != kind):
+                    break
                 groups.insert(0, (s2, k - 1))
                 k = s2 - 1
             else:
@@ -315,7 +346,7 @@ class Parse:
         text = self.span(s, e)
         head = self.head_of(s, e)
         if kind == "clause":
-            return f"{re.sub(r'[ ]*(것|거|게)$', '', text)} {CAT}"
+            return f"{re.sub(r'[ ]*(것|거|게|' + '|'.join(FRAME_NOUNS) + r')$', '', text)} {CAT}"
         if head == CAT and text != CAT and not absence:
             return text
         if head == "혼자":
@@ -341,7 +372,7 @@ class Parse:
         if r is None:
             return False
         s, e, kind = r
-        groups = self.coord_left(s) + [(s, e)]
+        groups = self.coord_left(s, e) + [(s, e)]
         if self.tag(s - 1) == "MM" and self.form(s - 1) == "다른":
             groups[-1] = (s - 1, e)
         first = groups[0][0]
@@ -356,7 +387,7 @@ class Parse:
         if r is None:
             return False
         s, e, kind = r
-        groups = self.coord_left(s) + [(s, e)]
+        groups = self.coord_left(s, e) + [(s, e)]
         if self.form(e) == CAT and s == e:
             return False
         for gs, ge in groups:
@@ -389,7 +420,14 @@ class Parse:
         p = re.sub(r"(인데)(?=\s|$)", "인", p)
         p = re.sub(r"\s+", " ", p).strip()
         if self.drop:
-            p = " ".join(w for w in p.split(" ") if not re.fullmatch(r"(곳|데)(에서|에|의|서)?|거|것", w))
+            words = []
+            for w in p.split(" "):
+                if re.fullmatch(r"(다른|딴)?(곳|데)(에서|에|의|서)?|거|것", w):
+                    if words and words[-1] in OTHER_MM:
+                        words.pop()
+                    continue
+                words.append(w)
+            p = " ".join(words)
         if CAT not in p:
             p = (p + " " + CAT).strip()
         return p

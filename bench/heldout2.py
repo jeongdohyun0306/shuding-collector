@@ -21,7 +21,7 @@ def collect(path):
     return json.load(open(path, encoding="utf-8"))["result"]
 
 
-def main(journal):
+def main(journal, out_name="heldout2_after_fix.json"):
     sets = collect(journal)
     kept, log = [], {"kept": 0, "fixed": 0, "dropped": 0, "dropped_items": []}
     for s in sets:
@@ -64,7 +64,7 @@ def main(journal):
         r2 = [r for r, k in zip(res["v2"], m) if k]
         summ[b] = {"v1": by_type(r1), "v2": by_type(r2), "paired": paired([r["ndcg10"] for r in r1], [r["ndcg10"] for r in r2])}
     out["summary"] = summ
-    json.dump(out, open(ROOT / "results" / "heldout2.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump(out, open(ROOT / "results" / out_name, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(json.dumps(log, ensure_ascii=False, indent=1))
     print("dropped (fewer than 2 positives):", dropped_pos)
     for k, s in summ.items():
@@ -81,4 +81,4 @@ def main(journal):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(*sys.argv[1:3])
